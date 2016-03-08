@@ -1,7 +1,7 @@
 <p align="center">
-<img src="https://www.dropbox.com/s/nrbtyfxhaul3cvk/GoodToGo_Image.png?dl=0">
+<img src="https://github.com/ricardopsantos/GoodToGo_Swift">
 </p>
 
-Good To Go Swift 2
+Good To Go Swift
 -----
 
