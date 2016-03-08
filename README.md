@@ -5,11 +5,9 @@ Good To Go Swift
 <img src="https://github.com/ricardopsantos/GoodToGo_Swift/blob/master/G2GLogo.png">
 </p>
 
-The intent of this project is to have a place where I can have all my app connected,  
-and separeted and the same time; and also a place where I could easily try new things 
-without loose to much time connections things, and class's or extension I could neeed 
+The intent of this project is to have a place where I can have all my app connected, and separeted and the same time; and also a place where I could easily try new things without loose to much time connections things, and class's or extension I could neeed 
 
-## App_1 : Template App 1 - Animations and UI tests
+### App_1 : Template App 1 - Animations and UI tests
 About :
 - Not intented to be MVVM
 - In constrution
@@ -31,7 +29,8 @@ About :
 - In constrution
 
 
-## App_5 : iOS Candidate Test : https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit
+## App_5 : iOS Candidate Test
+https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit
 About :
 - App suports all orientations
 - Storyboards/Autolayouts
