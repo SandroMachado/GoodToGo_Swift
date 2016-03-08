@@ -7,4 +7,6 @@ Good To Go Swift
 
 
 
+## License
 
+Good To Go Swift is released under the Your Cousin license. You can use it; but if soo, you must send me the Facebook url of you best (single > 21 years old) cousin.

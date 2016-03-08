@@ -1,13 +1,10 @@
 
-
-git status && git add . && git commit -m "Lorem epsilon" && git push origin master
+https://github.com/ricardopsantos/GoodToGo_Swift
 
 /*
- *  https://github.com/ricardopsantos/GoodToGo_Swift
+ * Tipical commit
  */
-
-// github
-https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+git status && git add . && git commit -m "Lorem epsilon" && git push origin master
 
 
 /*
@@ -17,6 +14,9 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 # killall Finder
 # 'Depois apagar a pasta Git'
 
+/*
+ *  Add Git
+ */
 git init
 git add .
 git commit -m "First commit"
@@ -26,9 +26,10 @@ git push origin master
 git push -f origin master.
 
 
+/*
+ *  FORCE!
+ */
 # http://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push/12610763#12610763
 git push origin master --force
 git reset --hard upstream/master
 
-
-git add . && git commit -m "Added images" && git push origin master
