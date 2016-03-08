@@ -1,6 +1,6 @@
 
 
-git add . && git commit -m "Added images" && git push origin master
+git status && git add . && git commit -m "Lorem epsilon" && git push origin master
 
 /*
  *  https://github.com/ricardopsantos/GoodToGo_Swift
