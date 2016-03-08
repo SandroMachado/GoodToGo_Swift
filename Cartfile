@@ -1,10 +1,9 @@
 # Tutorial          
 # http://www.raywenderlich.com/109330/carthage-tutorial-getting-started
 
-# Editar ficheiro     : open -a Xcode Cartfile
-# Actualizar (iPhone) : carthage update --platform iOS
-# Actualizar (tudo)   : carthage update
-# Abrir compilado     : open Carthage
+# Edit File       : open -a Xcode Cartfile
+# Update (iPhone) : carthage update --platform iOS
+# Open compiled   : open Carthage
 
 ####################################################################
 ########################## INSTALED ################################
@@ -22,13 +21,22 @@ github "SwiftyJSON/SwiftyJSON" ~> 2.3.0
 
 ####################################################################
 
-# Whisper is a component that will make the task of display messages and in-app notifications simple. It has three different views inside http://hyper.no
+# Whisper is a component that will make the task of display messages and in-app notifications simple.
 # https://github.com/hyperoslo/Whisper
 github "hyperoslo/Whisper"
+
+####################################################################
 
 # Eureka : Elegant iOS form builder in Swift 2
 # https://github.com/xmartlabs/Eureka
 github "xmartlabs/Eureka" ~> 1.0
+
+####################################################################
+
+# Crypto related functions and helpers for Swift implemented in Swift programming language http://krzyzanowskim.com
+# https://github.com/krzyzanowskim/CryptoSwift
+# ERROR : dyld: Library not loaded: @rpath/CryptoSwift.framework/CryptoSwift -> Go to project build settings and set Embedded Content Contains Swift Code flag to YES
+github "krzyzanowskim/CryptoSwift"
 
 ####################################################################
 ######################## NOT INSTALED ##############################
@@ -39,9 +47,8 @@ github "xmartlabs/Eureka" ~> 1.0
 # A type-safe Flux implementation for Swift
 # https://github.com/yonekawa/SwiftFlux
 # github "yonekawa/SwiftFlux"
-
+m
 ####################################################################
-
 
 # The easy to use Swift JSON decode
 # https://github.com/JohnSundell/Unbox
@@ -52,12 +59,6 @@ github "xmartlabs/Eureka" ~> 1.0
 # Promises for iOS and OS X http://promisekit.org
 # https://github.com/mxcl/PromiseKit
 # github "mxcl/PromiseKit" ~> 2.0
-
-####################################################################
-
-# Crypto related functions and helpers for Swift implemented in Swift programming language http://krzyzanowskim.com
-# https://github.com/krzyzanowskim/CryptoSwift
-#github "krzyzanowskim/CryptoSwift"
 
 ####################################################################
 
@@ -79,3 +80,4 @@ github "xmartlabs/Eureka" ~> 1.0
 # $(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework
 # $(SRCROOT)/Carthage/Build/iOS/Whisper.framework
 # $(SRCROOT)/Carthage/Build/iOS/Eureka.framework
+# $(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework

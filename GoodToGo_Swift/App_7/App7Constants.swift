@@ -35,7 +35,16 @@ enum App7Constants {
             return "ShowNoInternetConnection"
         }
     }
-    enum URL {
+    enum MarvelApi {
+        static var PublicKey: String {
+            return "b909907f183968b09dd99a9cc5b27d72"
+        }
+        static var PrivateKey: String {
+            return "87b64bb736e681a3e3b06b7baeaff0304e0f76f2"
+        }
+        static var EndPoint: String {
+            return "http://gateway.marvel.com/v1/public/comics"
+        }
         static var Commments: String {
             return "http://jsonplaceholder.typicode.com/comments"
         }

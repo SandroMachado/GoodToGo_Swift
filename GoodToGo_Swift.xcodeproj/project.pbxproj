@@ -480,6 +480,13 @@
 		9FA8BC591C831CEE00394CA1 /* RJSConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC551C831CEE00394CA1 /* RJSConvert.swift */; };
 		9FA8BC791C83AEC500394CA1 /* Screen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC781C83AEC500394CA1 /* Screen4.swift */; };
 		9FA8BC7D1C83BB0800394CA1 /* Screen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC7C1C83BB0800394CA1 /* Screen5.swift */; };
+		9FB650761C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB650771C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB650781C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB650791C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB6507A1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB6507B1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
+		9FB6507C1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
 		9FB9DF981C8C46F100EA325D /* LClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9DF971C8C46F100EA325D /* LClosures.swift */; };
 		9FB9DF9C1C8C4B4C00EA325D /* LGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9DF9B1C8C4B4C00EA325D /* LGenerics.swift */; };
 		9FC4D6351C6F80FA00796F65 /* VM+Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4D6341C6F80FA00796F65 /* VM+Links.swift */; };
@@ -861,6 +868,7 @@
 		9FA8BC6C1C8334B100394CA1 /* App4Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App4Constants.swift; path = App_4/App4Constants.swift; sourceTree = "<group>"; };
 		9FA8BC781C83AEC500394CA1 /* Screen4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen4.swift; path = App_2/Screen4.swift; sourceTree = "<group>"; };
 		9FA8BC7C1C83BB0800394CA1 /* Screen5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen5.swift; path = App_2/Screen5.swift; sourceTree = "<group>"; };
+		9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
 		9FB9DF971C8C46F100EA325D /* LClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LClosures.swift; path = GoodToGo_SwiftLessons/LClosures.swift; sourceTree = SOURCE_ROOT; };
 		9FB9DF9B1C8C4B4C00EA325D /* LGenerics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LGenerics.swift; path = GoodToGo_SwiftLessons/LGenerics.swift; sourceTree = SOURCE_ROOT; };
 		9FC4D6341C6F80FA00796F65 /* VM+Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VM+Links.swift"; sourceTree = "<group>"; };
@@ -910,6 +918,7 @@
 				9F41DAD71C8520420083D1FC /* Crashlytics.framework in Frameworks */,
 				9F41DAD81C8520420083D1FC /* SwiftyJSON.framework in Frameworks */,
 				9F41DAD91C8520420083D1FC /* Whisper.framework in Frameworks */,
+				9FB6507A1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6E65361C89F6F6005991CE /* RealmSwift.framework in Frameworks */,
 				9F41DADA1C8520420083D1FC /* CoreData.framework in Frameworks */,
 				9F41DADB1C8520420083D1FC /* Alamofire.framework in Frameworks */,
@@ -930,6 +939,7 @@
 				9FE3A9D31C6FFCF4002B166B /* Crashlytics.framework in Frameworks */,
 				9FE3A9A11C6FED63002B166B /* SwiftyJSON.framework in Frameworks */,
 				9F6D7F791C6FED3700E70557 /* Whisper.framework in Frameworks */,
+				9FB650771C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6E65331C89F6F6005991CE /* RealmSwift.framework in Frameworks */,
 				9F468ED41C6E7F5C00065E19 /* CoreData.framework in Frameworks */,
 				9FE3A9A41C6FED68002B166B /* Alamofire.framework in Frameworks */,
@@ -950,6 +960,7 @@
 				9FE3A9D41C6FFCF4002B166B /* Crashlytics.framework in Frameworks */,
 				9FE3A9A21C6FED64002B166B /* SwiftyJSON.framework in Frameworks */,
 				9F6D7F781C6FEC4500E70557 /* Whisper.framework in Frameworks */,
+				9FB650781C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6E65341C89F6F6005991CE /* RealmSwift.framework in Frameworks */,
 				9F468F531C6F65B600065E19 /* CoreData.framework in Frameworks */,
 				9FE3A9A51C6FED69002B166B /* Alamofire.framework in Frameworks */,
@@ -977,6 +988,7 @@
 				9F6E64EE1C89F513005991CE /* SwiftyJSON.framework in Frameworks */,
 				9F6E64EF1C89F513005991CE /* Fabric.framework in Frameworks */,
 				9F6E64F01C89F513005991CE /* Crashlytics.framework in Frameworks */,
+				9FB6507B1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6E64F11C89F513005991CE /* Whisper.framework in Frameworks */,
 				9F6E64F21C89F513005991CE /* CoreData.framework in Frameworks */,
 				9F6E64F31C89F513005991CE /* Alamofire.framework in Frameworks */,
@@ -997,6 +1009,7 @@
 				9F76EA2C1C8F572F00DEBAF2 /* Crashlytics.framework in Frameworks */,
 				9F76EA2D1C8F572F00DEBAF2 /* SwiftyJSON.framework in Frameworks */,
 				9F76EA2E1C8F572F00DEBAF2 /* Whisper.framework in Frameworks */,
+				9FB6507C1C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F76EA2F1C8F572F00DEBAF2 /* RealmSwift.framework in Frameworks */,
 				9F76EA301C8F572F00DEBAF2 /* CoreData.framework in Frameworks */,
 				9F76EA311C8F572F00DEBAF2 /* Alamofire.framework in Frameworks */,
@@ -1017,6 +1030,7 @@
 				9F63D2D71C84C02400352073 /* SwiftyJSON.framework in Frameworks */,
 				9FE3A9D51C6FFCF4002B166B /* Fabric.framework in Frameworks */,
 				9FE3A9D21C6FFCF4002B166B /* Crashlytics.framework in Frameworks */,
+				9FB650761C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6D7F7A1C6FED3800E70557 /* Whisper.framework in Frameworks */,
 				9F4681CF1C6E796B00065E19 /* CoreData.framework in Frameworks */,
 				9FE3A9A31C6FED67002B166B /* Alamofire.framework in Frameworks */,
@@ -1037,6 +1051,7 @@
 				9FD267FD1C723A06005E9CC9 /* Fabric.framework in Frameworks */,
 				9FD268011C723A06005E9CC9 /* Crashlytics.framework in Frameworks */,
 				9FD267FE1C723A06005E9CC9 /* Whisper.framework in Frameworks */,
+				9FB650791C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */,
 				9F6E65351C89F6F6005991CE /* RealmSwift.framework in Frameworks */,
 				9FD267FF1C723A06005E9CC9 /* CoreData.framework in Frameworks */,
 				9FD268001C723A06005E9CC9 /* Alamofire.framework in Frameworks */,
@@ -1231,6 +1246,7 @@
 		9F4681F51C6E7BD200065E19 /* Frameworks.Carthage */ = {
 			isa = PBXGroup;
 			children = (
+				9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */,
 				9FFCAD7A1C8DC6AE00EF51A5 /* Eureka.framework */,
 				9F6D7F771C6FEC4500E70557 /* Whisper.framework */,
 				9F4681491C6E1E0D00065E19 /* SwiftyJSON.framework */,
@@ -1973,6 +1989,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -1990,6 +2007,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2007,6 +2025,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2024,6 +2043,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2041,6 +2061,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2058,6 +2079,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2075,6 +2097,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -2694,6 +2717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2714,6 +2738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2733,6 +2758,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2752,6 +2778,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2771,6 +2798,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Links-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2790,6 +2818,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Links-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2841,6 +2870,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2860,6 +2890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2879,7 +2910,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2899,7 +2932,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3005,6 +3040,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3024,6 +3060,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3042,6 +3079,7 @@
 		9FD2680E1C723A06005E9CC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3060,6 +3098,7 @@
 		9FD2680F1C723A06005E9CC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

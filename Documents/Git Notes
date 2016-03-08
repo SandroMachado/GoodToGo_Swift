@@ -5,7 +5,7 @@ https://github.com/ricardopsantos/GoodToGo_Swift
  * Tipical commit
  */
 git status && git add . && git commit -m "Lorem epsilon" && git push origin master
-
+git status && git add . && git commit -m "Marvel challenge" && git push origin master
 
 /*
  *  Remove Git
