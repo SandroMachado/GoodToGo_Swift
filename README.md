@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://dl.dropboxusercontent.com/u/14102938/1455414504_Lighter.png">
+<img src="https://www.dropbox.com/s/nrbtyfxhaul3cvk/GoodToGo_Image.png?dl=0">
 </p>
 
 Good To Go Swift
