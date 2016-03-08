@@ -28,4 +28,4 @@ git push origin master --force
 git reset --hard upstream/master
 
 
-git add . && git commit -m "Added images" 
+git add . && git commit -m "Added images" && git push origin master
