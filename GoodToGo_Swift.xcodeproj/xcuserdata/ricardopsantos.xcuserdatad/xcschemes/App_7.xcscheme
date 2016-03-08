@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F41DA9C1C8520420083D1FC"
-               BuildableName = "App_5 - Exam 1.app"
-               BlueprintName = "App_5 - Exam 1"
+               BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
+               BuildableName = "App_7 - Exam 2.app"
+               BlueprintName = "App_7 - Exam 2"
                ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F41DA9C1C8520420083D1FC"
-            BuildableName = "App_5 - Exam 1.app"
-            BlueprintName = "App_5 - Exam 1"
+            BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
+            BuildableName = "App_7 - Exam 2.app"
+            BlueprintName = "App_7 - Exam 2"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F41DA9C1C8520420083D1FC"
-            BuildableName = "App_5 - Exam 1.app"
-            BlueprintName = "App_5 - Exam 1"
+            BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
+            BuildableName = "App_7 - Exam 2.app"
+            BlueprintName = "App_7 - Exam 2"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F41DA9C1C8520420083D1FC"
-            BuildableName = "App_5 - Exam 1.app"
-            BlueprintName = "App_5 - Exam 1"
+            BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
+            BuildableName = "App_7 - Exam 2.app"
+            BlueprintName = "App_7 - Exam 2"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

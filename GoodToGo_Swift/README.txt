@@ -44,6 +44,11 @@
         - Beside the user location, show also the user details
 
 ##############################################
-# App_6 : Real DB tests - https://realm.io/
+# App_6 : Realm DB tests - https://realm.io/
     About :
         - Not intented to be MVVM
+
+##############################################
+# App_7 : Marven Exam
+
+

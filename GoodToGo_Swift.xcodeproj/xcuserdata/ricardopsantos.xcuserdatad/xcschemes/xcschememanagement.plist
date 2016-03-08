@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>App_7.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Swift.Lessons.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -73,6 +78,16 @@
 			<true/>
 		</dict>
 		<key>9F6E64B51C89F513005991CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F76E9851C8F570F00DEBAF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F76E9E71C8F572F00DEBAF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
