@@ -777,6 +777,8 @@
 		9FF1BBCE1C810519004279D2 /* DBTConfigurationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBTConfigurationKeys.swift; path = App_Shared/DBTConfigurationKeys.swift; sourceTree = "<group>"; };
 		9FF1BBD61C810AB9004279D2 /* demoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = demoDB.db; sourceTree = "<group>"; };
 		9FF6A9D41C8ED7C500C60347 /* LDesignatedInitAndConvenienceInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDesignatedInitAndConvenienceInit.swift; path = GoodToGo_SwiftLessons/LDesignatedInitAndConvenienceInit.swift; sourceTree = SOURCE_ROOT; };
+		9FF6A9E11C8F25D600C60347 /* URL Utils */ = {isa = PBXFileReference; lastKnownFileType = text; name = "URL Utils"; path = "Documents/URL Utils"; sourceTree = "<group>"; };
+		9FF6A9E21C8F26AB00C60347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9FFCAD791C8DC68D00EF51A5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		9FFCAD7A1C8DC6AE00EF51A5 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -1308,6 +1310,7 @@
 		9F9A9BE51C6CF0CB00B37D0D = {
 			isa = PBXGroup;
 			children = (
+				9FF6A9E21C8F26AB00C60347 /* README.md */,
 				9F9A9C211C6CF7B800B37D0D /* Documents */,
 				9F9A9BF01C6CF0CB00B37D0D /* GoodToGo_Swift */,
 				9F63D2B01C84BEB100352073 /* GoodToGo_SwiftLessons */,
@@ -1354,6 +1357,7 @@
 			children = (
 				9FFCAD791C8DC68D00EF51A5 /* Cartfile */,
 				9F468F6F1C6F68D900065E19 /* Git Notes */,
+				9FF6A9E11C8F25D600C60347 /* URL Utils */,
 				9F469B3C1C6F68F600065E19 /* TheSwiftProgrammingLanguage.pdf */,
 				9F8F24361C8B12CB003D546B /* Advanced-Swift-prerelease-2016-02-12-2.pdf */,
 				9FF1BBC51C80A160004279D2 /* iOS Good Practices.pdf */,
