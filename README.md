@@ -9,4 +9,4 @@ Good To Go Swift
 
 ## License
 
-To Kill?
+WTFPL – Do What the F*** You Want to Public License - http://www.wtfpl.net/about/
