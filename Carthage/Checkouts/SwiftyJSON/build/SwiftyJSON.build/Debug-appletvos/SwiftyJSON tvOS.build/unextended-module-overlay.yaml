@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/ricardopsantos/Dropbox/MyApps/GoodToGo_Swift/Carthage/Checkouts/SwiftyJSON/build/Debug-appletvos/SwiftyJSON.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/ricardopsantos/Dropbox/MyApps/GoodToGo_Swift/Carthage/Checkouts/SwiftyJSON/build/SwiftyJSON.build/Debug-appletvos/SwiftyJSON tvOS.build/unextended-module.modulemap',
+    }]
+  }]
+}

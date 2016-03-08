@@ -1,0 +1,36 @@
+
+/*
+ *  https://github.com/ricardopsantos/GoodToGo_Swift
+ */
+
+// github
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+//
+// Remove Git
+# defaults write com.apple.finder AppleShowAllFiles TRUE
+# killall Finder
+# 'Depois apagar a pasta Git'
+
+git init
+git add .
+git commit -m "First commit"
+git remote rm origin
+git remote add origin https://github.com/ricardopsantos/GoodToGo_Swift
+git push origin master
+git push -f origin master.
+
+
+http://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push/12610763#12610763
+git push origin master --force
+git reset --hard  upstream/master
+
+http://nshipster.com/wkwebkit/
+
+// Coding Style
+https://github.com/raywenderlich/swift-style-guide
+
+// Carthage
+http://www.raywenderlich.com/109330/carthage-tutorial-getting-started
+
+

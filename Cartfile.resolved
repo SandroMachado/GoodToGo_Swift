@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "2.0.2"
+github "xmartlabs/Eureka" "1.4.1"
+github "SwiftyJSON/SwiftyJSON" "2.3.3"
+github "hyperoslo/Whisper" "2.0.2"

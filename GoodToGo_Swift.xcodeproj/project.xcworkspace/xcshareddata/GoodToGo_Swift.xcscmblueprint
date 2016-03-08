@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "807C90352C959C3FB85D1A105E6CB5F093D9E7D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D871517711585B83B72FD57DFBCBE3F51CC6BB08" : 0,
+    "807C90352C959C3FB85D1A105E6CB5F093D9E7D1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B0B3F03E-AAA5-469C-AF03-1279ECF38B3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D871517711585B83B72FD57DFBCBE3F51CC6BB08" : "Dropbox\/MyApps\/GoodToGo_Swift\/GoodToGo_Swift\/",
+    "807C90352C959C3FB85D1A105E6CB5F093D9E7D1" : "Dropbox\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GoodToGo_Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyApps\/GoodToGo_Swift\/GoodToGo_Swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ricardopsantos\/GoodToGo_ObjectiveC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "807C90352C959C3FB85D1A105E6CB5F093D9E7D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ricardopsantos\/GoodToGo_Swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D871517711585B83B72FD57DFBCBE3F51CC6BB08"
+    }
+  ]
+}

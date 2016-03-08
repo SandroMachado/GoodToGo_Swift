@@ -1,0 +1,81 @@
+# Tutorial          
+# http://www.raywenderlich.com/109330/carthage-tutorial-getting-started
+
+# Editar ficheiro     : open -a Xcode Cartfile
+# Actualizar (iPhone) : carthage update --platform iOS
+# Actualizar (tudo)   : carthage update
+# Abrir compilado     : open Carthage
+
+####################################################################
+########################## INSTALED ################################
+####################################################################
+
+# Elegant HTTP Networking in Swift
+# https://github.com/Alamofire/Alamofire
+github "Alamofire/Alamofire" ~> 2.0
+
+####################################################################
+
+# The better way to deal with JSON data in Swift
+# https://github.com/SwiftyJSON/SwiftyJSON
+github "SwiftyJSON/SwiftyJSON" ~> 2.3.0
+
+####################################################################
+
+# Whisper is a component that will make the task of display messages and in-app notifications simple. It has three different views inside http://hyper.no
+# https://github.com/hyperoslo/Whisper
+github "hyperoslo/Whisper"
+
+# Eureka : Elegant iOS form builder in Swift 2
+# https://github.com/xmartlabs/Eureka
+github "xmartlabs/Eureka" ~> 1.0
+
+####################################################################
+######################## NOT INSTALED ##############################
+####################################################################
+
+####################################################################
+
+# A type-safe Flux implementation for Swift
+# https://github.com/yonekawa/SwiftFlux
+# github "yonekawa/SwiftFlux"
+
+####################################################################
+
+
+# The easy to use Swift JSON decode
+# https://github.com/JohnSundell/Unbox
+# github johnsundell/unbox
+
+####################################################################
+
+# Promises for iOS and OS X http://promisekit.org
+# https://github.com/mxcl/PromiseKit
+# github "mxcl/PromiseKit" ~> 2.0
+
+####################################################################
+
+# Crypto related functions and helpers for Swift implemented in Swift programming language http://krzyzanowskim.com
+# https://github.com/krzyzanowskim/CryptoSwift
+#github "krzyzanowskim/CryptoSwift"
+
+####################################################################
+
+# Performant animated GIF engine for iOS
+# https://github.com/Flipboard/FLAnimatedImage
+# github "Flipboard/FLAnimatedImage"
+
+####################################################################
+
+# MBProgressHUD + Customizations http://www.bukovinski.com/
+# https://github.com/jdg/MBProgressHUD
+#github "jdg/MBProgressHUD" ~> 0.9.2
+
+####################################################################
+####################################################################
+####################################################################
+
+# $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
+# $(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework
+# $(SRCROOT)/Carthage/Build/iOS/Whisper.framework
+# $(SRCROOT)/Carthage/Build/iOS/Eureka.framework

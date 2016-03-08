@@ -1,0 +1,14 @@
+PODS:
+  - Whisper (2.0.0)
+
+DEPENDENCIES:
+  - Whisper (from `../../`)
+
+EXTERNAL SOURCES:
+  Whisper:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  Whisper: 285d73bcddde1b494935d4801a699a75e5e42533
+
+COCOAPODS: 0.39.0
