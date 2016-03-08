@@ -1,7 +1,7 @@
 Good To Go Swift
 -----
 
-The intent of this project is to have a place where I can have all my app connected, and separeted and the same time; and also a place where I could easily try new things without loose to much time connections things, and class's or extension I could neeed 
+The intent of this project is to have a place where I can have all my (swift) apps connected, and separeted and the same time; and also a place where I could easily try new things without loose to much time connections things, making class's or extension I could neeed do to a fast project/demo. 
 
 <p align="center">
 <img src="https://github.com/ricardopsantos/GoodToGo_Swift/blob/master/G2GLogo.png">
@@ -9,29 +9,28 @@ The intent of this project is to have a place where I can have all my app connec
 
 -----
 
-
 ### App_1 : Template App 1 - Animations and UI tests
 About :
-- Not intented to be MVVM.
+- Used to test simple layouts and UI animations.
 - In constrution.
 
 ## App_2 : Template App 2 - Storyboards / AutoLayouts tests
 About :
-- Not intented to be MVVM.
+- Used to test Storybards and autolayouts.
 - In constrution.
 
 ## App_3 : Links - UIWebView based app
 About :
-- Real app to send to the app store. Have to be all reabuilded in MVVM and Realm for storage.
+- Real app to send to the app store (or not).
 - 3 tier architacture - PL, BLL, DAL - https://www.techopedia.com/definition/24649/three-tier-architecture.
 TODO :
+- Rebuild to MVVM and Realm for storage.
 - Turn into MVVM.
 
 ## App_4 : Template App 3 - MVVM - Model-View-ViewModel
 About :
 - A simple impletation of a MVVM app.
 - In constrution.
-
 
 ## App_5 : iOS Candidate Test
 https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit
