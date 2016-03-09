@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 
 // FIX: The map is consuming to much memory
-class Screen3ViewController: UIViewController, MKMapViewDelegate {
+class App7Screen3ViewController: UIViewController, MKMapViewDelegate {
  
     @IBOutlet weak var map: MKMapView?
     var sharedVar : TableItem?

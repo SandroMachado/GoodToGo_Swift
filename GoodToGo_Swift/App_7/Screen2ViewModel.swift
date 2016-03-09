@@ -12,7 +12,6 @@ protocol Screen2ViewModelProtocol {
     var articleTitle: String { get }
     var body: String { get }
     var username: String { get }
-    var commentsCount: String { get }
     var coverImage: UIImage? { get }
     var viewNeedsReload: Dynamic<Bool> { get }
 }
@@ -33,7 +32,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
 
     init(item:TableItem) {
         self.viewNeedsReload = Dynamic<Bool>(false)
-        self.controllerTitle = "Post details"
+        self.controllerTitle = "Comic details"
         self.body            = item.description
         self.username        = ""//user.name
         self.articleTitle    = item.title
@@ -55,7 +54,9 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
                 // We didnt find the avatar image on the file system. Let fetch it....
                 RJSDownloadsManager.downloadImage(item.thumbnail) { (result, error) -> Void in
                     if(HaveValue(error) && !HaveValue(result)) {
+                        
                         RJSErrorsManager.handleError(error)
+                        
                         // Error? Return a defautl image...
                         self.coverImage = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
                     }
@@ -65,6 +66,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
                         // Cache the image for future use
                         RJSFilesManager.saveImage(imageName, folder: RJSFilesManager.Folder.Documents, image: result)
                     }
+                    self.setViewNeedsToReadInMainTread()
                 }
             }
             else {
@@ -79,6 +81,22 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     func makeSomeOperation() -> Void
     {
         self.viewNeedsReload.value = true;
+    }
+    
+    /*
+    * This is needed cauze if we do self.viewNeedsReload.value=true, and we came from a notification (func handleNotification(sender:NSNotification)),
+    * we will trigger the update in the ViewCrontroller from a background tread! Here we can ensure that the update is trigged in
+    * the main tread
+    */
+    private func setViewNeedsToReadInMainTread() -> Void {
+        if(NSThread.isMainThread()) {
+            self.viewNeedsReload.value = true;
+        }
+        else {
+            RJSBlocks.executeInMainTread { () -> () in
+                self.viewNeedsReload.value = true;
+            }
+        }
     }
     
 

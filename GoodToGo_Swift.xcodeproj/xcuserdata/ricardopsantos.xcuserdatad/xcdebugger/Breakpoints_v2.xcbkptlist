@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoodToGo_Swift/App_7/Screen2ViewModel.swift"
-            timestampString = "479217721.845957"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "init(item:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "GoodToGo_Swift/AppDelegate.swift"
             timestampString = "479231846.598356"
             startingColumnNumber = "9223372036854775807"
@@ -41,29 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoodToGo_Swift/App_7/App7Configuration.swift"
-            timestampString = "479231550.946138"
+            filePath = "GoodToGo_Swift/App_7/Screen2ViewModel.swift"
+            timestampString = "479233443.432794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "prepare()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GoodToGo_Swift/App_7/Screen1ViewController.swift"
-            timestampString = "479231824.811112"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "setViewNeedsToReadInMainTread()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

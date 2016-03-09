@@ -410,11 +410,11 @@
 		9F76EA601C8F586000DEBAF2 /* DBTableComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA521C8F586000DEBAF2 /* DBTableComments.swift */; };
 		9F76EA611C8F586000DEBAF2 /* DBTablePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA531C8F586000DEBAF2 /* DBTablePosts.swift */; };
 		9F76EA621C8F586000DEBAF2 /* DBTableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA541C8F586000DEBAF2 /* DBTableUsers.swift */; };
-		9F76EA631C8F586000DEBAF2 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA551C8F586000DEBAF2 /* Screen1ViewController.swift */; };
+		9F76EA631C8F586000DEBAF2 /* App7Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA551C8F586000DEBAF2 /* App7Screen1ViewController.swift */; };
 		9F76EA641C8F586000DEBAF2 /* Screen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA561C8F586000DEBAF2 /* Screen1ViewModel.swift */; };
-		9F76EA651C8F586000DEBAF2 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA571C8F586000DEBAF2 /* Screen2ViewController.swift */; };
+		9F76EA651C8F586000DEBAF2 /* App7Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA571C8F586000DEBAF2 /* App7Screen2ViewController.swift */; };
 		9F76EA661C8F586000DEBAF2 /* Screen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA581C8F586000DEBAF2 /* Screen2ViewModel.swift */; };
-		9F76EA671C8F586000DEBAF2 /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA591C8F586000DEBAF2 /* Screen3ViewController.swift */; };
+		9F76EA671C8F586000DEBAF2 /* App7Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA591C8F586000DEBAF2 /* App7Screen3ViewController.swift */; };
 		9F76EA681C8F586000DEBAF2 /* Screen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA5A1C8F586000DEBAF2 /* Screen3ViewModel.swift */; };
 		9F8F24341C8B1151003D546B /* LSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24331C8B1151003D546B /* LSingletons.swift */; };
 		9F8F24381C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
@@ -944,11 +944,11 @@
 		9F76EA521C8F586000DEBAF2 /* DBTableComments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBTableComments.swift; path = App_7/DBTableComments.swift; sourceTree = "<group>"; };
 		9F76EA531C8F586000DEBAF2 /* DBTablePosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBTablePosts.swift; path = App_7/DBTablePosts.swift; sourceTree = "<group>"; };
 		9F76EA541C8F586000DEBAF2 /* DBTableUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBTableUsers.swift; path = App_7/DBTableUsers.swift; sourceTree = "<group>"; };
-		9F76EA551C8F586000DEBAF2 /* Screen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen1ViewController.swift; path = App_7/Screen1ViewController.swift; sourceTree = "<group>"; };
+		9F76EA551C8F586000DEBAF2 /* App7Screen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7Screen1ViewController.swift; path = App_7/App7Screen1ViewController.swift; sourceTree = "<group>"; };
 		9F76EA561C8F586000DEBAF2 /* Screen1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen1ViewModel.swift; path = App_7/Screen1ViewModel.swift; sourceTree = "<group>"; };
-		9F76EA571C8F586000DEBAF2 /* Screen2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen2ViewController.swift; path = App_7/Screen2ViewController.swift; sourceTree = "<group>"; };
+		9F76EA571C8F586000DEBAF2 /* App7Screen2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7Screen2ViewController.swift; path = App_7/App7Screen2ViewController.swift; sourceTree = "<group>"; };
 		9F76EA581C8F586000DEBAF2 /* Screen2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen2ViewModel.swift; path = App_7/Screen2ViewModel.swift; sourceTree = "<group>"; };
-		9F76EA591C8F586000DEBAF2 /* Screen3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen3ViewController.swift; path = App_7/Screen3ViewController.swift; sourceTree = "<group>"; };
+		9F76EA591C8F586000DEBAF2 /* App7Screen3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7Screen3ViewController.swift; path = App_7/App7Screen3ViewController.swift; sourceTree = "<group>"; };
 		9F76EA5A1C8F586000DEBAF2 /* Screen3ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen3ViewModel.swift; path = App_7/Screen3ViewModel.swift; sourceTree = "<group>"; };
 		9F76EA6C1C8F58A900DEBAF2 /* App_7-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "App_7-Info.plist"; sourceTree = "<group>"; };
 		9F76EA6F1C8F596A00DEBAF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = App_5/en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1604,9 +1604,9 @@
 		9F76EA6A1C8F587D00DEBAF2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F76EA551C8F586000DEBAF2 /* Screen1ViewController.swift */,
-				9F76EA571C8F586000DEBAF2 /* Screen2ViewController.swift */,
-				9F76EA591C8F586000DEBAF2 /* Screen3ViewController.swift */,
+				9F76EA551C8F586000DEBAF2 /* App7Screen1ViewController.swift */,
+				9F76EA571C8F586000DEBAF2 /* App7Screen2ViewController.swift */,
+				9F76EA591C8F586000DEBAF2 /* App7Screen3ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -2662,14 +2662,14 @@
 				9F76E9EC1C8F572F00DEBAF2 /* AFDateExtension.swift in Sources */,
 				9F76E9ED1C8F572F00DEBAF2 /* RJSStorages.swift in Sources */,
 				9F76E9EF1C8F572F00DEBAF2 /* RJSCrashlytics.swift in Sources */,
-				9F76EA671C8F586000DEBAF2 /* Screen3ViewController.swift in Sources */,
+				9F76EA671C8F586000DEBAF2 /* App7Screen3ViewController.swift in Sources */,
 				9F76E9F11C8F572F00DEBAF2 /* RJSErrorsManager.swift in Sources */,
 				9F76EA601C8F586000DEBAF2 /* DBTableComments.swift in Sources */,
 				9FB0B5F01C90773600C0F031 /* OAuth.swift in Sources */,
 				9F76E9F21C8F572F00DEBAF2 /* RJSBlocks.swift in Sources */,
 				9FB0B5B81C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F76E9F31C8F572F00DEBAF2 /* UIColor+Extensions.swift in Sources */,
-				9F76EA631C8F586000DEBAF2 /* Screen1ViewController.swift in Sources */,
+				9F76EA631C8F586000DEBAF2 /* App7Screen1ViewController.swift in Sources */,
 				9F76E9F41C8F572F00DEBAF2 /* RJSLayoutsManager.swift in Sources */,
 				9F76E9F51C8F572F00DEBAF2 /* RJSProgramaticControls.swift in Sources */,
 				9F76E9F61C8F572F00DEBAF2 /* RJSUtils.swift in Sources */,
@@ -2713,7 +2713,7 @@
 				9F76EA131C8F572F00DEBAF2 /* RJSConvert.swift in Sources */,
 				9F76EA5D1C8F586000DEBAF2 /* App7LayoutsManager.swift in Sources */,
 				9F76EA151C8F572F00DEBAF2 /* NSObject+Extensions.swift in Sources */,
-				9F76EA651C8F586000DEBAF2 /* Screen2ViewController.swift in Sources */,
+				9F76EA651C8F586000DEBAF2 /* App7Screen2ViewController.swift in Sources */,
 				9F76EA161C8F572F00DEBAF2 /* String+Base64.swift in Sources */,
 				9F76EA171C8F572F00DEBAF2 /* RJSAppAndDeviceInfo.swift in Sources */,
 				9F76EA181C8F572F00DEBAF2 /* UILabel+Extensions.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Screen1ViewController: UIViewController {
+class App7Screen1ViewController: UIViewController {
     
     var oncetoken: dispatch_once_t = 0
 
@@ -59,7 +59,7 @@ class Screen1ViewController: UIViewController {
     
     // MARK: Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if let destinationVC = segue.destinationViewController as? Screen2ViewController {
+        if let destinationVC = segue.destinationViewController as? App7Screen2ViewController {
             destinationVC.sharedVar = lastSelectedItem
             
             // Override back button text

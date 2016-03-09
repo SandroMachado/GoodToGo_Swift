@@ -7,15 +7,13 @@
 
 import UIKit
 
-class Screen2ViewController: UIViewController {
+class App7Screen2ViewController: UIViewController {
  
     var oncetoken: dispatch_once_t = 0
     
-    @IBOutlet weak var txtBody: UITextView?
-    @IBOutlet weak var lblUserName: UILabel?
-    @IBOutlet weak var lblArticleTitle: UILabel?
-    @IBOutlet weak var lblComentsCount: UILabel?
-    @IBOutlet weak var imgAvatar: UIImageView?
+    @IBOutlet weak var txtCommicDescription: UITextView?
+    @IBOutlet weak var lblCommicTitle: UILabel?
+    @IBOutlet weak var imgCommic: UIImageView?
 
     @IBOutlet weak var lblBackground1: UILabel?
     @IBOutlet weak var lblBackground2: UILabel?
@@ -39,9 +37,10 @@ class Screen2ViewController: UIViewController {
     
     // MARK: Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if let destinationVC = segue.destinationViewController as? Screen3ViewController {
-            destinationVC.sharedVar = self.sharedVar
-        }
+        DLogWarning("Comentado")
+      //  if let destinationVC = segue.destinationViewController as? Screen3ViewController {
+      //      destinationVC.sharedVar = self.sharedVar
+      //  }
     }
     
     // MARK: Auxiliar
@@ -67,14 +66,12 @@ class Screen2ViewController: UIViewController {
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground2)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground3)
         
-        RJSLayoutsManager.App7.LayoutLabel_Value_1(self.lblUserName)
-        RJSLayoutsManager.App7.LayoutLabel_Title_1(self.lblArticleTitle)
-        RJSLayoutsManager.App7.LayoutLabel_Value_1(self.lblComentsCount)
-        RJSLayoutsManager.App7.LayoutTextView_1(self.txtBody)
+        RJSLayoutsManager.App7.LayoutLabel_Title_1(self.lblCommicTitle)
+        RJSLayoutsManager.App7.LayoutTextView_1(self.txtCommicDescription)
 
-        if(HaveValue(self.imgAvatar))
+        if(HaveValue(self.imgCommic))
         {
-            self.imgAvatar!.setCornerRadius(5)
+            self.imgCommic!.setCornerRadius(5)
         }
     }
     
@@ -85,13 +82,10 @@ class Screen2ViewController: UIViewController {
         lblTitle.textAlignment = .Center;
         self.navigationItem.titleView = lblTitle
         
-        RJSOptionalUtils.safeUIElementSetValue(self.lblUserName,     value: viewModel!.username)
-        RJSOptionalUtils.safeUIElementSetValue(self.lblArticleTitle, value: viewModel!.articleTitle)
+        RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.articleTitle)
 
-        RJSOptionalUtils.safeUIElementSetValue(self.txtBody,         value: viewModel!.body)
-        RJSOptionalUtils.safeUIElementSetValue(self.lblUserName,     value: viewModel!.username)
-        RJSOptionalUtils.safeUIElementSetValue(self.lblComentsCount, value: viewModel!.commentsCount)
-        RJSOptionalUtils.safeUIElementSetValue(self.imgAvatar,       value: viewModel!.coverImage)
+        RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.body)
+        RJSOptionalUtils.safeUIElementSetValue(self.imgCommic,            value: viewModel!.coverImage)
     }
     
     // MARK: Page life cicle
