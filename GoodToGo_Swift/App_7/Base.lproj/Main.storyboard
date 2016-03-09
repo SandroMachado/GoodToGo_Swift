@@ -191,6 +191,8 @@
                         <outlet property="imgCommic" destination="hr6-3e-RBj" id="n47-Tf-DaY"/>
                         <outlet property="lblBackground1" destination="W5A-GU-6L1" id="MM1-IV-VXF"/>
                         <outlet property="lblBackground2" destination="6en-4G-lpZ" id="pgP-4T-Q9m"/>
+                        <outlet property="lblCommicTitle" destination="PoR-ei-7pl" id="hXN-ew-azP"/>
+                        <outlet property="txtCommicDescription" destination="qpm-H2-gb4" id="UNF-KG-5mp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-Ab-5Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +202,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1243" y="0.0"/>
+            <point key="canvasLocation" x="1303" y="0.0"/>
         </scene>
         <!--Screen3 - Map-->
         <scene sceneID="ANY-J2-c9l">

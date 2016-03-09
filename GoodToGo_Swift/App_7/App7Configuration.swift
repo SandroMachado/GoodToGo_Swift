@@ -23,13 +23,13 @@
         * Download data
         */
         
+        
         guard RJSUtils.existsInternetConnection() else {
             return 0
         }
         
         RJSMessagesManager.showSmallTopMessage("Updating records...")
 
-        
         // Clean cache
         RJSFilesManager.clearFolder(RJSFilesManager.Folder.Documents)
         

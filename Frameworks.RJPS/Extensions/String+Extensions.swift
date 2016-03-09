@@ -55,6 +55,11 @@ extension String {
         return result;
     }
     
+    func containsString(string:String) -> Bool
+    {
+        return self.lowercaseString.rangeOfString(string.lowercaseString) != nil
+    }
+    
     func cleanString() -> String
     {
         return String.cleanString(self);
@@ -99,6 +104,7 @@ extension String {
         {
             stringOut = "";
         }
+        stringOut = stringOut.trim()
         return stringOut;
     }
     

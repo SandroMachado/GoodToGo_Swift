@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire // TODO : Delete
 
 class App7Screen2ViewController: UIViewController {
  
@@ -31,8 +32,32 @@ class App7Screen2ViewController: UIViewController {
 
     // Handles tap on lblUserName
     @IBAction func handleTap(sender: UITapGestureRecognizer? = nil) {
-        let segueId      = App7Constants.Segues.Screen3
-        performSegueWithIdentifier(segueId, sender: nil)
+       // let segueId      = App7Constants.Segues.Screen3
+       // performSegueWithIdentifier(segueId, sender: nil)
+        
+        
+        if(false) {
+            let headers1 = [
+                "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+                "Content-Type": "application/x-www-form-urlencoded"
+            ]
+            
+            Alamofire.request(.GET, "https://httpbin.org/get", headers: headers1)
+                .responseJSON { response in
+                    debugPrint(response)
+            }
+        }
+
+        //RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
+        //    print(result)
+        //}
+        
+        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:UIImage()) { (result, error) -> Void in
+            print(result)
+        }
+        
+
+
     }
     
     // MARK: Segues
@@ -44,7 +69,7 @@ class App7Screen2ViewController: UIViewController {
     }
     
     // MARK: Auxiliar
-
+    
     func loadViewModel()
     {
         guard !HaveValue(viewModel) else {
@@ -72,6 +97,8 @@ class App7Screen2ViewController: UIViewController {
         if(HaveValue(self.imgCommic))
         {
             self.imgCommic!.setCornerRadius(5)
+            let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+            self.imgCommic!.addGestureRecognizer(tap)
         }
     }
     

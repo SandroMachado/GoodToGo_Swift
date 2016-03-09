@@ -14,16 +14,18 @@ struct RJSErrorsManager
             DLogWarning("Ignored")
             return false
         }
-        RJSCrashlytics.logError("NSError", error: error!)
+        RJSCrashlytics.logError("RJSErrorsManager", error: error!)
         DLogError(error)
         return true;
     }
     
+    /// FIX: lower case this
     static func NSErrorWith(domain: String) -> NSError
     {
         return NSErrorWith(domain, code: 9999, dict: nil)
     }
     
+    /// FIX: lower case this
     static func NSErrorWith(domain: String, code: Int, dict: [NSObject : AnyObject]?) -> NSError
     {
         return NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotOpenFile, userInfo: nil)

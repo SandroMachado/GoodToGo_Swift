@@ -27,8 +27,13 @@ enum AppGenericConstants {
             return "5ego6zf44mk1isi"
         }
         static var DropboxAppSecret: String {
-            return "5ego6zf44mk1isi" /// TODO: ofuscate
+            return "adbgescpyvr1knv" /// TODO: ofuscate
         }
+        static var DropboxAcessTokenSecret: String {
+            return "meQImamoaCQAAAAAAAEg-h9djSRFTUUAFVu6ZkYFKJt-WghJH_luOuiq4Vapz8PY" /// TODO: ofuscate
+        }
+        
+        
     }
     
 }
