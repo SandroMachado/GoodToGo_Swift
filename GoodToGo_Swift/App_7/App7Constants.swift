@@ -16,24 +16,15 @@ struct TableItem {
 enum App7Constants {
     enum Segues {
         static var Screen2: String {
-            return "app5.modal.screen2"
+            return "app7.modal.screen2"
         }
         static var Screen3: String {
-            return "app5.modal.screen3"
+            return "app7.modal.screen3"
         }
     }
     enum Notifications {
         static var TableComicUpdated: String {
             return "TableComicUpdated"
-        }
-        static var TablePostsUpdated: String {
-            return "TablePostsUpdated"
-        }
-        static var TableUsersUpdated: String {
-            return "TableUsersUpdated"
-        }
-        static var TableCommentsUpdated: String {
-            return "TableCommentsUpdated"
         }
         static var ShowNoInternetConnection: String {
             return "ShowNoInternetConnection"

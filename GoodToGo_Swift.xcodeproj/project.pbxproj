@@ -480,6 +480,125 @@
 		9FA8BC591C831CEE00394CA1 /* RJSConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC551C831CEE00394CA1 /* RJSConvert.swift */; };
 		9FA8BC791C83AEC500394CA1 /* Screen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC781C83AEC500394CA1 /* Screen4.swift */; };
 		9FA8BC7D1C83BB0800394CA1 /* Screen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC7C1C83BB0800394CA1 /* Screen5.swift */; };
+		9FB0B5A41C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5A51C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5A61C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5A71C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5A81C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5A91C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5AA1C90773500C0F031 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57B1C90773500C0F031 /* Async.swift */; };
+		9FB0B5AB1C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5AC1C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5AD1C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5AE1C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5AF1C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5B01C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5B11C90773500C0F031 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57C1C90773500C0F031 /* Auth.swift */; };
+		9FB0B5B21C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B31C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B41C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B51C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B61C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B71C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B81C90773600C0F031 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */; };
+		9FB0B5B91C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BA1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BB1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BC1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BD1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BE1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5BF1C90773600C0F031 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57E1C90773500C0F031 /* BabelValidators.swift */; };
+		9FB0B5C01C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C11C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C21C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C31C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C41C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C51C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C61C90773600C0F031 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B57F1C90773500C0F031 /* Client.swift */; };
+		9FB0B5C71C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5C81C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5C91C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5CA1C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5CB1C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5CC1C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5CD1C90773600C0F031 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5801C90773500C0F031 /* DropboxClient.swift */; };
+		9FB0B5CE1C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5CF1C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D01C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D11C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D21C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D31C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D41C90773600C0F031 /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5811C90773500C0F031 /* DropboxUtil.swift */; };
+		9FB0B5D51C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5D61C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5D71C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5D81C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5D91C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5DA1C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5DB1C90773600C0F031 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5821C90773500C0F031 /* Files.swift */; };
+		9FB0B5DC1C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5DD1C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5DE1C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5DF1C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5E01C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5E11C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5E21C90773600C0F031 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5831C90773500C0F031 /* FilesRoutes.swift */; };
+		9FB0B5EA1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5EB1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5EC1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5ED1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5EE1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5EF1C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5F01C90773600C0F031 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5851C90773500C0F031 /* OAuth.swift */; };
+		9FB0B5F11C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F21C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F31C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F41C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F51C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F61C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F71C90773600C0F031 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5871C90773500C0F031 /* SecurityUtil.m */; };
+		9FB0B5F81C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5F91C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FA1C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FB1C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FC1C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FD1C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FE1C90773600C0F031 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5881C90773500C0F031 /* Sharing.swift */; };
+		9FB0B5FF1C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6001C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6011C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6021C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6031C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6041C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6051C90773600C0F031 /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B5891C90773500C0F031 /* SharingRoutes.swift */; };
+		9FB0B6061C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B6071C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B6081C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B6091C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B60A1C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B60B1C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B60C1C90773600C0F031 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58B1C90773500C0F031 /* Team.swift */; };
+		9FB0B60D1C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B60E1C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B60F1C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B6101C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B6111C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B6121C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B6131C90773600C0F031 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58C1C90773500C0F031 /* Users.swift */; };
+		9FB0B6141C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6151C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6161C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6171C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6181C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6191C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B61A1C90773600C0F031 /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */; };
+		9FB0B6231C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6241C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6251C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6261C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6271C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6281C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
+		9FB0B6291C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */; };
 		9FB650761C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
 		9FB650771C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
 		9FB650781C8F7FA000207AD2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
@@ -868,6 +987,30 @@
 		9FA8BC6C1C8334B100394CA1 /* App4Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App4Constants.swift; path = App_4/App4Constants.swift; sourceTree = "<group>"; };
 		9FA8BC781C83AEC500394CA1 /* Screen4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen4.swift; path = App_2/Screen4.swift; sourceTree = "<group>"; };
 		9FA8BC7C1C83BB0800394CA1 /* Screen5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen5.swift; path = App_2/Screen5.swift; sourceTree = "<group>"; };
+		9FB0B5771C90773500C0F031 /* .jazzy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = .jazzy.json; sourceTree = "<group>"; };
+		9FB0B5781C90773500C0F031 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9FB0B5791C90773500C0F031 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9FB0B57B1C90773500C0F031 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		9FB0B57C1C90773500C0F031 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabelSerializers.swift; sourceTree = "<group>"; };
+		9FB0B57E1C90773500C0F031 /* BabelValidators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabelValidators.swift; sourceTree = "<group>"; };
+		9FB0B57F1C90773500C0F031 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		9FB0B5801C90773500C0F031 /* DropboxClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxClient.swift; sourceTree = "<group>"; };
+		9FB0B5811C90773500C0F031 /* DropboxUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxUtil.swift; sourceTree = "<group>"; };
+		9FB0B5821C90773500C0F031 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		9FB0B5831C90773500C0F031 /* FilesRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesRoutes.swift; sourceTree = "<group>"; };
+		9FB0B5841C90773500C0F031 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB0B5851C90773500C0F031 /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		9FB0B5861C90773500C0F031 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		9FB0B5871C90773500C0F031 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		9FB0B5881C90773500C0F031 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
+		9FB0B5891C90773500C0F031 /* SharingRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingRoutes.swift; sourceTree = "<group>"; };
+		9FB0B58A1C90773500C0F031 /* SwiftyDropbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyDropbox.h; sourceTree = "<group>"; };
+		9FB0B58B1C90773500C0F031 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		9FB0B58C1C90773500C0F031 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRoutes.swift; sourceTree = "<group>"; };
+		9FB0B58E1C90773500C0F031 /* SwiftyDropbox.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyDropbox.podspec; sourceTree = "<group>"; };
+		9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJSDropBoxManager.swift; sourceTree = "<group>"; };
 		9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
 		9FB9DF971C8C46F100EA325D /* LClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LClosures.swift; path = GoodToGo_SwiftLessons/LClosures.swift; sourceTree = SOURCE_ROOT; };
 		9FB9DF9B1C8C4B4C00EA325D /* LGenerics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LGenerics.swift; path = GoodToGo_SwiftLessons/LGenerics.swift; sourceTree = SOURCE_ROOT; };
@@ -1206,6 +1349,7 @@
 		9F4680DA1C6E1B3800065E19 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9FB0B6221C907D6E00C0F031 /* RJSDropBoxManager.swift */,
 				9FA8BC431C825DBD00394CA1 /* RJSDownloadsManager.swift */,
 				9F999F421C7DEF7400CF12E2 /* RJSLayoutsManager.swift */,
 				9F4680DE1C6E1B3800065E19 /* RJSErrorsManager.swift */,
@@ -1259,6 +1403,7 @@
 			isa = PBXGroup;
 			children = (
 				9F38C2ED1C6F7087009EFE20 /* README.txt */,
+				9FB0B5761C90773500C0F031 /* SwiftyDropbox-master */,
 				9F6E65131C89F6E2005991CE /* Realm */,
 				9FA8BC151C82487200394CA1 /* AFDateHelper */,
 				9F9A29021C7D3124006CE65C /* SQLite */,
@@ -1507,12 +1652,13 @@
 		9F9A9BE51C6CF0CB00B37D0D = {
 			isa = PBXGroup;
 			children = (
-				9FF6A9E21C8F26AB00C60347 /* README.md */,
 				9F9A9C211C6CF7B800B37D0D /* Documents */,
 				9F9A9BF01C6CF0CB00B37D0D /* GoodToGo_Swift */,
 				9F63D2B01C84BEB100352073 /* GoodToGo_SwiftLessons */,
 				9FFCAD811C8DC98B00EF51A5 /* GoodToGo_PlayGrounds */,
 				9F9A9BEF1C6CF0CB00B37D0D /* Products */,
+				9FF6A9E21C8F26AB00C60347 /* README.md */,
+				9FFCAD791C8DC68D00EF51A5 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1554,7 +1700,6 @@
 		9F9A9C211C6CF7B800B37D0D /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				9FFCAD791C8DC68D00EF51A5 /* Cartfile */,
 				9F468F6F1C6F68D900065E19 /* Git Notes */,
 				9FF6A9E11C8F25D600C60347 /* URL Utils */,
 				9F469B3C1C6F68F600065E19 /* TheSwiftProgrammingLanguage.pdf */,
@@ -1603,6 +1748,44 @@
 				9FA8BC2B1C824FE700394CA1 /* Article.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9FB0B5761C90773500C0F031 /* SwiftyDropbox-master */ = {
+			isa = PBXGroup;
+			children = (
+				9FB0B5771C90773500C0F031 /* .jazzy.json */,
+				9FB0B5781C90773500C0F031 /* LICENSE */,
+				9FB0B5791C90773500C0F031 /* README.md */,
+				9FB0B58E1C90773500C0F031 /* SwiftyDropbox.podspec */,
+				9FB0B57A1C90773500C0F031 /* Source */,
+			);
+			path = "SwiftyDropbox-master";
+			sourceTree = "<group>";
+		};
+		9FB0B57A1C90773500C0F031 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9FB0B5841C90773500C0F031 /* Info.plist */,
+				9FB0B5861C90773500C0F031 /* SecurityUtil.h */,
+				9FB0B58A1C90773500C0F031 /* SwiftyDropbox.h */,
+				9FB0B57B1C90773500C0F031 /* Async.swift */,
+				9FB0B57C1C90773500C0F031 /* Auth.swift */,
+				9FB0B57D1C90773500C0F031 /* BabelSerializers.swift */,
+				9FB0B57E1C90773500C0F031 /* BabelValidators.swift */,
+				9FB0B57F1C90773500C0F031 /* Client.swift */,
+				9FB0B5801C90773500C0F031 /* DropboxClient.swift */,
+				9FB0B5811C90773500C0F031 /* DropboxUtil.swift */,
+				9FB0B5821C90773500C0F031 /* Files.swift */,
+				9FB0B5831C90773500C0F031 /* FilesRoutes.swift */,
+				9FB0B5851C90773500C0F031 /* OAuth.swift */,
+				9FB0B5871C90773500C0F031 /* SecurityUtil.m */,
+				9FB0B5881C90773500C0F031 /* Sharing.swift */,
+				9FB0B5891C90773500C0F031 /* SharingRoutes.swift */,
+				9FB0B58B1C90773500C0F031 /* Team.swift */,
+				9FB0B58C1C90773500C0F031 /* Users.swift */,
+				9FB0B58D1C90773500C0F031 /* UsersRoutes.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		9FD268121C723A29005E9CC9 /* App_4 */ = {
@@ -2112,6 +2295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB0B5AF1C90773500C0F031 /* Auth.swift in Sources */,
+				9FB0B5E01C90773600C0F031 /* FilesRoutes.swift in Sources */,
 				9F41DA9E1C8520420083D1FC /* RJSJSON.swift in Sources */,
 				9F41DA9F1C8520420083D1FC /* RJSWebservices.swift in Sources */,
 				9F41DAA01C8520420083D1FC /* RJSIntrospection.swift in Sources */,
@@ -2122,20 +2307,26 @@
 				9FF0E5F61C8631740051E9F5 /* App5Configuration.swift in Sources */,
 				9F41DAA61C8520420083D1FC /* RJSErrorsManager.swift in Sources */,
 				9F41DAA91C8520420083D1FC /* RJSBlocks.swift in Sources */,
+				9FB0B5EE1C90773600C0F031 /* OAuth.swift in Sources */,
 				9F41DAAA1C8520420083D1FC /* UIColor+Extensions.swift in Sources */,
+				9FB0B5B61C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F41DAAB1C8520420083D1FC /* RJSLayoutsManager.swift in Sources */,
 				9F41DAAC1C8520420083D1FC /* RJSProgramaticControls.swift in Sources */,
 				9F41DAAD1C8520420083D1FC /* RJSUtils.swift in Sources */,
 				9FF0E5F21C862DBA0051E9F5 /* DBTableUsers.swift in Sources */,
 				9FF0E6161C877AA10051E9F5 /* UITableView+Extensions.swift in Sources */,
+				9FB0B5D21C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9F41DAAE1C8520420083D1FC /* RJSChoivesVC.swift in Sources */,
+				9FB0B6111C90773600C0F031 /* Users.swift in Sources */,
 				9F41DAAF1C8520420083D1FC /* String-Extras.swift in Sources */,
+				9FB0B6181C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F41DAB11C8520420083D1FC /* RJSDBManager.swift in Sources */,
 				9F41DAB31C8520420083D1FC /* RJSGlobalFuntions.swift in Sources */,
 				9F576BCB1C861EEC0073738E /* App5Constants.swift in Sources */,
 				9F41DAB41C8520420083D1FC /* RJSSQLiteDB.swift in Sources */,
 				9F41DAB51C8520420083D1FC /* RJSCronometer.swift in Sources */,
 				9F41DAB61C8520420083D1FC /* AppDelegate.swift in Sources */,
+				9FB0B60A1C90773600C0F031 /* Team.swift in Sources */,
 				9F41DAB71C8520420083D1FC /* UINavigationController+Extensions.swift in Sources */,
 				9F41DAB81C8520420083D1FC /* RJSNodeServer.swift in Sources */,
 				9F41DAB91C8520420083D1FC /* UIViewController+Extensions.swift in Sources */,
@@ -2147,6 +2338,7 @@
 				9F41DAC01C8520420083D1FC /* RJSMessagesManager.swift in Sources */,
 				9F41DAC11C8520420083D1FC /* RJSOptionalUtils.swift in Sources */,
 				9F41DAC31C8520420083D1FC /* DBTConfigurationKeys.swift in Sources */,
+				9FB0B5A81C90773500C0F031 /* Async.swift in Sources */,
 				9F41DAC41C8520420083D1FC /* RJSMVVMUtils.swift in Sources */,
 				9FF0E6081C8750480051E9F5 /* RJSFilesManager.swift in Sources */,
 				9F41DAC51C8520420083D1FC /* NSTimmer+Extensions.swift in Sources */,
@@ -2156,6 +2348,9 @@
 				9F41DAC81C8520420083D1FC /* UIView+Extensions.swift in Sources */,
 				9F41DAC91C8520420083D1FC /* RJSConvert.swift in Sources */,
 				9FF0E5F11C862DBA0051E9F5 /* DBTablePosts.swift in Sources */,
+				9FB0B5CB1C90773600C0F031 /* DropboxClient.swift in Sources */,
+				9FB0B6031C90773600C0F031 /* SharingRoutes.swift in Sources */,
+				9FB0B6271C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F41DACA1C8520420083D1FC /* NSObject+Extensions.swift in Sources */,
 				9F41DACB1C8520420083D1FC /* String+Base64.swift in Sources */,
 				9F41DACC1C8520420083D1FC /* RJSAppAndDeviceInfo.swift in Sources */,
@@ -2168,9 +2363,14 @@
 				9F41DAD01C8520420083D1FC /* RJSExceptionsManager.swift in Sources */,
 				9FF0E6001C8645990051E9F5 /* Screen2ViewController.swift in Sources */,
 				9FF0E61A1C8781A60051E9F5 /* Screen3ViewModel.swift in Sources */,
+				9FB0B5FC1C90773600C0F031 /* Sharing.swift in Sources */,
+				9FB0B5D91C90773600C0F031 /* Files.swift in Sources */,
 				9F41DAD11C8520420083D1FC /* UIBezierPath+Extensions.swift in Sources */,
 				9F8F243C1C8B13FD003D546B /* AppConfiguration.swift in Sources */,
+				9FB0B5C41C90773600C0F031 /* Client.swift in Sources */,
 				9F41DAD21C8520420083D1FC /* Dictionary+Extensions.swift in Sources */,
+				9FB0B5F51C90773600C0F031 /* SecurityUtil.m in Sources */,
+				9FB0B5BD1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9F024E081C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
 				9F41DAD31C8520420083D1FC /* demoDBTable.swift in Sources */,
 				9F31C79C1C88781800E14B22 /* App5LayoutsManager.swift in Sources */,
@@ -2182,12 +2382,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F468EB31C6E7F5C00065E19 /* RJSJSON.swift in Sources */,
+				9FB0B5BA1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9F3D2E7D1C7D449A005A78B3 /* RJSDBManager.swift in Sources */,
+				9FB0B5F21C90773600C0F031 /* SecurityUtil.m in Sources */,
+				9FB0B5B31C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F468EB41C6E7F5C00065E19 /* RJSWebservices.swift in Sources */,
 				9F468EB51C6E7F5C00065E19 /* RJSIntrospection.swift in Sources */,
+				9FB0B5C11C90773600C0F031 /* Client.swift in Sources */,
 				9FA8BC571C831CEE00394CA1 /* RJSConvert.swift in Sources */,
+				9FB0B5C81C90773600C0F031 /* DropboxClient.swift in Sources */,
 				9FE3A9DD1C700662002B166B /* RJSErrorsManager.swift in Sources */,
 				9F468F051C6E920C00065E19 /* RJSStorages.swift in Sources */,
+				9FB0B6071C90773600C0F031 /* Team.swift in Sources */,
 				9F9A29131C7D3124006CE65C /* String-Extras.swift in Sources */,
 				9F024E051C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
 				9F468EBA1C6E7F5C00065E19 /* RJSBlocks.swift in Sources */,
@@ -2196,22 +2402,29 @@
 				9F9A290D1C7D3124006CE65C /* SQLTable.swift in Sources */,
 				9F468EBD1C6E7F5C00065E19 /* RJSUtils.swift in Sources */,
 				9FA8BC4C1C8274E200394CA1 /* RJSOptionalUtils.swift in Sources */,
+				9FB0B5F91C90773600C0F031 /* Sharing.swift in Sources */,
 				9FF0E6131C877AA10051E9F5 /* UITableView+Extensions.swift in Sources */,
 				9F468EBE1C6E7F5C00065E19 /* RJSChoivesVC.swift in Sources */,
 				9F468EBF1C6E7F5C00065E19 /* RJSGlobalFuntions.swift in Sources */,
 				9FD267C31C709E0C005E9CC9 /* Screen3.swift in Sources */,
 				9FA8BC7D1C83BB0800394CA1 /* Screen5.swift in Sources */,
 				9FC4D63E1C6F827E00796F65 /* UINavigationController+Extensions.swift in Sources */,
+				9FB0B5DD1C90773600C0F031 /* FilesRoutes.swift in Sources */,
+				9FB0B6001C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9F468EC11C6E7F5C00065E19 /* AppDelegate.swift in Sources */,
 				9F999F441C7DEF7400CF12E2 /* RJSLayoutsManager.swift in Sources */,
 				9FA8BC1A1C82487A00394CA1 /* AFDateExtension.swift in Sources */,
 				9F9A29071C7D3124006CE65C /* SQLiteDB.swift in Sources */,
 				9F3D2E831C7D449A005A78B3 /* RJSSQLiteDB.swift in Sources */,
+				9FB0B5D61C90773600C0F031 /* Files.swift in Sources */,
 				9FA8BC791C83AEC500394CA1 /* Screen4.swift in Sources */,
+				9FB0B5A51C90773500C0F031 /* Async.swift in Sources */,
 				9F468EC21C6E7F5C00065E19 /* UIViewController+Extensions.swift in Sources */,
 				9F38C3041C6F799E009EFE20 /* Screen1.swift in Sources */,
 				9F468EC51C6E7F5C00065E19 /* String+Extensions.swift in Sources */,
+				9FB0B6241C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9FF0E6061C8750470051E9F5 /* RJSFilesManager.swift in Sources */,
+				9FB0B6151C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9FE3A9DA1C6FFD36002B166B /* RJSAppAndDeviceInfo.swift in Sources */,
 				9F468EC61C6E7F5C00065E19 /* UIView+Animations.swift in Sources */,
 				9FF1BBD01C810519004279D2 /* DBTConfigurationKeys.swift in Sources */,
@@ -2224,14 +2437,18 @@
 				9F468F011C6E84B700065E19 /* Screen2.swift in Sources */,
 				9FD267CC1C714322005E9CC9 /* RJSNodeServer.swift in Sources */,
 				9F468ECA1C6E7F5C00065E19 /* NSTimmer+Extensions.swift in Sources */,
+				9FB0B5AC1C90773500C0F031 /* Auth.swift in Sources */,
 				9F468ECB1C6E7F5C00065E19 /* UIControl+Target.swift in Sources */,
 				9F468ECC1C6E7F5C00065E19 /* UIView+Extensions.swift in Sources */,
 				9F468ECD1C6E7F5C00065E19 /* String+Base64.swift in Sources */,
 				9F31C7B11C88CD0500E14B22 /* App2Configuration.swift in Sources */,
 				9F468ECF1C6E7F5C00065E19 /* UILabel+Extensions.swift in Sources */,
 				9F31C79E1C887C2200E14B22 /* App2Constants.swift in Sources */,
+				9FB0B60E1C90773600C0F031 /* Users.swift in Sources */,
 				9F468ED01C6E7F5C00065E19 /* RJSExceptionsManager.swift in Sources */,
 				9F38C2F91C6F74A0009EFE20 /* RJSMessagesManager.swift in Sources */,
+				9FB0B5EB1C90773600C0F031 /* OAuth.swift in Sources */,
+				9FB0B5CF1C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9FE3A9B41C6FF808002B166B /* RJSCrashlytics.swift in Sources */,
 				9F468ED11C6E7F5C00065E19 /* UIBezierPath+Extensions.swift in Sources */,
 				9FD267CA1C70C267005E9CC9 /* ContainedScreen21.swift in Sources */,
@@ -2246,13 +2463,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB0B6251C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F468F361C6F65B600065E19 /* RJSJSON.swift in Sources */,
+				9FB0B5DE1C90773600C0F031 /* FilesRoutes.swift in Sources */,
 				9F468F381C6F65B600065E19 /* RJSWebservices.swift in Sources */,
+				9FB0B5EC1C90773600C0F031 /* OAuth.swift in Sources */,
+				9FB0B5FA1C90773600C0F031 /* Sharing.swift in Sources */,
 				9F468F391C6F65B600065E19 /* RJSIntrospection.swift in Sources */,
 				9F4202DA1C6F8835003CF81F /* App3LayoutsManager.swift in Sources */,
 				9FA8BC1B1C82487A00394CA1 /* AFDateExtension.swift in Sources */,
+				9FB0B5BB1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9F468F3A1C6F65B600065E19 /* RJSStorages.swift in Sources */,
 				9F4202D91C6F87C8003CF81F /* LKMainScreenVC.swift in Sources */,
+				9FB0B5C21C90773600C0F031 /* Client.swift in Sources */,
 				9F31C7B31C88CD1600E14B22 /* App3Configuration.swift in Sources */,
 				9FE3A9B51C6FF808002B166B /* RJSCrashlytics.swift in Sources */,
 				9FE3A9DE1C700663002B166B /* RJSErrorsManager.swift in Sources */,
@@ -2261,12 +2484,14 @@
 				9F468F3B1C6F65B600065E19 /* RJSBlocks.swift in Sources */,
 				9F468F3C1C6F65B600065E19 /* UIColor+Extensions.swift in Sources */,
 				9F999F451C7DEF7400CF12E2 /* RJSLayoutsManager.swift in Sources */,
+				9FB0B6011C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9FF0E6141C877AA10051E9F5 /* UITableView+Extensions.swift in Sources */,
 				9F468F3D1C6F65B600065E19 /* RJSProgramaticControls.swift in Sources */,
 				9F468F3E1C6F65B600065E19 /* RJSUtils.swift in Sources */,
 				9F468F3F1C6F65B600065E19 /* RJSChoivesVC.swift in Sources */,
 				9F9A29141C7D3124006CE65C /* String-Extras.swift in Sources */,
 				9F3D2E7E1C7D449A005A78B3 /* RJSDBManager.swift in Sources */,
+				9FB0B5D71C90773600C0F031 /* Files.swift in Sources */,
 				9F6D7F721C6FE4E200E70557 /* LinksUIWebView.swift in Sources */,
 				9F468F401C6F65B600065E19 /* RJSGlobalFuntions.swift in Sources */,
 				9F3D2E841C7D449A005A78B3 /* RJSSQLiteDB.swift in Sources */,
@@ -2275,16 +2500,24 @@
 				9F468F421C6F65B600065E19 /* AppDelegate.swift in Sources */,
 				9FC4D63F1C6F827E00796F65 /* UINavigationController+Extensions.swift in Sources */,
 				9FC4D6371C6F811000796F65 /* RJSNodeServer.swift in Sources */,
+				9FB0B6081C90773600C0F031 /* Team.swift in Sources */,
 				9F468F431C6F65B600065E19 /* UIViewController+Extensions.swift in Sources */,
 				9FF0E6071C8750470051E9F5 /* RJSFilesManager.swift in Sources */,
 				9F468F451C6F65B600065E19 /* String+Extensions.swift in Sources */,
+				9FB0B60F1C90773600C0F031 /* Users.swift in Sources */,
 				9F468F461C6F65B600065E19 /* UIView+Animations.swift in Sources */,
+				9FB0B6161C90773600C0F031 /* UsersRoutes.swift in Sources */,
+				9FB0B5B41C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F468F471C6F65B600065E19 /* RJSSizes.swift in Sources */,
 				9F9A290E1C7D3124006CE65C /* SQLTable.swift in Sources */,
+				9FB0B5AD1C90773500C0F031 /* Auth.swift in Sources */,
 				9FA8BC521C8319C000394CA1 /* App3Constants.swift in Sources */,
 				9F38C2F81C6F749F009EFE20 /* RJSMessagesManager.swift in Sources */,
 				9FA8BC4D1C8274E200394CA1 /* RJSOptionalUtils.swift in Sources */,
 				9FF1BBD11C810519004279D2 /* DBTConfigurationKeys.swift in Sources */,
+				9FB0B5D01C90773600C0F031 /* DropboxUtil.swift in Sources */,
+				9FB0B5C91C90773600C0F031 /* DropboxClient.swift in Sources */,
+				9FB0B5A61C90773500C0F031 /* Async.swift in Sources */,
 				9FA8BC091C81E66700394CA1 /* RJSMVVMUtils.swift in Sources */,
 				9F468F4A1C6F65B600065E19 /* NSTimmer+Extensions.swift in Sources */,
 				9FA8BC461C825DBD00394CA1 /* RJSDownloadsManager.swift in Sources */,
@@ -2296,6 +2529,7 @@
 				9F8F243A1C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9FE3A9DB1C6FFD36002B166B /* RJSAppAndDeviceInfo.swift in Sources */,
 				9F468F4E1C6F65B600065E19 /* UILabel+Extensions.swift in Sources */,
+				9FB0B5F31C90773600C0F031 /* SecurityUtil.m in Sources */,
 				9F9A29081C7D3124006CE65C /* SQLiteDB.swift in Sources */,
 				9FF1BBCA1C81001A004279D2 /* AppGenericConstants.swift in Sources */,
 				9F468F4F1C6F65B600065E19 /* RJSExceptionsManager.swift in Sources */,
@@ -2351,10 +2585,13 @@
 				9F6E64C01C89F513005991CE /* RJSBlocks.swift in Sources */,
 				9F6E655B1C89FD0B005991CE /* Person.swift in Sources */,
 				9F6E64C11C89F513005991CE /* UIColor+Extensions.swift in Sources */,
+				9FB0B5B71C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F6E64C21C89F513005991CE /* RJSProgramaticControls.swift in Sources */,
 				9F6E64C31C89F513005991CE /* RJSUtils.swift in Sources */,
 				9F6E64C41C89F513005991CE /* RJSNodeServer.swift in Sources */,
+				9FB0B5FD1C90773600C0F031 /* Sharing.swift in Sources */,
 				9F6E64C51C89F513005991CE /* SQLiteDB.swift in Sources */,
+				9FB0B5A91C90773500C0F031 /* Async.swift in Sources */,
 				9F6E64C61C89F513005991CE /* RJSChoivesVC.swift in Sources */,
 				9F8F24451C8B298E003D546B /* App6Constants.swift in Sources */,
 				9F6E64C71C89F513005991CE /* UINavigationController+Extensions.swift in Sources */,
@@ -2362,25 +2599,33 @@
 				9F6E64C91C89F513005991CE /* AppDelegate.swift in Sources */,
 				9F6E64CA1C89F513005991CE /* UIViewController+Extensions.swift in Sources */,
 				9F8F24431C8B1FF4003D546B /* DBTableUsers.swift in Sources */,
+				9FB0B5E11C90773600C0F031 /* FilesRoutes.swift in Sources */,
+				9FB0B60B1C90773600C0F031 /* Team.swift in Sources */,
 				9F6E64CB1C89F513005991CE /* String+Extensions.swift in Sources */,
+				9FB0B5F61C90773600C0F031 /* SecurityUtil.m in Sources */,
 				9F6E64CC1C89F513005991CE /* RJSDownloadsManager.swift in Sources */,
 				9F6E64CD1C89F513005991CE /* RJSAppAndDeviceInfo.swift in Sources */,
 				9F6E64CF1C89F513005991CE /* RJSFilesManager.swift in Sources */,
+				9FB0B5BE1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9F6E64D11C89F513005991CE /* RJSSQLiteDB.swift in Sources */,
 				9F8F243D1C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9F6E64D21C89F513005991CE /* RJSConvert.swift in Sources */,
+				9FB0B5CC1C90773600C0F031 /* DropboxClient.swift in Sources */,
 				9F8F24411C8B1F1F003D546B /* Screen1.swift in Sources */,
 				9F6E64D31C89F513005991CE /* UIView+Animations.swift in Sources */,
 				9F6E64D41C89F513005991CE /* RJSDBManager.swift in Sources */,
 				9F6E64D51C89F513005991CE /* NSObject+Extensions.swift in Sources */,
 				9F6E64D61C89F513005991CE /* RJSSizes.swift in Sources */,
 				9F6E64D71C89F513005991CE /* NSTimmer+Extensions.swift in Sources */,
+				9FB0B5D31C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9F6E64D91C89F513005991CE /* UIControl+Target.swift in Sources */,
 				9F6E655E1C89FD46005991CE /* Dog.swift in Sources */,
 				9F6E64DA1C89F513005991CE /* String-Extras.swift in Sources */,
 				9F6E64DB1C89F513005991CE /* UIView+Extensions.swift in Sources */,
+				9FB0B6281C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F6E64DC1C89F513005991CE /* DBTConfigurationKeys.swift in Sources */,
 				9F6E64DD1C89F513005991CE /* RJSLayoutsManager.swift in Sources */,
+				9FB0B6041C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9F6E64DF1C89F513005991CE /* RJSCronometer.swift in Sources */,
 				9F6E64E01C89F513005991CE /* demoDBTable.swift in Sources */,
 				9F6E64E11C89F513005991CE /* RJSOptionalUtils.swift in Sources */,
@@ -2388,12 +2633,18 @@
 				9F6E64E31C89F513005991CE /* UITableView+Extensions.swift in Sources */,
 				9F6E650D1C89F565005991CE /* App6Configuration.swift in Sources */,
 				9F6E64E51C89F513005991CE /* UILabel+Extensions.swift in Sources */,
+				9FB0B5EF1C90773600C0F031 /* OAuth.swift in Sources */,
 				9F6E64E61C89F513005991CE /* RJSExceptionsManager.swift in Sources */,
+				9FB0B6191C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F6E64E71C89F513005991CE /* RJSMessagesManager.swift in Sources */,
 				9F6E64E81C89F513005991CE /* AFDateExtension.swift in Sources */,
+				9FB0B6121C90773600C0F031 /* Users.swift in Sources */,
 				9F6E64E91C89F513005991CE /* RJSCrashlytics.swift in Sources */,
 				9F024E091C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
+				9FB0B5C51C90773600C0F031 /* Client.swift in Sources */,
 				9F6E64EA1C89F513005991CE /* UIBezierPath+Extensions.swift in Sources */,
+				9FB0B5DA1C90773600C0F031 /* Files.swift in Sources */,
+				9FB0B5B01C90773500C0F031 /* Auth.swift in Sources */,
 				9F6E64EB1C89F513005991CE /* Dictionary+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2402,6 +2653,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB0B5B11C90773500C0F031 /* Auth.swift in Sources */,
+				9FB0B5E21C90773600C0F031 /* FilesRoutes.swift in Sources */,
 				9F76E9E91C8F572F00DEBAF2 /* RJSJSON.swift in Sources */,
 				9F76EA5C1C8F586000DEBAF2 /* App7Constants.swift in Sources */,
 				9F76E9EA1C8F572F00DEBAF2 /* RJSWebservices.swift in Sources */,
@@ -2412,20 +2665,26 @@
 				9F76EA671C8F586000DEBAF2 /* Screen3ViewController.swift in Sources */,
 				9F76E9F11C8F572F00DEBAF2 /* RJSErrorsManager.swift in Sources */,
 				9F76EA601C8F586000DEBAF2 /* DBTableComments.swift in Sources */,
+				9FB0B5F01C90773600C0F031 /* OAuth.swift in Sources */,
 				9F76E9F21C8F572F00DEBAF2 /* RJSBlocks.swift in Sources */,
+				9FB0B5B81C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9F76E9F31C8F572F00DEBAF2 /* UIColor+Extensions.swift in Sources */,
 				9F76EA631C8F586000DEBAF2 /* Screen1ViewController.swift in Sources */,
 				9F76E9F41C8F572F00DEBAF2 /* RJSLayoutsManager.swift in Sources */,
 				9F76E9F51C8F572F00DEBAF2 /* RJSProgramaticControls.swift in Sources */,
 				9F76E9F61C8F572F00DEBAF2 /* RJSUtils.swift in Sources */,
+				9FB0B5D41C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9F76E9F81C8F572F00DEBAF2 /* UITableView+Extensions.swift in Sources */,
+				9FB0B6131C90773600C0F031 /* Users.swift in Sources */,
 				9F76E9F91C8F572F00DEBAF2 /* RJSChoivesVC.swift in Sources */,
+				9FB0B61A1C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F76EA611C8F586000DEBAF2 /* DBTablePosts.swift in Sources */,
 				9F76E9FA1C8F572F00DEBAF2 /* String-Extras.swift in Sources */,
 				9F76E9FB1C8F572F00DEBAF2 /* RJSDBManager.swift in Sources */,
 				9F76E9FC1C8F572F00DEBAF2 /* RJSGlobalFuntions.swift in Sources */,
 				9F76EA641C8F586000DEBAF2 /* Screen1ViewModel.swift in Sources */,
 				9F76E9FE1C8F572F00DEBAF2 /* RJSSQLiteDB.swift in Sources */,
+				9FB0B60C1C90773600C0F031 /* Team.swift in Sources */,
 				9F76E9FF1C8F572F00DEBAF2 /* RJSCronometer.swift in Sources */,
 				9F76EA001C8F572F00DEBAF2 /* AppDelegate.swift in Sources */,
 				9F76EA681C8F586000DEBAF2 /* Screen3ViewModel.swift in Sources */,
@@ -2437,6 +2696,7 @@
 				9F76EA051C8F572F00DEBAF2 /* UIView+Animations.swift in Sources */,
 				9F76EA061C8F572F00DEBAF2 /* RJSSizes.swift in Sources */,
 				9F76EA081C8F572F00DEBAF2 /* SQLTable.swift in Sources */,
+				9FB0B5AA1C90773500C0F031 /* Async.swift in Sources */,
 				9F76EA091C8F572F00DEBAF2 /* RJSMessagesManager.swift in Sources */,
 				9F76EA621C8F586000DEBAF2 /* DBTableUsers.swift in Sources */,
 				9F76EA0A1C8F572F00DEBAF2 /* RJSOptionalUtils.swift in Sources */,
@@ -2446,6 +2706,9 @@
 				9F76EA0E1C8F572F00DEBAF2 /* NSTimmer+Extensions.swift in Sources */,
 				9F76EA0F1C8F572F00DEBAF2 /* RJSDownloadsManager.swift in Sources */,
 				9F76EA101C8F572F00DEBAF2 /* UIControl+Target.swift in Sources */,
+				9FB0B5CD1C90773600C0F031 /* DropboxClient.swift in Sources */,
+				9FB0B6051C90773600C0F031 /* SharingRoutes.swift in Sources */,
+				9FB0B6291C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F76EA121C8F572F00DEBAF2 /* UIView+Extensions.swift in Sources */,
 				9F76EA131C8F572F00DEBAF2 /* RJSConvert.swift in Sources */,
 				9F76EA5D1C8F586000DEBAF2 /* App7LayoutsManager.swift in Sources */,
@@ -2458,9 +2721,14 @@
 				9F76EA1B1C8F572F00DEBAF2 /* RJSRegExp.swift in Sources */,
 				9F76EA1C1C8F572F00DEBAF2 /* AppGenericConstants.swift in Sources */,
 				9F76EA1E1C8F572F00DEBAF2 /* RJSExceptionsManager.swift in Sources */,
+				9FB0B5FE1C90773600C0F031 /* Sharing.swift in Sources */,
+				9FB0B5DB1C90773600C0F031 /* Files.swift in Sources */,
 				9F76EA661C8F586000DEBAF2 /* Screen2ViewModel.swift in Sources */,
 				9F76EA211C8F572F00DEBAF2 /* UIBezierPath+Extensions.swift in Sources */,
+				9FB0B5C61C90773600C0F031 /* Client.swift in Sources */,
 				9F76EA221C8F572F00DEBAF2 /* AppConfiguration.swift in Sources */,
+				9FB0B5F71C90773600C0F031 /* SecurityUtil.m in Sources */,
+				9FB0B5BF1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9F76EA231C8F572F00DEBAF2 /* Dictionary+Extensions.swift in Sources */,
 				9F76EA241C8F572F00DEBAF2 /* UIImage+Extensions.swift in Sources */,
 				9F76EA251C8F572F00DEBAF2 /* demoDBTable.swift in Sources */,
@@ -2472,13 +2740,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F46818E1C6E792400065E19 /* RJSJSON.swift in Sources */,
+				9FB0B6141C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F4681961C6E792400065E19 /* RJSWebservices.swift in Sources */,
 				9FF1BBC81C81001A004279D2 /* AppGenericConstants.swift in Sources */,
 				9FE3A9DC1C700662002B166B /* RJSErrorsManager.swift in Sources */,
+				9FB0B5C01C90773600C0F031 /* Client.swift in Sources */,
 				9FA8BC071C81E66700394CA1 /* RJSMVVMUtils.swift in Sources */,
 				9F9A290C1C7D3124006CE65C /* SQLTable.swift in Sources */,
 				9F468F041C6E920C00065E19 /* RJSStorages.swift in Sources */,
 				9F4681941C6E792400065E19 /* RJSIntrospection.swift in Sources */,
+				9FB0B5F81C90773600C0F031 /* Sharing.swift in Sources */,
+				9FB0B5DC1C90773600C0F031 /* FilesRoutes.swift in Sources */,
 				9F8F24381C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9FF0E61C1C879C080051E9F5 /* RJSRegExp.swift in Sources */,
 				9F4681971C6E792400065E19 /* RJSBlocks.swift in Sources */,
@@ -2489,27 +2761,36 @@
 				9F9A29061C7D3124006CE65C /* SQLiteDB.swift in Sources */,
 				9F4681561C6E791300065E19 /* RJSChoivesVC.swift in Sources */,
 				9FC4D63D1C6F827E00796F65 /* UINavigationController+Extensions.swift in Sources */,
+				9FB0B5FF1C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9F46818D1C6E792400065E19 /* RJSGlobalFuntions.swift in Sources */,
 				9F9A9BF21C6CF0CB00B37D0D /* AppDelegate.swift in Sources */,
 				9F46816E1C6E792000065E19 /* UIViewController+Extensions.swift in Sources */,
 				9F4681671C6E792000065E19 /* String+Extensions.swift in Sources */,
 				9FA8BC441C825DBD00394CA1 /* RJSDownloadsManager.swift in Sources */,
 				9FE3A9D91C6FFD36002B166B /* RJSAppAndDeviceInfo.swift in Sources */,
+				9FB0B5B91C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9FF0E6051C8750470051E9F5 /* RJSFilesManager.swift in Sources */,
+				9FB0B5CE1C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9F3D2E821C7D449A005A78B3 /* RJSSQLiteDB.swift in Sources */,
+				9FB0B5F11C90773600C0F031 /* SecurityUtil.m in Sources */,
 				9FA8BC561C831CEE00394CA1 /* RJSConvert.swift in Sources */,
 				9F46816C1C6E792000065E19 /* UIView+Animations.swift in Sources */,
 				9F3D2E7C1C7D449A005A78B3 /* RJSDBManager.swift in Sources */,
 				9F3D2E891C7D4B0B005A78B3 /* NSObject+Extensions.swift in Sources */,
 				9F4681911C6E792400065E19 /* RJSSizes.swift in Sources */,
+				9FB0B5EA1C90773600C0F031 /* OAuth.swift in Sources */,
+				9FB0B6061C90773600C0F031 /* Team.swift in Sources */,
 				9F4681641C6E792000065E19 /* NSTimmer+Extensions.swift in Sources */,
 				9F4681521C6E790B00065E19 /* UIControl+Target.swift in Sources */,
 				9F9A29121C7D3124006CE65C /* String-Extras.swift in Sources */,
 				9F46816D1C6E792000065E19 /* UIView+Extensions.swift in Sources */,
+				9FB0B5B21C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9FF1BBCF1C810519004279D2 /* DBTConfigurationKeys.swift in Sources */,
+				9FB0B6231C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F999F431C7DEF7400CF12E2 /* RJSLayoutsManager.swift in Sources */,
 				9F31C7AF1C88CCD800E14B22 /* App1Configuration.swift in Sources */,
 				9F0763091C7B96AC00252D80 /* RJSCronometer.swift in Sources */,
+				9FB0B5A41C90773500C0F031 /* Async.swift in Sources */,
 				9F9A29301C7D36CD006CE65C /* demoDBTable.swift in Sources */,
 				9FA8BC4B1C8274E200394CA1 /* RJSOptionalUtils.swift in Sources */,
 				9F4681651C6E792000065E19 /* String+Base64.swift in Sources */,
@@ -2518,7 +2799,11 @@
 				9F46816B1C6E792000065E19 /* UILabel+Extensions.swift in Sources */,
 				9F46820A1C6E7D6800065E19 /* RJSExceptionsManager.swift in Sources */,
 				9F38C2F61C6F7496009EFE20 /* RJSMessagesManager.swift in Sources */,
+				9FB0B5D51C90773600C0F031 /* Files.swift in Sources */,
+				9FB0B60D1C90773600C0F031 /* Users.swift in Sources */,
 				9FA8BC191C82487A00394CA1 /* AFDateExtension.swift in Sources */,
+				9FB0B5AB1C90773500C0F031 /* Auth.swift in Sources */,
+				9FB0B5C71C90773600C0F031 /* DropboxClient.swift in Sources */,
 				9FE3A9B31C6FF808002B166B /* RJSCrashlytics.swift in Sources */,
 				9F024E041C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
 				9F4681691C6E792000065E19 /* UIBezierPath+Extensions.swift in Sources */,
@@ -2534,6 +2819,7 @@
 				9FD267DC1C723A06005E9CC9 /* RJSWebservices.swift in Sources */,
 				9FD267DD1C723A06005E9CC9 /* RJSErrorsManager.swift in Sources */,
 				9F41DB081C8525010083D1FC /* ArticleViewModel.swift in Sources */,
+				9FB0B5FB1C90773600C0F031 /* Sharing.swift in Sources */,
 				9FF1BBCB1C81001A004279D2 /* AppGenericConstants.swift in Sources */,
 				9FD267DE1C723A06005E9CC9 /* RJSStorages.swift in Sources */,
 				9FA8BC0A1C81E66700394CA1 /* RJSMVVMUtils.swift in Sources */,
@@ -2545,8 +2831,10 @@
 				9FA8BC591C831CEE00394CA1 /* RJSConvert.swift in Sources */,
 				9FD267E11C723A06005E9CC9 /* UIColor+Extensions.swift in Sources */,
 				9FD267E21C723A06005E9CC9 /* RJSProgramaticControls.swift in Sources */,
+				9FB0B5DF1C90773600C0F031 /* FilesRoutes.swift in Sources */,
 				9F41DB091C8525050083D1FC /* Article.swift in Sources */,
 				9FD267E31C723A06005E9CC9 /* RJSUtils.swift in Sources */,
+				9FB0B5B51C90773600C0F031 /* BabelSerializers.swift in Sources */,
 				9FA8BC471C825DBD00394CA1 /* RJSDownloadsManager.swift in Sources */,
 				9FD267E41C723A06005E9CC9 /* RJSNodeServer.swift in Sources */,
 				9F41DB061C8524F70083D1FC /* App4Constants.swift in Sources */,
@@ -2554,33 +2842,47 @@
 				9F9A29091C7D3124006CE65C /* SQLiteDB.swift in Sources */,
 				9FD267E61C723A06005E9CC9 /* UINavigationController+Extensions.swift in Sources */,
 				9FD267E71C723A06005E9CC9 /* RJSGlobalFuntions.swift in Sources */,
+				9FB0B5D81C90773600C0F031 /* Files.swift in Sources */,
+				9FB0B5D11C90773600C0F031 /* DropboxUtil.swift in Sources */,
 				9FF0E61F1C879C080051E9F5 /* RJSRegExp.swift in Sources */,
 				9FD267E81C723A06005E9CC9 /* AppDelegate.swift in Sources */,
 				9F8F243B1C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9FA8BC4E1C8274E200394CA1 /* RJSOptionalUtils.swift in Sources */,
 				9F31C7B51C88CD2800E14B22 /* App4Configuration.swift in Sources */,
+				9FB0B6021C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9FD267E91C723A06005E9CC9 /* UIViewController+Extensions.swift in Sources */,
+				9FB0B5BC1C90773600C0F031 /* BabelValidators.swift in Sources */,
 				9FD267EA1C723A06005E9CC9 /* String+Extensions.swift in Sources */,
 				9FD267EB1C723A06005E9CC9 /* RJSAppAndDeviceInfo.swift in Sources */,
 				9FD267EE1C723A06005E9CC9 /* UIView+Animations.swift in Sources */,
+				9FB0B6171C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F3D2E851C7D449A005A78B3 /* RJSSQLiteDB.swift in Sources */,
+				9FB0B5ED1C90773600C0F031 /* OAuth.swift in Sources */,
 				9FD267EF1C723A06005E9CC9 /* RJSSizes.swift in Sources */,
 				9F3D2E7F1C7D449A005A78B3 /* RJSDBManager.swift in Sources */,
 				9FF0E6091C8750490051E9F5 /* RJSFilesManager.swift in Sources */,
 				9F3D2E8C1C7D4B0B005A78B3 /* NSObject+Extensions.swift in Sources */,
+				9FB0B5C31C90773600C0F031 /* Client.swift in Sources */,
 				9FD267F11C723A06005E9CC9 /* NSTimmer+Extensions.swift in Sources */,
 				9FD267F21C723A06005E9CC9 /* UIControl+Target.swift in Sources */,
+				9FB0B6261C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
+				9FB0B5AE1C90773500C0F031 /* Auth.swift in Sources */,
 				9FD267F31C723A06005E9CC9 /* UIView+Extensions.swift in Sources */,
 				9F9A29151C7D3124006CE65C /* String-Extras.swift in Sources */,
 				9FD267F41C723A06005E9CC9 /* String+Base64.swift in Sources */,
+				9FB0B5F41C90773600C0F031 /* SecurityUtil.m in Sources */,
 				9FF1BBD21C810519004279D2 /* DBTConfigurationKeys.swift in Sources */,
 				9F999F461C7DEF7400CF12E2 /* RJSLayoutsManager.swift in Sources */,
 				9F07630C1C7B96AC00252D80 /* RJSCronometer.swift in Sources */,
+				9FB0B6091C90773600C0F031 /* Team.swift in Sources */,
 				9F9A29331C7D36CF006CE65C /* demoDBTable.swift in Sources */,
 				9FD267F61C723A06005E9CC9 /* UILabel+Extensions.swift in Sources */,
 				9FD267F71C723A06005E9CC9 /* RJSExceptionsManager.swift in Sources */,
 				9F41DB071C8524FD0083D1FC /* ArticleViewController.swift in Sources */,
 				9FD267F81C723A06005E9CC9 /* RJSMessagesManager.swift in Sources */,
+				9FB0B6101C90773600C0F031 /* Users.swift in Sources */,
+				9FB0B5A71C90773500C0F031 /* Async.swift in Sources */,
+				9FB0B5CA1C90773600C0F031 /* DropboxClient.swift in Sources */,
 				9FD267F91C723A06005E9CC9 /* RJSCrashlytics.swift in Sources */,
 				9F024E071C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
 				9FD267FA1C723A06005E9CC9 /* UIBezierPath+Extensions.swift in Sources */,

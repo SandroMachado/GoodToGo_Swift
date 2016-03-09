@@ -3,6 +3,7 @@
 //  Copyright (c) 2015 Ricardo Santos. All rights reserved.
 //
 
+/// TODO : Change names
 
 // Constants that are shared (existing) in the the app's
 enum AppGenericConstants {
@@ -16,6 +17,20 @@ enum AppGenericConstants {
             return "cellIdentifier"
         }
     }
+    enum Notifications {
+        static var ShowNoInternetConnection: String {
+            return "ShowNoInternetConnection"
+        }
+    }
+    enum APIs {
+        static var DropboxAppKey: String {
+            return "5ego6zf44mk1isi"
+        }
+        static var DropboxAppSecret: String {
+            return "5ego6zf44mk1isi" /// TODO: ofuscate
+        }
+    }
+    
 }
 
 

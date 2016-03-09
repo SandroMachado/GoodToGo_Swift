@@ -45,13 +45,15 @@ class Screen1ViewController: UIViewController {
     }
     
     func shouldUpdateScreen() {
-        let lblTitle = RJSProgramaticControls.GetUILabel(viewModel?.title)
-        RJSLayoutsManager.App7.LayoutLabel_Title_1(lblTitle)
-        lblTitle.textAlignment = .Center;
-        self.navigationItem.titleView = lblTitle
-        tableView!.reloadData()
-        if(self.refreshControl.refreshing) {
-            self.refreshControl.endRefreshing()
+        RJSBlocks.executeInMainTread { () -> () in
+            let lblTitle = RJSProgramaticControls.GetUILabel(self.viewModel?.title)
+            RJSLayoutsManager.App7.LayoutLabel_Title_1(lblTitle)
+            lblTitle.textAlignment = .Center;
+            self.navigationItem.titleView = lblTitle
+            self.tableView!.reloadData()
+            if(self.refreshControl.refreshing) {
+                self.refreshControl.endRefreshing()
+            }
         }
     }
     
@@ -110,39 +112,6 @@ class Screen1ViewController: UIViewController {
         cell.detailTextLabel?.text = item.description
         
   
-        // Check for user Avatar image
-        var imageName = item.thumbnail.replace(":", newChar: "").replace("\\", newChar: "").replace("/", newChar: "")
-        imageName = "comic_cover\\" + imageName
-        let avatarImage = RJSFilesManager.getImage(imageName)
-        
-        if(HaveValue(avatarImage)) {
-            // We find the avatar image on the file system!
-            cell.imageView?.image = avatarImage
-        }
-        else {
-            if(RJSUtils.existsInternetConnection())
-            {
-                // We didnt find the avatar image on the file system. Let fetch it....
-                RJSDownloadsManager.downloadImage(item.thumbnail) { (result, error) -> Void in
-                    if(HaveValue(error) && !HaveValue(result)) {
-                        RJSErrorsManager.handleError(error)
-                        // Error? Return a defautl image...
-                        cell.imageView?.image = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
-                    }
-                    else {
-                        // Set the image
-                        cell.imageView?.image = result
-                        // Cache the image for future use
-                        RJSFilesManager.saveImage(imageName, folder: RJSFilesManager.Folder.Documents, image: result)
-                    }
-                }
-            }
-            else {
-                // No internet connection to download image. Using default
-                cell.imageView?.image = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
-            }
-        }
-       
         RJSLayoutsManager.App7.LayoutUITableViewCell_1(cell)
         return cell
     }
@@ -188,6 +157,9 @@ class Screen1ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
+        
+        RJSDropBoxManager.authorizeFromController(self)
+
     }
   
 }

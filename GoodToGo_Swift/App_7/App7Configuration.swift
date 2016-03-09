@@ -13,6 +13,8 @@
     
     static func prepare() -> Int
     {
+        // Connect to the DropBox
+        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
         
         // Prepare navigation bar layout
         RJSLayoutsManager.App7.LayoutNavigationBar()
@@ -24,6 +26,9 @@
         guard RJSUtils.existsInternetConnection() else {
             return 0
         }
+        
+        RJSMessagesManager.showSmallTopMessage("Updating records...")
+
         
         // Clean cache
         RJSFilesManager.clearFolder(RJSFilesManager.Folder.Documents)
@@ -75,59 +80,7 @@
                 }
         }
         
-        return 1;
-        
-        RJSMessagesManager.showSmallTopMessage("Updating records...")
-        
-        let download3Comments = {
-            RJSUtils.setActivityIndicatorToState(true, identifier: App7Constants.MarvelApi.Commments)
-            RJSWebservices.asynchonousRequest(App7Constants.MarvelApi.Commments) { (result, error) -> Void in
-                if(HaveValue(result))
-                {
-                    DBTableComments.deleteAllRecords() // If we received values, lets delete the old ones...
-                    for post in result as! NSArray
-                    {
-                        autoreleasepool {
-                            DBTableComments(dic:post as! [String : AnyObject]).save()
-                        }
-                    }
-                }
-                else
-                {
-                    RJSErrorsManager.handleError(error)
-                }
-                RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.Commments)
-                RJSMessagesManager.showSmallTopMessage("Comments updated...")
-                RJSUtils.postNotificaitonWithName(App7Constants.Notifications.TableCommentsUpdated)
-            };
-        }
-        
-        let download2Posts = {
-            RJSUtils.setActivityIndicatorToState(true, identifier: App7Constants.MarvelApi.Posts)
-            RJSWebservices.asynchonousRequest(App7Constants.MarvelApi.Posts) { (result, error) -> Void in
-                if(HaveValue(result))
-                {
-                    DBTablePosts.deleteAllRecords() // If we received values, lets delete the old ones...
-                    for post in result as! NSArray
-                    {
-                        autoreleasepool {
-                            DBTablePosts(dic:post as! [String : AnyObject]).save()
-                        }
-                    }
-                }
-                else
-                {
-                    RJSErrorsManager.handleError(error)
-                }
-                RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.Posts)
-                RJSMessagesManager.showSmallTopMessage("Posts updated...")
-                RJSUtils.postNotificaitonWithName(App7Constants.Notifications.TablePostsUpdated)
-                download3Comments()
-            };
-            
-        }
-        
-        
+    
         return 1
     }
   }

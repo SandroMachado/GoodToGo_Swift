@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Comments" id="0hj-Ly-fl2"/>
                     <connections>
                         <outlet property="tableView" destination="Uf9-Vk-V8I" id="nEX-ne-ZRn"/>
-                        <segue destination="QjW-zc-lu6" kind="show" identifier="app5.modal.screen2" id="2ir-Ta-6RU"/>
+                        <segue destination="QjW-zc-lu6" kind="show" identifier="app7.modal.screen2" id="2ir-Ta-6RU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -227,7 +227,7 @@
                         <outlet property="lblComentsCount" destination="TMW-vz-Y8P" id="kDE-xB-ZPG"/>
                         <outlet property="lblUserName" destination="nty-fk-EcS" id="7nL-BS-qkm"/>
                         <outlet property="txtBody" destination="qpm-H2-gb4" id="9hs-29-Lyb"/>
-                        <segue destination="mYb-T1-WmD" kind="presentation" identifier="app5.modal.screen3" modalTransitionStyle="coverVertical" id="aK5-a1-lp3"/>
+                        <segue destination="mYb-T1-WmD" kind="presentation" identifier="app7.modal.screen3" modalTransitionStyle="coverVertical" id="aK5-a1-lp3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-Ab-5Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>

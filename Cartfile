@@ -9,6 +9,12 @@
 ########################## INSTALED ################################
 ####################################################################
 
+####################################################################
+
+# SwiftyDropbox, the new Swift SDK for Dropbox API v2!
+# https://blogs.dropbox.com/developers/2015/05/try-out-swiftydropbox-the-new-swift-sdk-for-dropbox-api-v2/
+github "dropbox/SwiftyDropbox"
+
 # Elegant HTTP Networking in Swift
 # https://github.com/Alamofire/Alamofire
 github "Alamofire/Alamofire" ~> 2.0
@@ -47,7 +53,7 @@ github "krzyzanowskim/CryptoSwift"
 # A type-safe Flux implementation for Swift
 # https://github.com/yonekawa/SwiftFlux
 # github "yonekawa/SwiftFlux"
-m
+
 ####################################################################
 
 # The easy to use Swift JSON decode

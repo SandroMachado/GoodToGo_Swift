@@ -10,21 +10,21 @@ import UIKit
  * Model
  */
 
+/*
 import RealmSwift
 import Foundation
 import UIKit
 
 class DBTableComments : Object {
     
-    /*
-    {
-    body = "est illum quia alias ipsam minus\nut quod vero aut magni harum quis\nab minima voluptates nemo non sint quis\ndistinctio officia ea et maxime";
-    email = "Kadin@walter.io";
-    id = 494;
-    name = "molestias facere soluta mollitia totam dolorem commodi itaque";
-    postId = 99;
-    }
-    */
+    
+    //{
+    //body = "est illum quia alias ipsam minus\nut quod vero aut magni harum quis\nab minima voluptates nemo non sint quis\ndistinctio officia ea et maxime";
+    //email = "Kadin@walter.io";
+    //id = 494;
+    //name = "molestias facere soluta mollitia totam dolorem commodi itaque";
+    //postId = 99;
+    //}
 
     dynamic var id     = ""
     dynamic var body   = ""
@@ -73,3 +73,5 @@ class DBTableComments : Object {
     deinit { /* DLog("DBTableComments #\(id) is being deinitialized") */}
 
 }
+
+*/

@@ -13,7 +13,7 @@ protocol Screen2ViewModelProtocol {
     var body: String { get }
     var username: String { get }
     var commentsCount: String { get }
-    var avatar: UIImage? { get }
+    var coverImage: UIImage? { get }
     var viewNeedsReload: Dynamic<Bool> { get }
 }
 
@@ -27,7 +27,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     var body: String
     var username: String
     var commentsCount: String
-    var avatar: UIImage?
+    var coverImage: UIImage?
     
     var viewNeedsReload: Dynamic<Bool>
 
@@ -35,48 +35,44 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         self.viewNeedsReload = Dynamic<Bool>(false)
         self.controllerTitle = "Post details"
         self.body            = item.description
-        let post             = DBTablePosts.recordWithRowId(item.id)
-      //  let user             = DBTableUsers.recordWithRowId(post.userId)
-        let email            = ""//user.email
-        let count            = DBTableComments.comentsCountFor(post.id)
         self.username        = ""//user.name
         self.articleTitle    = item.title
-        self.commentsCount   = "\(count) comments"
-      /*
+        self.commentsCount   = "commentsCount"//"\(count) comments"
+ 
         // Check for user Avatar image
-        let imageName   = "avatar_\(email).png"
+        // Check for user Avatar image
+        var imageName = item.thumbnail.replace(":", newChar: "").replace("\\", newChar: "").replace("/", newChar: "")
+        imageName = "comic_cover\\" + imageName
         let avatarImage = RJSFilesManager.getImage(imageName)
         
         if(HaveValue(avatarImage)) {
             // We find the avatar image on the file system!
-            self.avatar = avatarImage
+            coverImage = avatarImage
         }
         else {
             if(RJSUtils.existsInternetConnection())
             {
                 // We didnt find the avatar image on the file system. Let fetch it....
-                let imageURL = "https://api.adorable.io/avatars/105/\(email).png"
-                RJSDownloadsManager.downloadImage(imageURL) { (result, error) -> Void in
+                RJSDownloadsManager.downloadImage(item.thumbnail) { (result, error) -> Void in
                     if(HaveValue(error) && !HaveValue(result)) {
                         RJSErrorsManager.handleError(error)
                         // Error? Return a defautl image...
-                        self.avatar = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
+                        self.coverImage = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
                     }
                     else {
                         // Set the image
-                        self.avatar = result
+                        self.coverImage = result
                         // Cache the image for future use
                         RJSFilesManager.saveImage(imageName, folder: RJSFilesManager.Folder.Documents, image: result)
                     }
-                    self.viewNeedsReload.value = true
                 }
             }
             else {
                 // No internet connection to download image. Using default
-                self.avatar = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
+                self.coverImage = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
             }
         }
-*/
+        
         self.viewNeedsReload.value = true
     }
     

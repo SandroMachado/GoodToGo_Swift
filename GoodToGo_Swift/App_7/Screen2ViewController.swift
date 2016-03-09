@@ -91,7 +91,7 @@ class Screen2ViewController: UIViewController {
         RJSOptionalUtils.safeUIElementSetValue(self.txtBody,         value: viewModel!.body)
         RJSOptionalUtils.safeUIElementSetValue(self.lblUserName,     value: viewModel!.username)
         RJSOptionalUtils.safeUIElementSetValue(self.lblComentsCount, value: viewModel!.commentsCount)
-        RJSOptionalUtils.safeUIElementSetValue(self.imgAvatar,       value: viewModel!.avatar)
+        RJSOptionalUtils.safeUIElementSetValue(self.imgAvatar,       value: viewModel!.coverImage)
     }
     
     // MARK: Page life cicle
@@ -111,6 +111,8 @@ class Screen2ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
+        
+        
     }
 
 }
