@@ -36,13 +36,13 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         self.controllerTitle = "Post details"
         self.body            = item.description
         let post             = DBTablePosts.recordWithRowId(item.id)
-        let user             = DBTableUsers.recordWithRowId(post.userId)
-        let email            = user.email
+      //  let user             = DBTableUsers.recordWithRowId(post.userId)
+        let email            = ""//user.email
         let count            = DBTableComments.comentsCountFor(post.id)
-        self.username        = user.name
+        self.username        = ""//user.name
         self.articleTitle    = item.title
         self.commentsCount   = "\(count) comments"
-      
+      /*
         // Check for user Avatar image
         let imageName   = "avatar_\(email).png"
         let avatarImage = RJSFilesManager.getImage(imageName)
@@ -76,7 +76,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
                 self.avatar = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
             }
         }
-
+*/
         self.viewNeedsReload.value = true
     }
     

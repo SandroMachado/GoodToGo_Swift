@@ -1333,6 +1333,7 @@
 			children = (
 				9F8F24351C8B1163003D546B /* README.txt */,
 				9F63D2B61C84BF0300352073 /* main.swift */,
+				9F63D2DD1C84C19200352073 /* LIterators.swift */,
 				9FB9DF9B1C8C4B4C00EA325D /* LGenerics.swift */,
 				9FF6A9D41C8ED7C500C60347 /* LDesignatedInitAndConvenienceInit.swift */,
 				9F8F24331C8B1151003D546B /* LSingletons.swift */,
@@ -1341,7 +1342,6 @@
 				9F63D2DB1C84C19200352073 /* LMisc.swift */,
 				9FF0E6011C8662AF0051E9F5 /* LWeakStrong.swift */,
 				9F63D2DC1C84C19200352073 /* LCodingStyle.swift */,
-				9F63D2DD1C84C19200352073 /* LIterators.swift */,
 				9F63D2DE1C84C19200352073 /* LSampleClass.swift */,
 				9F22E4A01C8BBF150037C7EC /* LOptionals.swift */,
 				9FB9DF971C8C46F100EA325D /* LClosures.swift */,
@@ -1439,9 +1439,9 @@
 				9F76EA4A1C8F586000DEBAF2 /* App7Configuration.swift */,
 				9F76EA4B1C8F586000DEBAF2 /* App7Constants.swift */,
 				9F76EA4C1C8F586000DEBAF2 /* App7LayoutsManager.swift */,
-				9F76EA6B1C8F588200DEBAF2 /* Model */,
 				9F76EA6A1C8F587D00DEBAF2 /* Controllers */,
 				9F76EA691C8F587700DEBAF2 /* ViewModels */,
+				9F76EA6B1C8F588200DEBAF2 /* Model */,
 			);
 			name = App_7;
 			sourceTree = "<group>";

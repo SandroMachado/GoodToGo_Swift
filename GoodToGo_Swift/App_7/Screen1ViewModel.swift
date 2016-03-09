@@ -25,7 +25,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
 
     // MARK: Private
     @objc private func handleNotification(sender:NSNotification) {
-        if(sender.name==App7Constants.Notifications.TablePostsUpdated) {
+        if(sender.name==App7Constants.Notifications.TableComicUpdated) {
             updateCommentsData()
         }
     }
@@ -50,7 +50,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
 
     init() {
         
-        self.title           = "Comments"
+        self.title           = "Commics"
         self.viewNeedsReload = Dynamic<Bool>(false)
         
         updateCommentsData()
@@ -84,7 +84,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
         self.tableViewDataSource.removeAll()
         
         var sectionItems = [TableItem]()
-        let posts        = DBTablePosts.allRecords()
+        let posts        = DBTableComic.allRecords()
         
         if(posts.count>0)
         {
@@ -94,7 +94,8 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
             // TODO: change to Map with Reduce
             for post in posts
             {
-                sectionItems.append(TableItem(title: post.title, description: post.body, id: post.id))
+                //DLog(post.debugDescription)
+                sectionItems.append(TableItem(title: post.title, description: post.descriptionCommic, thumbnail:post.thumbnail, id: post.id))
             }
             
             self.tableViewDataSource.append(sectionItems)

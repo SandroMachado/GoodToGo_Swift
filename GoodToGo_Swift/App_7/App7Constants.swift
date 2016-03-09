@@ -9,6 +9,7 @@ import UIKit
 struct TableItem {
     let title: String
     let description: String
+    let thumbnail: String
     let id: String
 }
 
@@ -22,6 +23,9 @@ enum App7Constants {
         }
     }
     enum Notifications {
+        static var TableComicUpdated: String {
+            return "TableComicUpdated"
+        }
         static var TablePostsUpdated: String {
             return "TablePostsUpdated"
         }
@@ -42,7 +46,7 @@ enum App7Constants {
         static var PrivateKey: String {
             return "87b64bb736e681a3e3b06b7baeaff0304e0f76f2"
         }
-        static var EndPoint: String {
+        static var CommicsEndPoint: String {
             return "http://gateway.marvel.com/v1/public/comics"
         }
         static var Commments: String {

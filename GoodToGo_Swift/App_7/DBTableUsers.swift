@@ -10,52 +10,48 @@ import UIKit
  * Model
  */
 
-
- /**
- * Model
- */
 import RealmSwift
 import Foundation
 import UIKit
 
-class DBTableUsers : Object {
-    /*
-    {
-    address  = { city = Gwenborough; geo = { lat = "-37.3159"; lng = "81.1496"; };  street = "Kulas Light";  suite = "Apt. 556"; ipcode = "92998-3874"; };
-    company  = { bs = "harness real-time e-markets"; catchPhrase = "Multi-layered client-server neural-net"; name = "Romaguera-Crona"; };
-    email    = "Sincere@april.biz";
-    id       = 1;
-    name     = "Leanne Graham";
-    phone    = "1-770-736-8031 x56442";
-    username = Bret;
-    website  = "hildegard.org";
-    }
-    */
-
+class DBTableComic : Object {
+    
     dynamic var id       = ""
-    dynamic var email    = ""
-    dynamic var name     = ""
-    dynamic var phone    = ""
-    dynamic var username = ""
-    dynamic var website  = ""
-    dynamic var company  = ""
-    dynamic var address  = ""
+    dynamic var digitalId    = ""
+    dynamic var title     = ""
+    dynamic var issueNumber    = ""
+    dynamic var variantDescription = ""
+    dynamic var descriptionCommic  = ""
+    dynamic var thumbnail  = ""
+    dynamic var images  = ""
+    dynamic var format  = ""
+    dynamic var pageCount  = ""
+    dynamic var resourceURI  = ""
+    
+    /// TODO: Delete latter
+    dynamic var originalJSON  = "" // Just in case?
     
     convenience required init(dic:[String:AnyObject]) {
         self.init()
-        self.id       = ToString(dic["id"])
-        self.email    = ToString(dic["email"])
-        self.name     = ToString(dic["name"])
-        self.phone    = ToString(dic["phone"])
-        self.username = ToString(dic["username"])
-        self.website  = ToString(dic["website"])
-        self.company  = ToString(dic["company"])
-        self.address  = ToString(dic["address"])
+        self.id                 = ToString(dic["id"])
+        
+        self.title              = ToString(dic["title"])
+        self.digitalId          = ToString(dic["digitalId"])
+        self.issueNumber        = ToString(dic["issueNumber"])
+        self.descriptionCommic  = ToString(dic["description"])
+        let thumbnailAux        = dic["thumbnail"]
+        self.thumbnail          = "\(ToString(thumbnailAux!["path"])).\(ToString(thumbnailAux!["extension"]))"
+        self.variantDescription = ToString(dic["variantDescription"])
+        self.images             = ToString(dic["images"])
+        self.format             = ToString(dic["pageCount"])
+        self.format             = ToString(dic["pageCount"])
+        self.resourceURI        = ToString(dic["resourceURI"])
+        self.originalJSON       = ToString(dic)
     }
     
-    static func recordWithRowId(id:String) -> DBTableUsers {
+    static func recordWithRowId(id:String) -> DBTableComic {
         let realm = try! Realm()
-        let result = realm.objects(DBTableUsers).filter("id = \"\(id)\"")
+        let result = realm.objects(DBTableComic).filter("id = \"\(id)\"")
         return result[0]
     }
     
@@ -67,16 +63,22 @@ class DBTableUsers : Object {
         return 1
     }
     
+    static func allRecords() -> Results<DBTableComic> {
+        let realm = try! Realm()
+        let result = realm.objects(DBTableComic)
+        return result
+    }
+    
     static func recordsCount() -> Int {
         let realm = try! Realm()
         // TODO: Improve
-        return realm.objects(DBTableUsers).count
+        return realm.objects(DBTableComic).count
     }
     
     static func deleteAllRecords() -> Int {
         let realm = try! Realm()
         try! realm.write {
-            realm.delete(realm.objects(DBTableUsers))
+            realm.delete(realm.objects(DBTableComic))
         }
         return 1
     }

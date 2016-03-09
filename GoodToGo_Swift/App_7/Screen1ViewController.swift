@@ -45,14 +45,11 @@ class Screen1ViewController: UIViewController {
     }
     
     func shouldUpdateScreen() {
-        
         let lblTitle = RJSProgramaticControls.GetUILabel(viewModel?.title)
         RJSLayoutsManager.App7.LayoutLabel_Title_1(lblTitle)
         lblTitle.textAlignment = .Center;
         self.navigationItem.titleView = lblTitle
-        
         tableView!.reloadData()
-
         if(self.refreshControl.refreshing) {
             self.refreshControl.endRefreshing()
         }
@@ -60,7 +57,6 @@ class Screen1ViewController: UIViewController {
     
     // MARK: Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        
         if let destinationVC = segue.destinationViewController as? Screen2ViewController {
             destinationVC.sharedVar = lastSelectedItem
             
@@ -148,7 +144,7 @@ class Screen1ViewController: UIViewController {
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated);
         
-        // Avoid to re-prepareLayout layout and modelview more thant once (when we came back from the post details)
+        // Avoid to re-prepareLayout layout and modelview more thant once (when we came back from details)
         dispatch_once(&oncetoken) {
             self.loadViewModel()
             self.prepareLayout()

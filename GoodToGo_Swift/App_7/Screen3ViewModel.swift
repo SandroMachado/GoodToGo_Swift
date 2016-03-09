@@ -25,17 +25,20 @@ final class Screen3ViewModel : Screen3ViewModelProtocol {
 
     init(item:TableItem) {
         self.viewNeedsReload = Dynamic<Bool>(false)
-
+        self.latitude  = 0
+        self.longitude = 0
+        
+/*
         let record = DBTablePosts.recordWithRowId(item.id)
         let user   = DBTableUsers.recordWithRowId(record.userId)
         
         let adress = user.address
         
-        /*
-         * Extrate the latitude and longitude using regular expressions
-         * Sample In : {city = Gwenborough; geo = {lat = "-37.3159";lng = "81.1496";};street = "Kulas Light";suite = "Apt. 556";zipcode = "92998-3874\;}
-         * Sample Out : ["-37.3159", "81.1496"]
-         */
+        //
+         // Extrate the latitude and longitude using regular expressions
+         //Sample In : {city = Gwenborough; geo = {lat = "-37.3159";lng = "81.1496";};street = "Kulas Light";suite = "Apt. 556";zipcode = "92998-3874\;}
+         // Sample Out : ["-37.3159", "81.1496"]
+         //
         let matches = RJSRegExp.matchesForRegexInText("-?[0-9]{2}[.][0-9]{4}", text: adress)
         
         self.latitude  = RJSConvert.convertToDouble(ToString(matches[0]))
@@ -43,7 +46,7 @@ final class Screen3ViewModel : Screen3ViewModelProtocol {
         
         if(!RJSUtils.existsInternetConnection()) {
            RJSUtils.postNotificaitonWithName(App7Constants.Notifications.ShowNoInternetConnection)
-        }
+        }*/
         
     }
     
