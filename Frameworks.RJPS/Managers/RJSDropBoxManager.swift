@@ -28,8 +28,7 @@ struct RJSDropBoxManager
             Dropbox.authorizeFromController(controller)
         }
         else {
-            DLogWarning("User is already authorized!")
-            print("User is already authorized!")
+            DLogWarning("Controller \(controller) is already authorized!")
         }
     }
 
