@@ -25,6 +25,9 @@
             return 0
         }
         
+        // Clean cache
+        RJSFilesManager.clearFolder(RJSFilesManager.Folder.Documents)
+        
         let timestamp = "\(NSDate().timeIntervalSince1970)"
         let hash      = "\(timestamp)\(App7Constants.MarvelApi.PrivateKey)\(App7Constants.MarvelApi.PublicKey)".md5()
         
@@ -52,7 +55,7 @@
                             let test = comic as! [String : AnyObject]
                             let keys = test.keys
 
-                            print("\(comic)")
+                           // print("\(comic)")
                             autoreleasepool {
                                 DBTableComic(dic:comic as! [String : AnyObject]).save()
                             }
@@ -63,8 +66,8 @@
                             for index in 0...count-1 {
                                 print(records[index].thumbnail)
                             }
-                            print(DBTableComic.recordsCount())
                         }
+                        print(DBTableComic.recordsCount())
                         RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.CommicsEndPoint)
                         RJSMessagesManager.showSmallTopMessage("Comics updated...")
                         RJSUtils.postNotificaitonWithName(App7Constants.Notifications.TableComicUpdated)

@@ -11,12 +11,12 @@ The intent of this project is to have a place where I can have all my (swift) ap
 
 ### App_1 : Template App 1 - Animations and UI tests
 About :
-- Used to test simple layouts and UI animations.
+- Used to test layouts and UI animations.
 - In constrution.
 
 ## App_2 : Template App 2 - Storyboards / AutoLayouts tests
 About :
-- Used to test Storybards and autolayouts.
+- Used to test Storybards.
 - In constrution.
 
 ## App_3 : Links - UIWebView based app

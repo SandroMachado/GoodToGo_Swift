@@ -41,7 +41,7 @@ struct RJSFilesManager
         let filename = "\(path)/\(name)"
         let result   = UIImage(contentsOfFile: filename)
         if(!HaveValue(result)) {
-            DLogError("Error getting image \(name)")
+            DLogWarning("Error getting image \(name) from file system")
         }
         return result;
     }

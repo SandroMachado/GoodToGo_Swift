@@ -21,6 +21,15 @@ extension String {
         return randomString as String
     }
     
+    func replace(oldChar:String, newChar:String) -> String {
+        guard !oldChar.isEmpty else {
+            DLogWarning("Do you want to replace an empty char?")
+            return self
+        }
+        let newString = self.stringByReplacingOccurrencesOfString(oldChar, withString: newChar)
+        return newString
+    }
+    
     func countUTF8() -> Int
     {
         return self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)

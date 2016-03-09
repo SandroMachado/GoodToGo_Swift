@@ -82,7 +82,16 @@ struct  RJSUtils
     {
         if(HaveValue(name))
         {
-            NSNotificationCenter.defaultCenter().postNotificationName(name, object: nil)
+            DLog("Posting notification [\(name)]")
+            // Always do in MainThread
+            if(NSThread.isMainThread()) {
+                NSNotificationCenter.defaultCenter().postNotificationName(name, object: nil)
+            }
+            else {
+                RJSBlocks.executeInMainTread({ () -> () in
+                    NSNotificationCenter.defaultCenter().postNotificationName(name, object: nil)
+                })
+            }
             return true;
         }
         return false;

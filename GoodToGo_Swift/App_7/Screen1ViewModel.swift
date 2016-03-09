@@ -58,7 +58,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "handleNotification:",
-            name: App7Constants.Notifications.TablePostsUpdated,
+            name: App7Constants.Notifications.TableComicUpdated,
             object: nil)
         
         // Warn the view controller that there is no internet connection
@@ -88,19 +88,21 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
         
         if(posts.count>0)
         {
-            let sectionTitle = "\(posts.count) posts"
+            let sectionTitle = "\(posts.count) comics"
             tableViewSectionsTitle.append(sectionTitle)
             
-            // TODO: change to Map with Reduce
+            // TODO: change to Map with Reduce, 
+            // TODO: change name
             for post in posts
             {
-                //DLog(post.debugDescription)
                 sectionItems.append(TableItem(title: post.title, description: post.descriptionCommic, thumbnail:post.thumbnail, id: post.id))
             }
             
             self.tableViewDataSource.append(sectionItems)
         }
-        
+        else {
+            DLogWarning("No records")
+        }
         setViewNeedsToReadInMainTread()
     }
     

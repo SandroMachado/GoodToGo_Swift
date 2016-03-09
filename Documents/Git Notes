@@ -10,9 +10,9 @@ git status && git add . && git commit -m "Marvel challenge" && git push origin m
 /*
  *  Remove Git
  */
-# defaults write com.apple.finder AppleShowAllFiles TRUE
-# killall Finder
-# 'Depois apagar a pasta Git'
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
+# Delete Git folder
 
 /*
  *  Add Git
@@ -31,5 +31,5 @@ git push -f origin master.
  */
 # http://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push/12610763#12610763
 git push origin master --force
-git reset --hard upstream/master
+##git reset --hard upstream/master
 
