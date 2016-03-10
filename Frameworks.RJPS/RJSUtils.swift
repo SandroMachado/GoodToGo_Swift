@@ -45,8 +45,9 @@ struct  RJSUtils
         return Reachability.isConnectedToNetwork();
     }
     
-    
-
+    static func isMainThread() -> Bool {
+        return NSThread.isMainThread();
+    }
     
     static func guid() -> String
     {

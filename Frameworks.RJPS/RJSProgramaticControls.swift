@@ -10,6 +10,7 @@ import UIKit
 
 struct  RJSProgramaticControls
 {
+    // FIX: lowercase
     static func GetUILabel(title:String?) -> UILabel
     {
         let label = UILabel()
@@ -34,6 +35,7 @@ struct  RJSProgramaticControls
         return label;
     }
     
+    // FIX: lowercase
     static func GetUIButton(title:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIButton
     {
         let button   = UIButton(type: UIButtonType.System) as UIButton
@@ -59,6 +61,7 @@ struct  RJSProgramaticControls
         return button
     }
     
+    // FIX: lowercase
     static func GetUIBarButtonItem(title:String?, image:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIBarButtonItem
     {
         
@@ -86,12 +89,14 @@ struct  RJSProgramaticControls
         return UIBarButtonItem(customView: button)
     }
     
+    // FIX: lowercase
     static func GetUIBarButtonItemBack(target:AnyObject?) -> UIBarButtonItem
     {
         let result = RJSProgramaticControls.GetUIBarButtonItem("Back", image:nil, backgroundColor:nil,target:target,action:Selector(UIViewController.btnDismissPressedSelector()))
         return result
     }
     
+    // FIX: lowercase
     static func GetUIBarButtonFlexibleSpace() ->UIBarButtonItem
     {
         return UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)

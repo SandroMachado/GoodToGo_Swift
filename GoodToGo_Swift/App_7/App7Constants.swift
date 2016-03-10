@@ -50,8 +50,8 @@ enum App7Constants {
             return "http://jsonplaceholder.typicode.com/posts"
         }
     }
-    enum Misc {
-        static var DefaultAvatarImage: String {
+    enum Images {
+        static var DefaultCoverImage: String {
             return "templateImage256x256.png"
         }
     }

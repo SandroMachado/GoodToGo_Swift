@@ -63,6 +63,14 @@ struct RJSSizes {
             return 44.0
         }
     }
+    enum UINavigationBar {
+        static var width: CGFloat {
+            return UIScreen.mainScreen().bounds.width
+        }
+        static var height: CGFloat {
+            return 44.0
+        }
+    }
     enum CarrierStatusBar {
         static var width: CGFloat {
             return UIScreen.mainScreen().bounds.width

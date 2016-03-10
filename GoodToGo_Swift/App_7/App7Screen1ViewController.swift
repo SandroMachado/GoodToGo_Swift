@@ -75,8 +75,9 @@ class App7Screen1ViewController: UIViewController {
         let currentOffset = scrollView.contentOffset.y;
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
         
-        if (maximumOffset - currentOffset <= -40.0) {
-            RJSMessagesManager.showSmallTopMessage("Adding more records...")
+        let percentage = (currentOffset/maximumOffset) * 100
+        print(percentage)
+        if ((maximumOffset - currentOffset <= -40.0) || (percentage>66)) {
             App7MarvelAPI.getNexComicsPage()
         }
     }
@@ -91,14 +92,15 @@ class App7Screen1ViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let noDataText = "No data is currently available.\n\nPlease pull down to refresh."
         guard HaveValue(viewModel) else {
-            return 0
+            return tableView.layoutForNoData(noDataText, recordsCount: 0)
         }
         guard HaveValue(viewModel!.tableViewDataSource.count>0) else {
-            return 0
+            return tableView.layoutForNoData(noDataText, recordsCount: 0)
         }
         let result = viewModel!.tableViewDataSource[section].count
-        return result
+        return tableView.layoutForNoData(noDataText, recordsCount: result)
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -123,7 +125,10 @@ class App7Screen1ViewController: UIViewController {
         cell.textLabel?.text       = item.title
         cell.detailTextLabel?.text = item.description
         
-  
+        viewModel!.getCoverImage(item) { (result) -> Void in
+            cell.imageView?.image = result
+        }
+        
         RJSLayoutsManager.App7.LayoutUITableViewCell_1(cell)
         return cell
     }
@@ -154,7 +159,7 @@ class App7Screen1ViewController: UIViewController {
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-        tableView!.addSubview(refreshControl) // not required when using UITableViewController
+        tableView!.addSubview(refreshControl) 
     }
     
     override func viewWillAppear(animated: Bool){
@@ -164,14 +169,13 @@ class App7Screen1ViewController: UIViewController {
         dispatch_once(&oncetoken) {
             self.loadViewModel()
             self.prepareLayout()
+            RJSDropBoxManager.authorizeFromController(self)
         }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
         
-        RJSDropBoxManager.authorizeFromController(self)
-
     }
   
 }

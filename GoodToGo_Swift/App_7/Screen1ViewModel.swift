@@ -67,10 +67,17 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
         }
     }
     
+    func getCoverImage(tableItem:TableItem, completion:(result: UIImage) -> Void) {
+        App7ViewModelUseCases.getCoverImage(tableItem) { (result) -> Void in
+            RJSBlocks.executeInMainTread({ () -> () in
+                completion(result:result)
+            })
+        }
+    }
+    
     func refreshAllData () -> Void {
         if (RJSUtils.existsInternetConnection()) {
-            // Re-download all data
-            AppConfiguration.prepare()
+            App7MarvelAPI.getComics(0, limit: 0, cleanCachedImages: false, debug: false)
         }
         else {
             RJSUtils.postNotificaitonWithName(App7Constants.Notifications.ShowNoInternetConnection)
@@ -78,24 +85,29 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
         }
     }
     
+    // Fetch more records from the Marvel API
+    func loadMoreData () -> Void {
+         App7MarvelAPI.getNexComicsPage()
+    }
+    
+    // Get all the records currently stored in database and add then to (the var) sectionItems
     func updateCommentsData() -> Void {
 
         self.tableViewSectionsTitle.removeAll()
         self.tableViewDataSource.removeAll()
         
         var sectionItems = [TableItem]()
-        let posts        = DBTableComic.allRecords()
+        let commics      = DBTableComic.allRecords()
         
-        if(posts.count>0)
+        if(commics.count>0)
         {
-            let sectionTitle = "\(posts.count) comics"
+            let sectionTitle = "\(commics.count) comics"
             tableViewSectionsTitle.append(sectionTitle)
             
-            // TODO: change to Map with Reduce, 
-            // TODO: change name
-            for post in posts
+            // TODO: change to Map with Reduce
+            for commic in commics
             {
-                sectionItems.append(TableItem(title: post.title, description: post.descriptionCommic, thumbnail:post.thumbnail, id: post.id))
+                sectionItems.append(TableItem(title: commic.title, description: commic.descriptionCommic, thumbnail:commic.thumbnail, id: commic.id))
             }
             
             self.tableViewDataSource.append(sectionItems)

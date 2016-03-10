@@ -74,8 +74,17 @@ struct RJSMessagesManager
         }
     }
     
-    static func showNoInternetConnetion(sender:AnyObject?=nil) -> Void {
-        RJSMessagesManager.showSmallTopMessage("No internet connection! ")
+    static func showNoInternetConnetion(sender:UIViewController) -> Void {
+        let message = "No internet connection!"
+        
+        // FIX: isVisible
+        
+        // Avoid that diferent loaded viewcontrolleres can show the message
+        if(sender.isVisible() || true) {
+            RJSMessagesManager.showSmallTopMessage(message)
+        } else {
+            DLogWarning("Controller is not visible. The message [\(message)] as ignored")
+        }
     }
     
 }

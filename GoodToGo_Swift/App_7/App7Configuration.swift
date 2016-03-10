@@ -5,9 +5,9 @@
   //
   
   import UIKit
-  import RealmSwift
-  import Alamofire
-  import CryptoSwift
+  //import RealmSwift
+  //import Alamofire
+  //import CryptoSwift
   
   extension AppConfiguration {
     
@@ -19,11 +19,8 @@
         // Prepare navigation bar layout
         RJSLayoutsManager.App7.LayoutNavigationBar()
         
-       /*
-        * Download data
-        */
-        
-        App7MarvelAPI.getComics(1, limit: 100, cleanCachedImages: true, debug: false)
+        // Download first page of commics
+        App7MarvelAPI.getComics(0, limit: 75, cleanCachedImages: true, debug: false)
     
         return 1
     }

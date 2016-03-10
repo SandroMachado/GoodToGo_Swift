@@ -17,4 +17,15 @@ else
     // Fallback on earlier versions
 };
 
+/*
+* completion handler
+*/
+// Defenicao 1
+func hardProcessingWithString(input: String, completion: (result: String) -> Void) {
+    completion(result: "passed param: " + input)
+}
 
+// Caso de uso 1
+hardProcessingWithString("123", completion: { (result) -> Void in
+    print("Done")
+});

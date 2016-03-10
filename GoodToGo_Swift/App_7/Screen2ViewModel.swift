@@ -37,52 +37,13 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         self.username        = ""//user.name
         self.articleTitle    = item.title
         self.commentsCount   = "commentsCount"//"\(count) comments"
- 
-        // Check for user Avatar image
-        // Check for user Avatar image
-        var imageName = item.thumbnail.replace(":", newChar: "").replace("\\", newChar: "").replace("/", newChar: "")
-        imageName = "comic_cover\\" + imageName
-        let avatarImage = RJSFilesManager.getImage(imageName)
-        
-        if(HaveValue(avatarImage)) {
-            // We find the avatar image on the file system!
-            coverImage = avatarImage
-        }
-        else {
-            if(RJSUtils.existsInternetConnection())
-            {
-                // We didnt find the avatar image on the file system. Let fetch it....
-                RJSDownloadsManager.downloadImage(item.thumbnail) { (result, error) -> Void in
-                    if(HaveValue(error) && !HaveValue(result)) {
-                        
-                        RJSErrorsManager.handleError(error)
-                        
-                        // Error? Return a defautl image...
-                        self.coverImage = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
-                    }
-                    else {
-                        // Set the image
-                        self.coverImage = result
-                        // Cache the image for future use
-                        RJSFilesManager.saveImage(imageName, folder: RJSFilesManager.Folder.Documents, image: result)
-                    }
-                    self.setViewNeedsToReadInMainTread()
-                }
-            }
-            else {
-                // No internet connection to download image. Using default
-                self.coverImage = UIImage(named: App7Constants.Misc.DefaultAvatarImage)
-            }
-        }
-        
+        self.coverImage      = UIImage(named: App7Constants.Images.DefaultCoverImage)
+
         self.viewNeedsReload.value = true
     }
     
-    func makeSomeOperation() -> Void
-    {
-        self.viewNeedsReload.value = true;
-    }
-    
+    // MARK: Private
+
     /*
     * This is needed cauze if we do self.viewNeedsReload.value=true, and we came from a notification (func handleNotification(sender:NSNotification)),
     * we will trigger the update in the ViewCrontroller from a background tread! Here we can ensure that the update is trigged in
@@ -99,5 +60,10 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         }
     }
     
-
+    // MARK : Public
+    func makeSomeOperation() -> Void
+    {
+        self.viewNeedsReload.value = true;
+    }
+    
 }
