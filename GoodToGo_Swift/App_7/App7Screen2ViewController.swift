@@ -34,29 +34,7 @@ class App7Screen2ViewController: UIViewController {
     @IBAction func handleTap(sender: UITapGestureRecognizer? = nil) {
        // let segueId      = App7Constants.Segues.Screen3
        // performSegueWithIdentifier(segueId, sender: nil)
-        
-        
-        if(false) {
-            let headers1 = [
-                "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
-                "Content-Type": "application/x-www-form-urlencoded"
-            ]
-            
-            Alamofire.request(.GET, "https://httpbin.org/get", headers: headers1)
-                .responseJSON { response in
-                    debugPrint(response)
-            }
-        }
-
-        //RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
-        //    print(result)
-        //}
-        
-        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:UIImage()) { (result, error) -> Void in
-            print(result)
-        }
-        
-
+    
 
     }
     
@@ -133,7 +111,9 @@ class App7Screen2ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
         
-        
+        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:self.imgCommic!.image!) { (result, error) -> Void in
+            print(result)
+        }
     }
 
 }

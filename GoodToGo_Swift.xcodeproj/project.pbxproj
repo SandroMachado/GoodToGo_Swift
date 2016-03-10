@@ -416,6 +416,7 @@
 		9F76EA661C8F586000DEBAF2 /* Screen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA581C8F586000DEBAF2 /* Screen2ViewModel.swift */; };
 		9F76EA671C8F586000DEBAF2 /* App7Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA591C8F586000DEBAF2 /* App7Screen3ViewController.swift */; };
 		9F76EA681C8F586000DEBAF2 /* Screen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA5A1C8F586000DEBAF2 /* Screen3ViewModel.swift */; };
+		9F7CD8DF1C919F6200074DD5 /* App7MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */; };
 		9F8F24341C8B1151003D546B /* LSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24331C8B1151003D546B /* LSingletons.swift */; };
 		9F8F24381C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
 		9F8F24391C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
@@ -956,6 +957,7 @@
 		9F7C498B1C8E0E7D00020016 /* PGMisc.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = PGMisc.playground; path = GoodToGo_Playgrounds/PGMisc.playground; sourceTree = "<group>"; };
 		9F7C498C1C8E0E7D00020016 /* PGUnitTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = PGUnitTests.playground; path = GoodToGo_Playgrounds/PGUnitTests.playground; sourceTree = "<group>"; };
 		9F7C49901C8E11DD00020016 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = GoodToGo_Playgrounds/README.txt; sourceTree = "<group>"; };
+		9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7MarvelAPI.swift; path = App_7/App7MarvelAPI.swift; sourceTree = "<group>"; };
 		9F8F24331C8B1151003D546B /* LSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSingletons.swift; path = GoodToGo_SwiftLessons/LSingletons.swift; sourceTree = SOURCE_ROOT; };
 		9F8F24351C8B1163003D546B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = GoodToGo_SwiftLessons/README.txt; sourceTree = SOURCE_ROOT; };
 		9F8F24371C8B13FD003D546B /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfiguration.swift; path = App_Shared/AppConfiguration.swift; sourceTree = "<group>"; };
@@ -1583,6 +1585,7 @@
 				9F76EA501C8F586000DEBAF2 /* Main.storyboard */,
 				9F76EA4A1C8F586000DEBAF2 /* App7Configuration.swift */,
 				9F76EA4B1C8F586000DEBAF2 /* App7Constants.swift */,
+				9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */,
 				9F76EA4C1C8F586000DEBAF2 /* App7LayoutsManager.swift */,
 				9F76EA6A1C8F587D00DEBAF2 /* Controllers */,
 				9F76EA691C8F587700DEBAF2 /* ViewModels */,
@@ -2660,6 +2663,7 @@
 				9F76E9EA1C8F572F00DEBAF2 /* RJSWebservices.swift in Sources */,
 				9F76E9EB1C8F572F00DEBAF2 /* RJSIntrospection.swift in Sources */,
 				9F76E9EC1C8F572F00DEBAF2 /* AFDateExtension.swift in Sources */,
+				9F7CD8DF1C919F6200074DD5 /* App7MarvelAPI.swift in Sources */,
 				9F76E9ED1C8F572F00DEBAF2 /* RJSStorages.swift in Sources */,
 				9F76E9EF1C8F572F00DEBAF2 /* RJSCrashlytics.swift in Sources */,
 				9F76EA671C8F586000DEBAF2 /* App7Screen3ViewController.swift in Sources */,

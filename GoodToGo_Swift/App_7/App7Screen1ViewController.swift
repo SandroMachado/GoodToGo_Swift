@@ -69,6 +69,18 @@ class App7Screen1ViewController: UIViewController {
         }
     }
 
+    // MARK: ScroolView
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView!, willDecelerate decelerate: Bool) {
+        let currentOffset = scrollView.contentOffset.y;
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
+        
+        if (maximumOffset - currentOffset <= -40.0) {
+            RJSMessagesManager.showSmallTopMessage("Adding more records...")
+            App7MarvelAPI.getNexComicsPage()
+        }
+    }
+    
     // MARK: UITableView delegate
     var lastSelectedItem : TableItem?
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
