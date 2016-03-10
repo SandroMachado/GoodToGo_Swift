@@ -58,7 +58,7 @@
         lock = true 
         
         // Keep the user informed of whats going on
-        RJSMessagesManager.showSmallTopMessage("Updating commics...")
+        RJSMessagesManager.showSmallTopMessage("Fetching comics...")
 
         if(cleanCachedImages) {
             // Clean cached images
@@ -90,12 +90,12 @@
         let params    = ["apikey": App7Constants.MarvelApi.PublicKey, "ts":timestamp, "hash":hash, "limit":"\(limit)", "orderBy":"issueNumber", "offset":"\(offset)"]
         
         // Turn on the activity indicator
-        RJSUtils.setActivityIndicatorToState(true, identifier: App7Constants.MarvelApi.CommicsEndPoint)
+        RJSUtils.setActivityIndicatorToState(true, identifier: App7Constants.MarvelApi.ComicsEndPoint)
         
         // Make request in background
         RJSBlocks.executeInBackgroundTread { () -> () in
             
-            Alamofire.request(.GET, App7Constants.MarvelApi.CommicsEndPoint, parameters: params, headers:headers)
+            Alamofire.request(.GET, App7Constants.MarvelApi.ComicsEndPoint, parameters: params, headers:headers)
                 .responseJSON { response in
                     
                     // Save/handles result in background
@@ -117,7 +117,7 @@
                             }
                             
                             // Turn off the activity indicator
-                            RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.CommicsEndPoint)
+                            RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.ComicsEndPoint)
                             
                             // Keep the user informed of whats going on
                             RJSMessagesManager.showSmallTopMessage("Comics updated...")

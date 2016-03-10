@@ -12,6 +12,7 @@ class App7Screen2ViewController: UIViewController {
  
     var oncetoken: dispatch_once_t = 0
     
+    /// FIX: 
     @IBOutlet weak var txtCommicDescription: UITextView?
     @IBOutlet weak var lblCommicTitle: UILabel?
     @IBOutlet weak var imgCommic: UIImageView?

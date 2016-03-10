@@ -37,7 +37,7 @@ enum App7Constants {
         static var PrivateKey: String {
             return "87b64bb736e681a3e3b06b7baeaff0304e0f76f2"
         }
-        static var CommicsEndPoint: String {
+        static var ComicsEndPoint: String {
             return "http://gateway.marvel.com/v1/public/comics"
         }
         static var Commments: String {
