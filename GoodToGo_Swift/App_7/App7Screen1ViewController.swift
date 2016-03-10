@@ -121,12 +121,12 @@ class App7Screen1ViewController: UIViewController {
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppGenericConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
-        let item                   = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
-        cell.textLabel?.text       = item.title
-        cell.detailTextLabel?.text = item.description
+        let item = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
         
         viewModel!.getCoverImage(item) { (result) -> Void in
-            cell.imageView?.image = result
+            cell.imageView?.image      = result
+            cell.textLabel?.text       = item.title
+            cell.detailTextLabel?.text = item.description
         }
         
         RJSLayoutsManager.App7.LayoutUITableViewCell_1(cell)
