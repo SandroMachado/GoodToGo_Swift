@@ -109,6 +109,7 @@ struct RJSDropBoxManager
         }
     }
     
+    // FIX: !! Images are not upload the right way!
     static func uploadImage(secretToken:String, image:UIImage, var imageName:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
        
         guard !secretToken.isEmpty else {
@@ -127,7 +128,7 @@ struct RJSDropBoxManager
             DLogError("Bad JSON : [\(apiArg)]")
         }
         
-        var headers = [
+        let headers = [
             "Authorization": "Bearer \(secretToken)",
             "Content-Type": "application/octet-stream",
             "Dropbox-API-Arg": apiArg,
@@ -135,14 +136,12 @@ struct RJSDropBoxManager
         ]
         
         // let url = "https://api.dropboxapi.com/2-beta-2/files/upload"
-        var url = "https://content.dropboxapi.com/2-beta-2/files/upload"
-        var url2 = "?authorization=Bearer \(secretToken)?arg=\(apiArg)".stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
-       // url = url + url2
+        let url = "https://content.dropboxapi.com/2-beta-2/files/upload"
 
         // example image data
         let imageData = UIImageJPEGRepresentation(image, 0.1)
         
-        if(false) {
+        if(true) {
             
             let urlRequest = urlRequestWithComponents(url, parameters: headers, imageData: imageData!)
             
@@ -174,7 +173,6 @@ struct RJSDropBoxManager
         }
 
         if(true) {
-            //headers["data-binary"] = String.randomStringWithLength(256)
             
             RJSUtils.setActivityIndicatorToState(true, identifier: url) // Turn activity indicator ON
             Alamofire.request(.POST, url, headers: headers)
@@ -205,83 +203,7 @@ struct RJSDropBoxManager
         }
 
         
-    
-        
-        /*
-        curl -X POST https://api.dropboxapi.com/2-beta-2/files/upload \
-        --header "Authorization: Bearer <access-token>" \
-        --header "Content-Type: application/octet-stream" \
-        --header "Dropbox-API-Arg: {\"path\": \"/cupcake.png\", \"mode\": \"overwrite\"}" \
-        --data-binary @local-file.png
-        */
-        
-        /*
-        let apiArg = "{\"path\": \"/marvel/cupcake.png\", \"mode\": \"overwrite\"}"
-        if(!RJSJSON.isJSON(apiArg)) {
-            DLogError("Bad JSON : [\(apiArg)]")
-        }
-        
-        var imageData: NSData = UIImagePNGRepresentation(image)!
-        var imageString = NSString(data:imageData, encoding:NSUTF8StringEncoding)
-        //imageString = NSString(data:imageData, encoding:NSUnicodeStringEncoding)
-
-        
-        var parameters :Dictionary<String, String> = [
-            "task": "task",
-            "variable1": "var"
-        ]
-        
-        let headers = [
-            "Authorization": "Bearer \(secretToken)",
-            "Content-Type": "application/octet-stream",
-            "Dropbox-API-Arg": apiArg//,
-          //  "data-binary": ToString(imageString)
-        ]
-        
-       // let url = "https://api.dropboxapi.com/2-beta-2/files/upload"
-        let url = "https://content.dropboxapi.com/2-beta-2/files/upload"
-
-        // example image data
-        let image_ = image;//UIImage(named: "177143.jpg")
-        let imageData2 = UIImagePNGRepresentation(image_)
-        
-  
-        
-        let fileURL = NSBundle.mainBundle().URLForResource("Default", withExtension: "png")
-        Alamofire.upload(.POST, url, headers: headers, file: fileURL!)
-            .responseJSON { (a, b, c) -> Void in
-                debugPrint(c)
-        }
-        
-        RJSUtils.setActivityIndicatorToState(true, identifier: url) // Turn activity indicator ON
-        Alamofire.request(.POST, url, headers: headers)
-            .responseData { (nsurlrequest, nshttpresponse, result) -> Void in
-                // Prepare Result<NSData>
-                let resultData = result as Result<NSData>
-                let datastring = ToString(NSString(data: resultData.value!, encoding: NSUTF8StringEncoding))
-                if(RJSJSON.isJSON(datastring)) {
-                    let json = RJSJSON.convertObjectToJSONToObject(datastring)
-                    completion(result: json, error: nil)
-                }
-                else {
-                    
-                    debugPrint(datastring)
-                    debugPrint(result)
-                    
-                    // The result should be JSON! If we are here, something bad happned
-                    let error = RJSErrorsManager.NSErrorWith(datastring)
-                    RJSErrorsManager.handleError(error)
-                    completion(result: nil, error: error)
-                }
-                RJSUtils.setActivityIndicatorToState(false, identifier: url) // Turn activity indicator OFF
-        }
-        
-        Alamofire.request(.POST, url, headers: headers)
-        .responseJSON { (a, b, c) -> Void in
-            debugPrint(c)
-        }
-*/
-    }
+      }
     
     /**
      @brief Do unit testing for this class

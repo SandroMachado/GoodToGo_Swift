@@ -28,7 +28,6 @@ class DBTableComic : Object {
     dynamic var pageCount  = ""
     dynamic var resourceURI  = ""
     
-    /// TODO: Delete latter
     dynamic var originalJSON  = "" // Just in case?
     
     convenience required init(dic:[String:AnyObject]) {

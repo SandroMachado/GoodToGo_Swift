@@ -12,7 +12,7 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
  
     var oncetoken: dispatch_once_t = 0
     
-    /// FIX: Commic -> Comic
+    /// FIX: typo: Commic -> Comic
     @IBOutlet weak var txtCommicDescription: UITextView?
     @IBOutlet weak var lblCommicTitle: UILabel?
     @IBOutlet weak var imgCommic: UIImageView?

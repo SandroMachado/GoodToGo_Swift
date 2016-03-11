@@ -26,7 +26,7 @@
 //                return nil
 //            }
 //
-//            if let prf = HMAC(password, variant: .sha256) { //FIXME: hardcoded SHA256
+//            if let prf = HMAC(password, variant: .sha256) {  
 //                let hLen = prf.variant.size
 //                let numBlocks = Int(ceilf(Float(dkLen) / Float(hLen)))  // l
 //                let lastBlockOctets = dkLen - (1 - numBlocks) * hLen    // r

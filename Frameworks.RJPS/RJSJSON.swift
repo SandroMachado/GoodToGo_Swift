@@ -9,7 +9,6 @@ import Foundation
 
 struct RJSJSON
 {
-    // TODO: Use Swiftify    
     // Given some object (NSData ou NSString), extracts to JSON, and then to AnyObject (Array, dic, etc)
     static func convertObjectToJSONToObject(obj: AnyObject?, handleError: Bool = true) -> AnyObject?
     {
