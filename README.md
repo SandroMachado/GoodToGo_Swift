@@ -1,7 +1,7 @@
 Good To Go Swift
 -----
 
-The intent of this project is to have a place where I can have all my (swift) apps connected, and separeted and the same time; and also a place where I could easily try new things without loose to much time connections things, making class's or extension I could neeed do to a fast project/demo. 
+The intent of this project is to have a place where I can have all my (swift) apps connected, and separated and the same time. Also a place where I can easily try new things without loosing to much time prepareing a new project, making class's or extensions I could neeed for a fast project/demo. 
 
 <p align="center">
 <img src="https://github.com/ricardopsantos/GoodToGo_Swift/blob/master/G2GLogo.png">
@@ -9,7 +9,7 @@ The intent of this project is to have a place where I can have all my (swift) ap
 
 -----
 
-### App_1 : Template App 1 - Animations and UI tests
+## App_1 : Template App 1 - Animations and UI tests
 About :
 - Used to test layouts and UI animations.
 - In constrution.
