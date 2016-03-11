@@ -40,7 +40,7 @@ extension UITableView
             self.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         }
         else {
-            let messageLabel = RJSProgramaticControls.GetUILabel(messageToDisplayIfNoRecords)
+            let messageLabel = RJSProgramaticControls.getUILabel(messageToDisplayIfNoRecords)
             if(!RJSUtils.existsInternetConnection()) {
                 messageLabel.text = "\(messageLabel.text)\n(No internet connection...)"
             }

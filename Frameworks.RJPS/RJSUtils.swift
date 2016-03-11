@@ -54,7 +54,7 @@ struct  RJSUtils
         return NSUUID().UUIDString;
     }
     
-    // TODO: End implementation using identifier
+    // TODO: Finish implementation
     static var activityIndicatorToState : Bool = false
     static func setActivityIndicatorToState(state : Bool, identifier:String="") -> Void
     {

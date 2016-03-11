@@ -7,7 +7,7 @@ import Foundation
 
 struct RJSNodeServer {
 
-    // TODO: Finish 
+    // TODO: Finish implementation
     static func sendMessageToServer(message : String, var messageType : String, methodName : String) -> Void
     {
         guard !String.isNullOrEmpty(message) else {
@@ -30,7 +30,7 @@ struct RJSNodeServer {
     
     }
     
-    // TODO: Finish this
+    // TODO: Finish implementation
     static func getValueFromServer(serverKey: String, completion: (result: String!, error: NSError!) -> Void)
     {
         completion(result: nil, error: nil)

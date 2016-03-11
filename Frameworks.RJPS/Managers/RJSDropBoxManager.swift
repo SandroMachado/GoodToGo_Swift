@@ -39,10 +39,7 @@ struct RJSDropBoxManager
         uploadData.appendData("Content-Type: image/png\r\n\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
         uploadData.appendData(imageData)
         
-
         uploadData.appendData("\r\n--\(boundaryConstant)--\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
-        
-        
         
         // return URLRequestConvertible and NSData
         return (Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0, uploadData)
@@ -52,11 +49,13 @@ struct RJSDropBoxManager
      * Step 1 - Connect to the DropBox
      * Call inside AppDelegate application:didFinishLaunchingWithOptions
      */
+    private static var connected = false
     static func connect(appKey:String) -> Void {
-        guard !appKey.isEmpty else {
+        guard !appKey.isEmpty && !connected else {
             DLogWarning("Ignored")
             return
         }
+        connected = true
         Dropbox.setupWithAppKey(appKey)
     }
 
@@ -65,6 +64,10 @@ struct RJSDropBoxManager
      * Call inside AppDelegate application:didFinishLaunchingWithOptions
      */
     static func authorizeFromController(controller:UIViewController) -> Void {
+        
+        // Connect to the DropBox
+        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        
         if (Dropbox.authorizedClient == nil) {
             Dropbox.authorizeFromController(controller)
         }
@@ -74,6 +77,10 @@ struct RJSDropBoxManager
     }
 
     static func getCurrentAcount(secretToken:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
+        
+        // Connect to the DropBox
+        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        
         guard !secretToken.isEmpty else {
             DLogWarning("Ignored")
             return
@@ -112,6 +119,9 @@ struct RJSDropBoxManager
     // FIX: !! Images are not upload the right way!
     static func uploadImage(secretToken:String, image:UIImage, var imageName:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
        
+        // Connect to the DropBox
+        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        
         guard !secretToken.isEmpty else {
             DLogWarning("Ignored..")
             return

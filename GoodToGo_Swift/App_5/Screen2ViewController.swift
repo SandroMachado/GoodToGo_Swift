@@ -80,7 +80,7 @@ class Screen2ViewController: UIViewController {
     
     func shouldUpdateScreen() {
 
-        let lblTitle = RJSProgramaticControls.GetUILabel(viewModel?.controllerTitle)
+        let lblTitle = RJSProgramaticControls.getUILabel(viewModel?.controllerTitle)
         RJSLayoutsManager.App5.LayoutLabel_Title_1(lblTitle)
         lblTitle.textAlignment = .Center;
         self.navigationItem.titleView = lblTitle

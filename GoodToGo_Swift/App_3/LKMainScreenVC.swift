@@ -163,15 +163,15 @@ class LKMainScreenVC: UINavigationController, RJSChoivesVCDelegate, NSURLSession
 
         }
         
-        let flexBarButton = RJSProgramaticControls.GetUIBarButtonFlexibleSpace()
+        let flexBarButton = RJSProgramaticControls.getUIBarButtonFlexibleSpace()
         
-        let btnEdit = RJSProgramaticControls.GetUIBarButtonItem(nil, image:"pencil-8x.png",backgroundColor:nil,target:self,action:Selector("btnEditPressed:"))
+        let btnEdit = RJSProgramaticControls.getUIBarButtonItem(nil, image:"pencil-8x.png",backgroundColor:nil,target:self,action:Selector("btnEditPressed:"))
         
-        let btnLinks = RJSProgramaticControls.GetUIBarButtonItem(nil, image:"list-8x.png",backgroundColor:nil,target:self,action:Selector("btnActionPressed:"))
+        let btnLinks = RJSProgramaticControls.getUIBarButtonItem(nil, image:"list-8x.png",backgroundColor:nil,target:self,action:Selector("btnActionPressed:"))
         
-        let btnNew = RJSProgramaticControls.GetUIBarButtonItem(nil, image:"plus-6x.png",backgroundColor:nil,target:self,action:Selector("btnNewPressed:"))
+        let btnNew = RJSProgramaticControls.getUIBarButtonItem(nil, image:"plus-6x.png",backgroundColor:nil,target:self,action:Selector("btnNewPressed:"))
         
-        let btnBack = RJSProgramaticControls.GetUIBarButtonItem(nil, image:"action-undo-8x.png",backgroundColor:nil,target:self,action:Selector("btnBackPressed:"))
+        let btnBack = RJSProgramaticControls.getUIBarButtonItem(nil, image:"action-undo-8x.png",backgroundColor:nil,target:self,action:Selector("btnBackPressed:"))
 
         var items = [UIBarButtonItem]()
         

@@ -143,10 +143,10 @@ class LKEditURLVC: UIViewController, UIWebViewDelegate
         }
         
         // Prepare Toolbar
-        let flexBarButton1 = RJSProgramaticControls.GetUIBarButtonFlexibleSpace()
-        let flexBarButton2 = RJSProgramaticControls.GetUIBarButtonFlexibleSpace()
-        let btnBack        = RJSProgramaticControls.GetUIBarButtonItemBack(self)
-        let lblTitle       = RJSProgramaticControls.GetUILabel(titleMessage)
+        let flexBarButton1 = RJSProgramaticControls.getUIBarButtonFlexibleSpace()
+        let flexBarButton2 = RJSProgramaticControls.getUIBarButtonFlexibleSpace()
+        let btnBack        = RJSProgramaticControls.getUIBarButtonItem(self)
+        let lblTitle       = RJSProgramaticControls.getUILabel(titleMessage)
         RJSLayoutsManager.App_Links.LayoutBackgroundTitleLabel(lblTitle)
         let btnTitle = UIBarButtonItem(customView: lblTitle);
         toolbar_!.items = [flexBarButton1, btnTitle,flexBarButton2, btnBack];

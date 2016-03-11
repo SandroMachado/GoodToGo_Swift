@@ -46,7 +46,7 @@ class App7Screen1ViewController: UIViewController {
     
     func shouldUpdateScreen() {
         RJSBlocks.executeInMainTread { () -> () in
-            let lblTitle = RJSProgramaticControls.GetUILabel(self.viewModel?.title)
+            let lblTitle = RJSProgramaticControls.getUILabel(self.viewModel?.title)
             RJSLayoutsManager.App7.LayoutLabel_Title_1(lblTitle)
             lblTitle.textAlignment = .Center;
             self.navigationItem.titleView = lblTitle
@@ -169,7 +169,6 @@ class App7Screen1ViewController: UIViewController {
         dispatch_once(&oncetoken) {
             self.loadViewModel()
             self.prepareLayout()
-            RJSDropBoxManager.authorizeFromController(self)
         }
     }
     

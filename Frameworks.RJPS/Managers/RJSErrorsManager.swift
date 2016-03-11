@@ -19,13 +19,13 @@ struct RJSErrorsManager
         return true;
     }
     
-    /// FIX: lower case this
+    /// TODO: lower case this
     static func NSErrorWith(domain: String) -> NSError
     {
         return NSErrorWith(domain, code: 9999, dict: nil)
     }
     
-    /// FIX: lower case this
+    /// TODO: lower case this
     static func NSErrorWith(domain: String, code: Int, dict: [NSObject : AnyObject]?) -> NSError
     {
         return NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotOpenFile, userInfo: nil)

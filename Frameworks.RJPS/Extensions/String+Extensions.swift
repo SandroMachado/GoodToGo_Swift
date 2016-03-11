@@ -10,6 +10,10 @@ import Foundation
 
 extension String {
     
+    static func getPlainString(input:[UInt8]) -> String {
+        return ToString(NSString(bytes: input, length: input.count, encoding: NSASCIIStringEncoding))
+    }
+    
     static func randomStringWithLength (len : Int) -> String {
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         let randomString : NSMutableString = NSMutableString(capacity: len)

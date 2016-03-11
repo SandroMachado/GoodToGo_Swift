@@ -188,11 +188,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gp7-Ik-Im6"/>
                     <connections>
-                        <outlet property="imgCommic" destination="hr6-3e-RBj" id="n47-Tf-DaY"/>
+                        <outlet property="imgComic" destination="hr6-3e-RBj" id="BLs-Zf-9ti"/>
                         <outlet property="lblBackground1" destination="W5A-GU-6L1" id="MM1-IV-VXF"/>
                         <outlet property="lblBackground2" destination="6en-4G-lpZ" id="pgP-4T-Q9m"/>
-                        <outlet property="lblCommicTitle" destination="PoR-ei-7pl" id="hXN-ew-azP"/>
-                        <outlet property="txtCommicDescription" destination="qpm-H2-gb4" id="UNF-KG-5mp"/>
+                        <outlet property="lblComicTitle" destination="PoR-ei-7pl" id="ad1-mD-bQV"/>
+                        <outlet property="txtComicDescription" destination="qpm-H2-gb4" id="3VC-FZ-8aT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-Ab-5Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>

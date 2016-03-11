@@ -7,7 +7,7 @@ import Foundation
 
 struct RJSExceptionsManager
 {
-    // TODO: Finish
+    // TODO: Finish implementation
     static func handleException(ex : AnyObject) -> Bool
     {
         if(HaveValue(ex))

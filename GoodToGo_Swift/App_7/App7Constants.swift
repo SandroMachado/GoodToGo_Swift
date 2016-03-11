@@ -32,10 +32,12 @@ enum App7Constants {
     }
     enum MarvelApi {
         static var PublicKey: String {
-            return "b909907f183968b09dd99a9cc5b27d72"
+            let result : [UInt8] = [98, 57, 48, 57, 57, 48, 55, 102, 49, 56, 51, 57, 54, 56, 98, 48, 57, 100, 100, 57, 57, 97, 57, 99, 99, 53, 98, 50, 55, 100, 55, 50]
+            return String.getPlainString(result)
         }
         static var PrivateKey: String {
-            return "87b64bb736e681a3e3b06b7baeaff0304e0f76f2"
+            let result : [UInt8] = [56, 55, 98, 54, 52, 98, 98, 55, 51, 54, 101, 54, 56, 49, 97, 51, 101, 51, 98, 48, 54, 98, 55, 98, 97, 101, 97, 102, 102, 48, 51, 48, 52, 101, 48, 102, 55, 54, 102, 50]
+            return String.getPlainString(result)
         }
         static var ComicsEndPoint: String {
             return "http://gateway.marvel.com/v1/public/comics"

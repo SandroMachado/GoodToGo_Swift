@@ -12,10 +12,10 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
  
     var oncetoken: dispatch_once_t = 0
     
-    /// FIX: typo: Commic -> Comic
-    @IBOutlet weak var txtCommicDescription: UITextView?
-    @IBOutlet weak var lblCommicTitle: UILabel?
-    @IBOutlet weak var imgCommic: UIImageView?
+    /// TODO: typo: Commic -> Comic
+    @IBOutlet weak var txtComicDescription: UITextView?
+    @IBOutlet weak var lblComicTitle: UILabel?
+    @IBOutlet weak var imgComic: UIImageView?
 
     @IBOutlet weak var lblBackground1: UILabel?
     @IBOutlet weak var lblBackground2: UILabel?
@@ -43,6 +43,13 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func uploadCurrentPictToDropBox() {
+        
+        RJSMessagesManager.showAlert(sender: self, title: "Not implemented yet", message: "")
+
+        return
+            
+        RJSDropBoxManager.authorizeFromController(self)
+
         viewModel?.uploadImageToDropbox()
     }
     
@@ -114,38 +121,40 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
 
         navigationItem.rightBarButtonItems = [btn1, btn2]
             
-        txtCommicDescription?.userInteractionEnabled = true
+        txtComicDescription?.userInteractionEnabled = true
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground1)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground2)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground3)
         
-        RJSLayoutsManager.App7.LayoutLabel_Title_1(self.lblCommicTitle)
-        RJSLayoutsManager.App7.LayoutTextView_1(self.txtCommicDescription)
+        RJSLayoutsManager.App7.LayoutLabel_Title_1(self.lblComicTitle)
+        RJSLayoutsManager.App7.LayoutTextView_1(self.txtComicDescription)
 
-        if(HaveValue(self.imgCommic))
+        if(HaveValue(self.imgComic))
         {
-            self.imgCommic!.setCornerRadius(5)
+            self.imgComic!.setCornerRadius(5)
             let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
-            self.imgCommic!.addGestureRecognizer(tap)
+            self.imgComic!.addGestureRecognizer(tap)
         }
     }
     
     func shouldUpdateScreen() {
 
-        let lblTitle = RJSProgramaticControls.GetUILabel(viewModel?.controllerTitle)
+        let lblTitle = RJSProgramaticControls.getUILabel(viewModel?.controllerTitle)
         RJSLayoutsManager.App7.LayoutLabel_Title_1(lblTitle)
         lblTitle.textAlignment = .Center;
         self.navigationItem.titleView = lblTitle
         
-        RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.comicTitle)
-        RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.comicDescription)
+        RJSOptionalUtils.safeUIElementSetValue(self.lblComicTitle, value: viewModel!.comicTitle)
+        RJSOptionalUtils.safeUIElementSetValue(self.txtComicDescription, value: viewModel!.comicDescription)
         viewModel?.getCoverImage({ (newImage) -> Void in
-            self.imgCommic?.setNewImageWithSmootTransition(newImage)
+            self.imgComic?.setNewImageWithSmootTransition(newImage)
         })
     }
     
     // MARK: Page life cicle
-
+    override func viewDidLoad() {
+        super.viewDidLoad();
+    }
     
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated);
@@ -161,6 +170,5 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         
 
     }
-
 }
 

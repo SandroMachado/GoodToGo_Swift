@@ -13,9 +13,7 @@
     
     static func prepare() -> Int
     {
-        // Connect to the DropBox
-        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
-        
+    
         // Prepare navigation bar layout
         RJSLayoutsManager.App7.LayoutNavigationBar()
 

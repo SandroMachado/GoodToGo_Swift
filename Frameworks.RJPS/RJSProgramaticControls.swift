@@ -10,8 +10,7 @@ import UIKit
 
 struct  RJSProgramaticControls
 {
-    // FIX: lowercase
-    static func GetUILabel(title:String?) -> UILabel
+    static func getUILabel(title:String?) -> UILabel
     {
         let label = UILabel()
         label.frame = CGRectMake(0, 0, 100, 45)
@@ -25,18 +24,14 @@ struct  RJSProgramaticControls
         {
             label.text = "I made a label on the screen #toogood4you"
         }
-
-        //label.font = UIFont(name: "MarkerFelt-Thin", size: 45)
-        //label.textColor = UIColor.redColor()
-        //label.textAlignment = .Center
-        //label.numberOfLines = 0
-        //label.frame = CGRectMake(15, 54, 300, 500)
+        
+        label.textAlignment = .Center
+        label.numberOfLines = 0
 
         return label;
     }
     
-    // FIX: lowercase
-    static func GetUIButton(title:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIButton
+    static func getUIButton(title:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIButton
     {
         let button   = UIButton(type: UIButtonType.System) as UIButton
         button.frame = CGRectMake(100, 100, 100, 50)
@@ -61,8 +56,7 @@ struct  RJSProgramaticControls
         return button
     }
     
-    // FIX: lowercase
-    static func GetUIBarButtonItem(title:String?, image:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIBarButtonItem
+    static func getUIBarButtonItem(title:String?, image:String?, backgroundColor:UIColor?, target:AnyObject?, action: Selector) -> UIBarButtonItem
     {
         
         let button  = UIButton(type: .Custom)
@@ -89,15 +83,13 @@ struct  RJSProgramaticControls
         return UIBarButtonItem(customView: button)
     }
     
-    // FIX: lowercase
-    static func GetUIBarButtonItemBack(target:AnyObject?) -> UIBarButtonItem
+    static func getUIBarButtonItem(target:AnyObject?) -> UIBarButtonItem
     {
-        let result = RJSProgramaticControls.GetUIBarButtonItem("Back", image:nil, backgroundColor:nil,target:target,action:Selector(UIViewController.btnDismissPressedSelector()))
+        let result = RJSProgramaticControls.getUIBarButtonItem("Back", image:nil, backgroundColor:nil,target:target,action:Selector(UIViewController.btnDismissPressedSelector()))
         return result
     }
     
-    // FIX: lowercase
-    static func GetUIBarButtonFlexibleSpace() ->UIBarButtonItem
+    static func getUIBarButtonFlexibleSpace() ->UIBarButtonItem
     {
         return UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
     }
