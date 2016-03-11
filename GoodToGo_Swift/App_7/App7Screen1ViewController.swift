@@ -123,8 +123,8 @@ class App7Screen1ViewController: UIViewController {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppGenericConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
         let item = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
         
-        viewModel!.getCoverImage(item) { (result) -> Void in
-            cell.imageView?.image      = result
+        viewModel!.getCoverImage(item) { (newImage) -> Void in
+            cell.imageView?.setNewImageWithSmootTransition(newImage)
             cell.textLabel?.text       = item.title
             cell.detailTextLabel?.text = item.description
         }
@@ -157,7 +157,7 @@ class App7Screen1ViewController: UIViewController {
         self.tableView!.registerCellIdentifier(AppGenericConstants.TableView.cellIdentifier)
         
         refreshControl = UIRefreshControl()
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to restore to defaults...")
         refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         tableView!.addSubview(refreshControl) 
     }

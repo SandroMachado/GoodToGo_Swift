@@ -11,10 +11,12 @@ import UIKit
 extension UIImageView
 {    
     
-    // FIX: Hardcoded value
-    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=0.3) -> Void {
+    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=1) -> Void {
+        
         if(self.image==nil) {
+            // No image? Just set and leave
             self.image = newImage
+            return
         }
         
         UIView.transitionWithView(self,
@@ -22,20 +24,8 @@ extension UIImageView
             options: UIViewAnimationOptions.TransitionCrossDissolve,
             animations: { self.image = newImage }) //set the new image
             { (Bool) -> Void in
-               // self.animate() //Direct recursion
-               // self.count++
+
         }
-        /*
-        UIView.animateWithDuration(duration/2.0,
-            animations: {
-                //  self.myView.alpha = 0
-                self.alpha = 0
-            },
-            completion: { finished in
-                // self.myView.removeFromSuperview()
-            }
-        )?*/
-        
     }
 }
 
