@@ -77,6 +77,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
     
     func refreshAllData () -> Void {
         if (RJSUtils.existsInternetConnection()) {
+            DBTableComic.deleteAllRecords()
             App7MarvelAPI.getComics(0, limit: 0, cleanCachedImages: false, debug: false)
         }
         else {
@@ -107,7 +108,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
             // TODO: change to Map with Reduce
             for commic in commics
             {
-                sectionItems.append(TableItem(title: commic.title, description: commic.descriptionCommic, thumbnail:commic.thumbnail, id: commic.id))
+                sectionItems.append(TableItem(title: commic.title, description: commic.descriptionComic, thumbnail:commic.thumbnail, id: commic.id))
             }
             
             self.tableViewDataSource.append(sectionItems)

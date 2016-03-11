@@ -8,11 +8,11 @@
 import UIKit
 import Alamofire // TODO : Delete
 
-class App7Screen2ViewController: UIViewController {
+class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
  
     var oncetoken: dispatch_once_t = 0
     
-    /// FIX: 
+    /// FIX: Commic -> Comic
     @IBOutlet weak var txtCommicDescription: UITextView?
     @IBOutlet weak var lblCommicTitle: UILabel?
     @IBOutlet weak var imgCommic: UIImageView?
@@ -31,24 +31,68 @@ class App7Screen2ViewController: UIViewController {
     
     // MARK: IBActions
 
-    // Handles tap on lblUserName
     @IBAction func handleTap(sender: UITapGestureRecognizer? = nil) {
-       // let segueId      = App7Constants.Segues.Screen3
-       // performSegueWithIdentifier(segueId, sender: nil)
+        changeCoverPicture()
+    }
     
-
+    @IBAction func changeCoverPicture() {
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        presentViewController(picker, animated: true, completion: nil)
+    }
+    
+    @IBAction func uploadCurrentPictToDropBox() {
+        viewModel?.uploadImageToDropbox()
+    }
+    
+    // MARK: - UIImagePickerControllerDelegate Methods
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        var newImage: UIImage
+        
+        if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            newImage = possibleImage
+        } else {
+            return
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: {
+            
+            // Confirm if the user really wants to change the picture
+            let alertController = UIAlertController(title: "Alert", message: "Are your sure you want to replace the cover picture?", preferredStyle: .ActionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+                
+            }
+            
+            let OKAction = UIAlertAction(title: "Yes", style: .Default) { (action) in
+               // self.imgCommic?.image = newImage
+                self.viewModel?.replaceCoverImageForCurrentCommic(newImage)
+            }
+            
+            alertController.addAction(OKAction)
+            alertController.addAction(cancelAction)
+            self.presentViewController(alertController, animated: true) { }
+        })
+    }
+    
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        DLogWarning("Comentado")
-      //  if let destinationVC = segue.destinationViewController as? Screen3ViewController {
-      //      destinationVC.sharedVar = self.sharedVar
-      //  }
+  //      DLogWarning("Comentado")
+  //      if let destinationVC = segue.destinationViewController as? App7Screen3ViewController {
+  //          destinationVC.sharedVar = self.sharedVar
+  //      }
     }
     
     // MARK: Auxiliar
-    
     func loadViewModel()
     {
         guard !HaveValue(viewModel) else {
@@ -65,7 +109,12 @@ class App7Screen2ViewController: UIViewController {
     
     func prepareLayout()
     {
-        
+        let btn1 = UIBarButtonItem(barButtonSystemItem: .Camera, target: self, action: "changeCoverPicture")
+        let btn2 = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "uploadCurrentPictToDropBox")
+
+        navigationItem.rightBarButtonItems = [btn1, btn2]
+            
+        txtCommicDescription?.userInteractionEnabled = true
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground1)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground2)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground3)
@@ -89,16 +138,14 @@ class App7Screen2ViewController: UIViewController {
         self.navigationItem.titleView = lblTitle
         
         RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.articleTitle)
-
         RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.body)
-        RJSOptionalUtils.safeUIElementSetValue(self.imgCommic,            value: viewModel!.coverImage)
+        viewModel?.getCoverImage({ (result) -> Void in
+            self.imgCommic?.image = result
+        })
     }
     
     // MARK: Page life cicle
 
-    override func viewDidLoad() {
-        super.viewDidLoad();
-    }
     
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated);
@@ -112,9 +159,7 @@ class App7Screen2ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
         
-        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:self.imgCommic!.image!) { (result, error) -> Void in
-            print(result)
-        }
+
     }
 
 }

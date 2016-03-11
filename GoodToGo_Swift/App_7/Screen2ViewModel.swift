@@ -12,7 +12,7 @@ protocol Screen2ViewModelProtocol {
     var articleTitle: String { get }
     var body: String { get }
     var username: String { get }
-    var coverImage: UIImage? { get }
+    //var coverImage: UIImage? { get }
     var viewNeedsReload: Dynamic<Bool> { get }
 }
 
@@ -26,20 +26,54 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     var body: String
     var username: String
     var commentsCount: String
-    var coverImage: UIImage?
     
-    var viewNeedsReload: Dynamic<Bool>
-
+    internal var viewNeedsReload: Dynamic<Bool>
+    private  var currentItem : TableItem
+    
+    // MARK: Public
+    
     init(item:TableItem) {
+        currentItem = item
         self.viewNeedsReload = Dynamic<Bool>(false)
         self.controllerTitle = "Comic details"
         self.body            = item.description
         self.username        = ""//user.name
         self.articleTitle    = item.title
         self.commentsCount   = "commentsCount"//"\(count) comments"
-        self.coverImage      = UIImage(named: App7Constants.Images.DefaultCoverImage)
 
         self.viewNeedsReload.value = true
+    }
+    
+    // Uploads the current image to the dropbox
+    func uploadImageToDropbox () -> Void {
+        // Get the name of the image (the folder in the dropbox, is the same that the folder of the cached image)
+        let name = App7ViewModelUseCases.thumbnailURLToToFileSystemName(currentItem)
+        getCoverImage({ (image) -> Void in
+            App7ViewModelUseCases.uploadToDropBox(name, image: image)
+            RJSMessagesManager.showSmallTopMessage("Cover image uploaded to dropbox...")
+        })
+    }
+    
+    func replaceCoverImageForCurrentCommic(newImage:UIImage) {
+        
+        // Salvar a imagem no sistema de ficheiros
+        let name = App7ViewModelUseCases.thumbnailURLToToFileSystemName(currentItem)
+        RJSFilesManager.saveImage(name, folder: RJSFilesManager.Folder.Documents, image: newImage)
+        
+        // Reload...
+        setViewNeedsToReadInMainTread()
+        
+        // Upload da nova imagem para a dropbox
+        uploadImageToDropbox()
+    }
+    
+    func getCoverImage(completion:(result: UIImage) -> Void) {
+        App7ViewModelUseCases.getCoverImage(currentItem) { (result) -> Void in
+            // Make sure that UI updates are executed in the MainTread
+            RJSBlocks.executeInMainTread({ () -> () in
+                completion(result:result)
+            })
+        }
     }
     
     // MARK: Private

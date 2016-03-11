@@ -109,10 +109,10 @@ struct RJSDropBoxManager
         }
     }
     
-    static func uploadImage(secretToken:String, image:UIImage, completion: (result: AnyObject!, error: NSError!) -> Void) {
+    static func uploadImage(secretToken:String, image:UIImage, var imageName:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
        
         guard !secretToken.isEmpty else {
-            DLogWarning("Ignored")
+            DLogWarning("Ignored..")
             return
         }
         
@@ -120,7 +120,9 @@ struct RJSDropBoxManager
             DLogWarning("Are you sure that you are using the rigth token? [\(secretToken)]")
         }
         
-        let apiArg = "{\"path\": \"/marvel/cupcake.png\", \"mode\": \"overwrite\"}"
+        // "comic_covers\\id_8461_f3056e228fe7282ae289a49b087d9bbe.png" -> "comic_covers/id_8461_f3056e228fe7282ae289a49b087d9bbe.png"
+        imageName = imageName.replace("\\", newChar: "/")
+        let apiArg = "{\"path\": \"/\(imageName)\", \"mode\": \"overwrite\"}"
         if(!RJSJSON.isJSON(apiArg)) {
             DLogError("Bad JSON : [\(apiArg)]")
         }

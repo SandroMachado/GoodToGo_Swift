@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6en-4G-lpZ" userLabel="lblBackground">
-                                <rect key="frame" x="11" y="182" width="578" height="355"/>
+                                <rect key="frame" x="11" y="182" width="578" height="410"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,13 +123,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-H2-gb4">
-                                <rect key="frame" x="20" y="187" width="560" height="343"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. DuLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.is aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading1" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-3e-RBj">
                                 <rect key="frame" x="19" y="78" width="88" height="89"/>
                                 <gestureRecognizers/>
@@ -147,10 +140,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-H2-gb4">
+                                <rect key="frame" x="20" y="187" width="560" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. DuLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.is aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xk2-6h-9Hr" firstAttribute="top" secondItem="qpm-H2-gb4" secondAttribute="bottom" constant="70" id="2nS-s1-mda"/>
+                            <constraint firstItem="xk2-6h-9Hr" firstAttribute="top" secondItem="qpm-H2-gb4" secondAttribute="bottom" constant="15" id="2nS-s1-mda"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pf6-yl-91j" secondAttribute="trailing" id="2xR-BO-m0s"/>
                             <constraint firstItem="8xe-3P-Yod" firstAttribute="top" secondItem="xqY-Hx-BPq" secondAttribute="bottom" constant="-51" id="3n5-6p-xkb"/>
                             <constraint firstItem="W5A-GU-6L1" firstAttribute="leading" secondItem="5e1-kR-JNa" secondAttribute="leadingMargin" constant="-9" id="5II-Ww-LDl"/>
@@ -170,7 +170,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="8xe-3P-Yod" secondAttribute="leading" id="bl0-UA-wCW"/>
                             <constraint firstAttribute="leadingMargin" secondItem="6en-4G-lpZ" secondAttribute="leading" constant="9" id="fVQ-N1-iqQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vd5-fA-qNG" secondAttribute="trailing" constant="74" id="i3D-FY-4PC"/>
-                            <constraint firstItem="xk2-6h-9Hr" firstAttribute="top" secondItem="6en-4G-lpZ" secondAttribute="bottom" constant="63" id="iTM-Ce-vCO"/>
+                            <constraint firstItem="xk2-6h-9Hr" firstAttribute="top" secondItem="6en-4G-lpZ" secondAttribute="bottom" constant="8" id="iTM-Ce-vCO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W5A-GU-6L1" secondAttribute="trailing" constant="-9" id="jh0-aN-gAl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qpm-H2-gb4" secondAttribute="trailing" id="jhv-C9-zME"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qpm-H2-gb4" secondAttribute="leading" id="nU4-eZ-vi3"/>
@@ -196,11 +196,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-Ab-5Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mgD-Jm-Xdg">
-                    <connections>
-                        <action selector="handleTap:" destination="QjW-zc-lu6" id="lVk-zb-5Ub"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1303" y="0.0"/>
         </scene>

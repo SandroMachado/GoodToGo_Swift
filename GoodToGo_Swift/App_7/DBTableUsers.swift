@@ -21,7 +21,7 @@ class DBTableComic : Object {
     dynamic var title     = ""
     dynamic var issueNumber    = ""
     dynamic var variantDescription = ""
-    dynamic var descriptionCommic  = ""
+    dynamic var descriptionComic  = ""
     dynamic var thumbnail  = ""
     dynamic var images  = ""
     dynamic var format  = ""
@@ -38,7 +38,7 @@ class DBTableComic : Object {
         self.title              = ToString(dic["title"])
         self.digitalId          = ToString(dic["digitalId"])
         self.issueNumber        = ToString(dic["issueNumber"])
-        self.descriptionCommic  = ToString(dic["description"])
+        self.descriptionComic   = ToString(dic["description"])
         let thumbnailAux        = dic["thumbnail"]
         self.thumbnail          = "\(ToString(thumbnailAux!["path"])).\(ToString(thumbnailAux!["extension"]))"
         self.variantDescription = ToString(dic["variantDescription"])

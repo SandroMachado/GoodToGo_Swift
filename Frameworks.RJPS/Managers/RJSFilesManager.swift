@@ -64,6 +64,7 @@ struct RJSFilesManager
         
         if let data = UIImagePNGRepresentation(image) {
             let filename = "\(path)/\(name)"
+            self.deleteFile(path)
             data.writeToFile(filename, atomically: true)
             return true
         }
@@ -96,11 +97,14 @@ struct RJSFilesManager
     
     static func deleteFile(fileFullPath:String) ->Bool {
         let fileManager = NSFileManager.defaultManager()
+        guard fileManager.fileExistsAtPath(fileFullPath) else {
+            return false
+        }
         do {
             try fileManager.removeItemAtPath(fileFullPath)
             return true
         } catch {
-            DLogError("Could not clear folder: \(error)")
+            DLogError("Could not remove file: \(error)")
         }
         return false
     }

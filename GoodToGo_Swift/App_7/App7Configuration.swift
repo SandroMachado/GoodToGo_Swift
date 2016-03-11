@@ -20,7 +20,7 @@
         RJSLayoutsManager.App7.LayoutNavigationBar()
         
         // Download first page of commics
-        App7MarvelAPI.getComics(0, limit: 75, cleanCachedImages: true, debug: false)
+        App7MarvelAPI.getComics(0, limit: 100, cleanCachedImages: true, debug: false)
     
         return 1
     }

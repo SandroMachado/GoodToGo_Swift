@@ -9,20 +9,35 @@ import UIKit
 
 /*
  * What to put here?
- *  1 - Things (actions) that are shared beetween ViewModel
+ *  1 - Things (actions) that are shared beetween ViewModel's
+ *  2 - Things that are complex busniss
+ *  3 - Data acess
  *
  * !! ViewControlers DONT use this !!
  */
 
 struct App7ViewModelUseCases {
     
+    static func uploadToDropBox(imageName:String, image:UIImage)-> Void {
+        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:image, imageName:imageName ) {
+            (result, error) -> Void in
+            print(result)
+        }
+    }
+    
+    // Given some Url, calculates the name of that image in the file system
+    static func thumbnailURLToToFileSystemName(tableItem:TableItem)-> String {
+        var imageNameInFileSystem = "id_\(tableItem.id)_\(tableItem.thumbnail.md5())"
+        imageNameInFileSystem     = "comic_covers\\" + imageNameInFileSystem + ".png"
+        return imageNameInFileSystem
+    }
+    
+    // Given some TableItem, returns the rigth image to bind
     static func getCoverImage(tableItem:TableItem, completion:(result: UIImage) -> Void) {
         
         // The name of the imagem in the file system is the MD5 value of the commic id and the comic cover url
-        var imageNameInFileSystem = "\(tableItem.id)_\(tableItem.thumbnail.md5())"
-        imageNameInFileSystem     = "comic_covers\\" + imageNameInFileSystem + ".png"
-        
-        let imageInFileSystem = RJSFilesManager.getImage(imageNameInFileSystem)
+        let imageNameInFileSystem = thumbnailURLToToFileSystemName(tableItem)
+        let imageInFileSystem     = RJSFilesManager.getImage(imageNameInFileSystem)
         
         if(HaveValue(imageInFileSystem)) {
             // We find the avatar image on the file system!

@@ -63,23 +63,20 @@
         if(cleanCachedImages) {
             // Clean cached images
             RJSFilesManager.clearFolder(RJSFilesManager.Folder.Documents)
-            
-            // Clean chached records
-            DBTableComic.deleteAllRecords()
         }
 
         if(offset<0) {
             offset = 0
         }
         
-        App7MarvelAPI.currentOffset = offset
-        App7MarvelAPI.currentLimit  = limit
-        
         if(limit>100 || limit<1) {
             // https://developer.marvel.com/docs#!/public/getComicsCollection_get_6
             DLogWarning("Limit cant be greater than 100.")
             limit = 100
         }
+        
+        App7MarvelAPI.currentOffset = offset
+        App7MarvelAPI.currentLimit  = limit
         
         let timestamp = "\(NSDate().timeIntervalSince1970)"
         
