@@ -78,7 +78,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
     func refreshAllData () -> Void {
         if (RJSUtils.existsInternetConnection()) {
             DBTableComic.deleteAllRecords()
-            App7MarvelAPI.getComics(0, limit: 0, cleanCachedImages: false, debug: false)
+            App7MarvelAPI.getComics(0, limit: 0, cleanCachedImages: true, debug: false)
         }
         else {
             RJSUtils.postNotificaitonWithName(App7Constants.Notifications.ShowNoInternetConnection)

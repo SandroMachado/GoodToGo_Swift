@@ -23,7 +23,6 @@ class App7Screen1ViewController: UIViewController {
     // MARK: Auxiliar
     
     func refresh(sender:AnyObject?) {
-        /// FIX: Não está a dar
         viewModel?.refreshAllData()
     }
     

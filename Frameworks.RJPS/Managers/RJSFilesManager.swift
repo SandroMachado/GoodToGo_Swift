@@ -61,15 +61,16 @@ struct RJSFilesManager
             path = getTempDirectory() as String
             break;
         }
-        
+        var sucess = false
+        var filename = "\(path)/\(name)"
         if let data = UIImagePNGRepresentation(image) {
-            let filename = "\(path)/\(name)"
-            self.deleteFile(path)
-            data.writeToFile(filename, atomically: true)
-            return true
+            filename = filename.replace("\\", newChar: "/")
+            sucess = data.writeToFile(filename, atomically: true)
         }
-        DLogError("Error saving image \(name)")
-        return false
+        if(!sucess) {
+            DLogError("Error saving image \(filename)")
+        }
+        return sucess
     }
     
     static func clearFolder(folder:Folder) {

@@ -137,8 +137,8 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         lblTitle.textAlignment = .Center;
         self.navigationItem.titleView = lblTitle
         
-        RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.articleTitle)
-        RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.body)
+        RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.comicTitle)
+        RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.comicDescription)
         viewModel?.getCoverImage({ (result) -> Void in
             self.imgCommic?.image = result
         })

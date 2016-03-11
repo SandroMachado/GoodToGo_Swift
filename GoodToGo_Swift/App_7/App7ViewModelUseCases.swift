@@ -27,8 +27,9 @@ struct App7ViewModelUseCases {
     
     // Given some Url, calculates the name of that image in the file system
     static func thumbnailURLToToFileSystemName(tableItem:TableItem)-> String {
-        var imageNameInFileSystem = "id_\(tableItem.id)_\(tableItem.thumbnail.md5())"
-        imageNameInFileSystem     = "comic_covers\\" + imageNameInFileSystem + ".png"
+        var imageNameInFileSystem = "id_\(tableItem.id)-\(tableItem.thumbnail.md5())"
+        //imageNameInFileSystem     = "comic_covers\\" + imageNameInFileSystem + ".png"
+        imageNameInFileSystem     = "" + imageNameInFileSystem + ".png"
         return imageNameInFileSystem
     }
     

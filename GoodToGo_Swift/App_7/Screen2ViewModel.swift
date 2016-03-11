@@ -9,10 +9,8 @@ import UIKit
 
 protocol Screen2ViewModelProtocol {
     var controllerTitle: String { get }
-    var articleTitle: String { get }
-    var body: String { get }
-    var username: String { get }
-    //var coverImage: UIImage? { get }
+    var comicTitle: String { get }
+    var comicDescription: String { get }
     var viewNeedsReload: Dynamic<Bool> { get }
 }
 
@@ -22,10 +20,8 @@ protocol Screen2ViewModelProtocol {
 final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     var controllerTitle: String
-    var articleTitle: String
-    var body: String
-    var username: String
-    var commentsCount: String
+    var comicTitle: String
+    var comicDescription: String
     
     internal var viewNeedsReload: Dynamic<Bool>
     private  var currentItem : TableItem
@@ -34,12 +30,10 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     init(item:TableItem) {
         currentItem = item
-        self.viewNeedsReload = Dynamic<Bool>(false)
-        self.controllerTitle = "Comic details"
-        self.body            = item.description
-        self.username        = ""//user.name
-        self.articleTitle    = item.title
-        self.commentsCount   = "commentsCount"//"\(count) comments"
+        self.viewNeedsReload  = Dynamic<Bool>(false)
+        self.controllerTitle  = "Comic details"
+        self.comicDescription = item.description
+        self.comicTitle       = item.title
 
         self.viewNeedsReload.value = true
     }
