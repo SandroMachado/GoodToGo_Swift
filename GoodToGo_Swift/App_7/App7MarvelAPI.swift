@@ -117,7 +117,7 @@
                             RJSUtils.setActivityIndicatorToState(false, identifier: App7Constants.MarvelApi.ComicsEndPoint)
                             
                             // Keep the user informed of whats going on
-                            RJSMessagesManager.showSmallTopMessage("Comics updated...")
+                            RJSMessagesManager.showSmallTopMessage("Comics updated/added...")
                             
                             // Warn the ViewModel that there is new data available
                             RJSUtils.postNotificaitonWithName(App7Constants.Notifications.TableComicUpdated)

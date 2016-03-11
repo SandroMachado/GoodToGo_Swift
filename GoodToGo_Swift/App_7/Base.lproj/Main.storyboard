@@ -199,53 +199,6 @@
             </objects>
             <point key="canvasLocation" x="1303" y="0.0"/>
         </scene>
-        <!--Screen3 - Map-->
-        <scene sceneID="ANY-J2-c9l">
-            <objects>
-                <viewController id="mYb-T1-WmD" userLabel="Screen3 - Map" customClass="App7Screen3ViewController" customModule="App_7___Exam_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rhj-ns-9uk"/>
-                        <viewControllerLayoutGuide type="bottom" id="0v2-G0-UKO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="f2V-Bs-k0q">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-zb-BUt">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
-                                <connections>
-                                    <outlet property="delegate" destination="mYb-T1-WmD" id="ph7-l4-vkP"/>
-                                </connections>
-                            </mapView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqo-Td-QiI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem title="Dismiss" id="nAN-Hv-uQt">
-                                        <connections>
-                                            <action selector="btnDismissPressed:" destination="mYb-T1-WmD" id="9yS-93-dBK"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qqo-Td-QiI" secondAttribute="trailing" constant="-20" id="bbQ-kD-137"/>
-                            <constraint firstItem="Qqo-Td-QiI" firstAttribute="leading" secondItem="f2V-Bs-k0q" secondAttribute="leadingMargin" constant="-20" id="lIe-Td-PRc"/>
-                            <constraint firstItem="Qqo-Td-QiI" firstAttribute="top" secondItem="f2V-Bs-k0q" secondAttribute="topMargin" id="r4e-9I-2KE"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="map" destination="l4c-zb-BUt" id="ylL-nU-GdD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bTE-e3-EXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="L9b-h0-41G"/>
-            </objects>
-            <point key="canvasLocation" x="2008" y="0.0"/>
-        </scene>
     </scenes>
     <resources>
         <image name="loading1" width="300" height="300"/>

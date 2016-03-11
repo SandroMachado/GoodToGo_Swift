@@ -21,7 +21,7 @@
 
         // If we have comics stored, I dont request for more in the aplication lauch
         let storedComicsCount = DBTableComic.recordsCount()
-        if(storedComicsCount>App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest) {
+        if(storedComicsCount<App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest) {
             // Download first page of commics
             App7MarvelAPI.getComics(0, limit: App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest, cleanCachedImages: false, debug: false)
         }
