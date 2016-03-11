@@ -46,7 +46,7 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         
         RJSMessagesManager.showAlert(sender: self, title: "Not implemented yet", message: "")
 
-        return
+        return;
             
         RJSDropBoxManager.authorizeFromController(self)
 
