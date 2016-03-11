@@ -32,7 +32,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         currentItem = item
         self.viewNeedsReload  = Dynamic<Bool>(false)
         self.controllerTitle  = "Comic details"
-        self.comicDescription = item.description
+        self.comicDescription = App7ViewModelUseCases.fixCommicDescription(item.description)
         self.comicTitle       = item.title
 
         self.viewNeedsReload.value = true
@@ -61,11 +61,11 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
         uploadImageToDropbox()
     }
     
-    func getCoverImage(completion:(result: UIImage) -> Void) {
+    func getCoverImage(completion:(newImage: UIImage) -> Void) {
         App7ViewModelUseCases.getCoverImage(currentItem) { (result) -> Void in
             // Make sure that UI updates are executed in the MainTread
             RJSBlocks.executeInMainTread({ () -> () in
-                completion(result:result)
+                completion(newImage:result)
             })
         }
     }

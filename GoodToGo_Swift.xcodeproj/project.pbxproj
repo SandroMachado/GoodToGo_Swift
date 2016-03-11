@@ -418,6 +418,13 @@
 		9F76EA681C8F586000DEBAF2 /* Screen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76EA5A1C8F586000DEBAF2 /* Screen3ViewModel.swift */; };
 		9F7CD8DF1C919F6200074DD5 /* App7MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */; };
 		9F7CD8E11C91E68C00074DD5 /* App7ViewModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E01C91E68C00074DD5 /* App7ViewModelUseCases.swift */; };
+		9F7CD8E31C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E41C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E51C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E61C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E71C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E81C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8E91C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
 		9F8F24341C8B1151003D546B /* LSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24331C8B1151003D546B /* LSingletons.swift */; };
 		9F8F24381C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
 		9F8F24391C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
@@ -960,6 +967,7 @@
 		9F7C49901C8E11DD00020016 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = GoodToGo_Playgrounds/README.txt; sourceTree = "<group>"; };
 		9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7MarvelAPI.swift; path = App_7/App7MarvelAPI.swift; sourceTree = "<group>"; };
 		9F7CD8E01C91E68C00074DD5 /* App7ViewModelUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7ViewModelUseCases.swift; path = App_7/App7ViewModelUseCases.swift; sourceTree = "<group>"; };
+		9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extensions.swift"; path = "Frameworks.RJPS/Extensions/UIImageView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		9F8F24331C8B1151003D546B /* LSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSingletons.swift; path = GoodToGo_SwiftLessons/LSingletons.swift; sourceTree = SOURCE_ROOT; };
 		9F8F24351C8B1163003D546B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = GoodToGo_SwiftLessons/README.txt; sourceTree = SOURCE_ROOT; };
 		9F8F24371C8B13FD003D546B /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfiguration.swift; path = App_Shared/AppConfiguration.swift; sourceTree = "<group>"; };
@@ -1275,6 +1283,7 @@
 		9F4202D61C6F8649003CF81F /* Extensions.UI */ = {
 			isa = PBXGroup;
 			children = (
+				9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */,
 				9F024E031C8A746A00E3D27A /* UIImage+Extensions.swift */,
 				9FF0E6111C877AA10051E9F5 /* UITableView+Extensions.swift */,
 				9F4680D31C6E1B3800065E19 /* UIColor+Extensions.swift */,
@@ -2331,6 +2340,7 @@
 				9F576BCB1C861EEC0073738E /* App5Constants.swift in Sources */,
 				9F41DAB41C8520420083D1FC /* RJSSQLiteDB.swift in Sources */,
 				9F41DAB51C8520420083D1FC /* RJSCronometer.swift in Sources */,
+				9F7CD8E71C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9F41DAB61C8520420083D1FC /* AppDelegate.swift in Sources */,
 				9FB0B60A1C90773600C0F031 /* Team.swift in Sources */,
 				9F41DAB71C8520420083D1FC /* UINavigationController+Extensions.swift in Sources */,
@@ -2449,6 +2459,7 @@
 				9F468ECD1C6E7F5C00065E19 /* String+Base64.swift in Sources */,
 				9F31C7B11C88CD0500E14B22 /* App2Configuration.swift in Sources */,
 				9F468ECF1C6E7F5C00065E19 /* UILabel+Extensions.swift in Sources */,
+				9F7CD8E41C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9F31C79E1C887C2200E14B22 /* App2Constants.swift in Sources */,
 				9FB0B60E1C90773600C0F031 /* Users.swift in Sources */,
 				9F468ED01C6E7F5C00065E19 /* RJSExceptionsManager.swift in Sources */,
@@ -2529,6 +2540,7 @@
 				9FA8BC461C825DBD00394CA1 /* RJSDownloadsManager.swift in Sources */,
 				9F468F4B1C6F65B600065E19 /* UIControl+Target.swift in Sources */,
 				9F468F4C1C6F65B600065E19 /* UIView+Extensions.swift in Sources */,
+				9F7CD8E51C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9FA8BC581C831CEE00394CA1 /* RJSConvert.swift in Sources */,
 				9F3D2E8B1C7D4B0B005A78B3 /* NSObject+Extensions.swift in Sources */,
 				9F468F4D1C6F65B600065E19 /* String+Base64.swift in Sources */,
@@ -2631,6 +2643,7 @@
 				9FB0B6281C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F6E64DC1C89F513005991CE /* DBTConfigurationKeys.swift in Sources */,
 				9F6E64DD1C89F513005991CE /* RJSLayoutsManager.swift in Sources */,
+				9F7CD8E81C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9FB0B6041C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9F6E64DF1C89F513005991CE /* RJSCronometer.swift in Sources */,
 				9F6E64E01C89F513005991CE /* demoDBTable.swift in Sources */,
@@ -2723,6 +2736,7 @@
 				9F76EA651C8F586000DEBAF2 /* App7Screen2ViewController.swift in Sources */,
 				9F7CD8E11C91E68C00074DD5 /* App7ViewModelUseCases.swift in Sources */,
 				9F76EA161C8F572F00DEBAF2 /* String+Base64.swift in Sources */,
+				9F7CD8E91C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9F76EA171C8F572F00DEBAF2 /* RJSAppAndDeviceInfo.swift in Sources */,
 				9F76EA181C8F572F00DEBAF2 /* UILabel+Extensions.swift in Sources */,
 				9F76EA191C8F572F00DEBAF2 /* SQLiteDB.swift in Sources */,
@@ -2797,6 +2811,7 @@
 				9FB0B6231C907D6E00C0F031 /* RJSDropBoxManager.swift in Sources */,
 				9F999F431C7DEF7400CF12E2 /* RJSLayoutsManager.swift in Sources */,
 				9F31C7AF1C88CCD800E14B22 /* App1Configuration.swift in Sources */,
+				9F7CD8E31C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9F0763091C7B96AC00252D80 /* RJSCronometer.swift in Sources */,
 				9FB0B5A41C90773500C0F031 /* Async.swift in Sources */,
 				9F9A29301C7D36CD006CE65C /* demoDBTable.swift in Sources */,
@@ -2856,6 +2871,7 @@
 				9FD267E81C723A06005E9CC9 /* AppDelegate.swift in Sources */,
 				9F8F243B1C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9FA8BC4E1C8274E200394CA1 /* RJSOptionalUtils.swift in Sources */,
+				9F7CD8E61C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,
 				9F31C7B51C88CD2800E14B22 /* App4Configuration.swift in Sources */,
 				9FB0B6021C90773600C0F031 /* SharingRoutes.swift in Sources */,
 				9FD267E91C723A06005E9CC9 /* UIViewController+Extensions.swift in Sources */,

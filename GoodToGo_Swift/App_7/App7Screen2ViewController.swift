@@ -139,8 +139,8 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         
         RJSOptionalUtils.safeUIElementSetValue(self.lblCommicTitle, value: viewModel!.comicTitle)
         RJSOptionalUtils.safeUIElementSetValue(self.txtCommicDescription, value: viewModel!.comicDescription)
-        viewModel?.getCoverImage({ (result) -> Void in
-            self.imgCommic?.image = result
+        viewModel?.getCoverImage({ (newImage) -> Void in
+            self.imgCommic?.setNewImageWithSmootTransition(newImage)
         })
     }
     

@@ -49,6 +49,9 @@ enum App7Constants {
         static var Posts: String {
             return "http://jsonplaceholder.typicode.com/posts"
         }
+        static var MaxNumberOfComicsInSingleRequest : Int {
+            return 100
+        }
     }
     enum Images {
         static var DefaultCoverImage: String {

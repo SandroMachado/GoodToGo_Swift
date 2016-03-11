@@ -69,10 +69,10 @@
             offset = 0
         }
         
-        if(limit>100 || limit<1) {
+        if(limit>App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest || limit<1) {
             // https://developer.marvel.com/docs#!/public/getComicsCollection_get_6
-            DLogWarning("Limit cant be greater than 100.")
-            limit = 100
+            DLogWarning("Limit cant be greater than \(App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest).")
+            limit = App7Constants.MarvelApi.MaxNumberOfComicsInSingleRequest
         }
         
         App7MarvelAPI.currentOffset = offset

@@ -18,6 +18,17 @@ import UIKit
 
 struct App7ViewModelUseCases {
     
+    // Some of the comic descriptions have clearly invalid chars. 
+    // This function trys to fix some of then
+    static func fixCommicDescription(var textToEscape:String) -> String {
+        textToEscape = textToEscape.replace("<null>", newChar: "")
+        textToEscape = textToEscape.replace("<br>", newChar: "\n")
+        if(textToEscape.trim().isEmpty) {
+            textToEscape = "N/A"
+        }
+        return textToEscape
+    }
+    
     static func uploadToDropBox(imageName:String, image:UIImage)-> Void {
         RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:image, imageName:imageName ) {
             (result, error) -> Void in
@@ -34,7 +45,7 @@ struct App7ViewModelUseCases {
     }
     
     // Given some TableItem, returns the rigth image to bind
-    static func getCoverImage(tableItem:TableItem, completion:(result: UIImage) -> Void) {
+    static func getCoverImage(tableItem:TableItem, completion:(newImage: UIImage) -> Void) {
         
         // The name of the imagem in the file system is the MD5 value of the commic id and the comic cover url
         let imageNameInFileSystem = thumbnailURLToToFileSystemName(tableItem)
@@ -42,7 +53,7 @@ struct App7ViewModelUseCases {
         
         if(HaveValue(imageInFileSystem)) {
             // We find the avatar image on the file system!
-            completion(result: imageInFileSystem!)
+            completion(newImage: imageInFileSystem!)
             return
         }
 
@@ -50,7 +61,7 @@ struct App7ViewModelUseCases {
         {
             // While we download the imagem, let's set a temporary image...
             let downloadingImage = UIImage(named: AppGenericConstants.ImagesBlundle.Downloading1)
-            completion(result: downloadingImage!)
+            completion(newImage: downloadingImage!)
             
             // We didnt find the cover image on the file system. Let fetch it....
             RJSDownloadsManager.downloadImage(tableItem.thumbnail) { (result, error) -> Void in
@@ -61,11 +72,11 @@ struct App7ViewModelUseCases {
                     
                     // Error? Return a default image...
                     let defaultImage = UIImage(named: App7Constants.Images.DefaultCoverImage)
-                    completion(result: defaultImage!)
+                    completion(newImage: defaultImage!)
                 }
                 else {
                     // Set the image
-                    completion(result: result!)
+                    completion(newImage: result!)
                     
                     // Cache the image for future use
                     RJSFilesManager.saveImage(imageNameInFileSystem, folder: RJSFilesManager.Folder.Documents, image: result)
@@ -75,7 +86,7 @@ struct App7ViewModelUseCases {
         else {
             // No internet connection to download image. Using default
             let defaultImage = UIImage(named: App7Constants.Images.DefaultCoverImage)
-            completion(result: defaultImage!)
+            completion(newImage: defaultImage!)
         }
      
     }
