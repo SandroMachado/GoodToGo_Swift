@@ -24,6 +24,7 @@ About :
 - Real app to send to the app store (or not).
 - [3 tier architacture - PL, BLL, DAL](https://www.techopedia.com/definition/24649/three-tier-architecture.)
 
+
 TODO :
 - Rebuild to MVVM and Realm for storage.
 - Turn into MVVM.
