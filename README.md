@@ -34,7 +34,7 @@ About :
 
 ## App_5 : iOS Candidate Test
 
-[Test](https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit)
+The test can be found [here](https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit)
 
 About :
 - App suports all orientations.
@@ -47,9 +47,9 @@ TODO :
 - Fix top message orientation (Whisper).
 - Beside the user location, show also the user details.
 
-## App_6 : Realm DB tests
+## App_6 : [Realm](https://realm.io/) DB tests
 About :
-- [Realm](https://realm.io/) DB simples tests.
+-  Realm DB simples tests.
 - Not intented to be MVVM.
 
 ## App_7 : Marven Exam
