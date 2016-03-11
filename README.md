@@ -22,7 +22,7 @@ About :
 ## App_3 : Links - UIWebView based app
 About :
 - Real app to send to the app store (or not).
-- 3 tier architacture - PL, BLL, DAL - https://www.techopedia.com/definition/24649/three-tier-architecture.
+- [3 tier architacture - PL, BLL, DAL](https://www.techopedia.com/definition/24649/three-tier-architecture.)
 TODO :
 - Rebuild to MVVM and Realm for storage.
 - Turn into MVVM.
@@ -33,7 +33,8 @@ About :
 - In constrution.
 
 ## App_5 : iOS Candidate Test
-https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit
+
+[Test](https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit)
 
 About :
 - App suports all orientations.
@@ -46,9 +47,9 @@ TODO :
 - Fix top message orientation (Whisper).
 - Beside the user location, show also the user details.
 
-## App_6 : Realm DB tests - https://realm.io/
+## App_6 : Realm DB tests
 About :
-- Real DB simples tests.
+- [Realm](https://realm.io/) DB simples tests.
 - Not intented to be MVVM.
 
 ## App_7 : Marven Exam
@@ -57,4 +58,4 @@ About :
 
 ## License
 
-WTFPL – Do What the F*** You Want to Public License - http://www.wtfpl.net/about/
+WTFPL – Do What... You Want to Public License - http://www.wtfpl.net/about/
