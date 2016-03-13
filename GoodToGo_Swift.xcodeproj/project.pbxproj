@@ -425,6 +425,8 @@
 		9F7CD8E71C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
 		9F7CD8E81C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
 		9F7CD8E91C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */; };
+		9F7CD8EF1C960DE000074DD5 /* App7CustomTVCell_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CD8EE1C960DE000074DD5 /* App7CustomTVCell_1.xib */; };
+		9F7CD8F31C960E6000074DD5 /* App7CustomTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD8F21C960E6000074DD5 /* App7CustomTVCell.swift */; };
 		9F8F24341C8B1151003D546B /* LSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24331C8B1151003D546B /* LSingletons.swift */; };
 		9F8F24381C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
 		9F8F24391C8B13FD003D546B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
@@ -968,6 +970,8 @@
 		9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7MarvelAPI.swift; path = App_7/App7MarvelAPI.swift; sourceTree = "<group>"; };
 		9F7CD8E01C91E68C00074DD5 /* App7ViewModelUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7ViewModelUseCases.swift; path = App_7/App7ViewModelUseCases.swift; sourceTree = "<group>"; };
 		9F7CD8E21C92617B00074DD5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extensions.swift"; path = "Frameworks.RJPS/Extensions/UIImageView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		9F7CD8EE1C960DE000074DD5 /* App7CustomTVCell_1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = App7CustomTVCell_1.xib; path = App_7/App7CustomTVCell_1.xib; sourceTree = "<group>"; };
+		9F7CD8F21C960E6000074DD5 /* App7CustomTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7CustomTVCell.swift; path = App_7/App7CustomTVCell.swift; sourceTree = "<group>"; };
 		9F8F24331C8B1151003D546B /* LSingletons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSingletons.swift; path = GoodToGo_SwiftLessons/LSingletons.swift; sourceTree = SOURCE_ROOT; };
 		9F8F24351C8B1163003D546B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = GoodToGo_SwiftLessons/README.txt; sourceTree = SOURCE_ROOT; };
 		9F8F24371C8B13FD003D546B /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfiguration.swift; path = App_Shared/AppConfiguration.swift; sourceTree = "<group>"; };
@@ -1598,6 +1602,7 @@
 				9F76EA4B1C8F586000DEBAF2 /* App7Constants.swift */,
 				9F7CD8DE1C919F6200074DD5 /* App7MarvelAPI.swift */,
 				9F76EA4C1C8F586000DEBAF2 /* App7LayoutsManager.swift */,
+				9F7CD8F41C960FDD00074DD5 /* Views */,
 				9F76EA6A1C8F587D00DEBAF2 /* Controllers */,
 				9F76EA691C8F587700DEBAF2 /* ViewModels */,
 				9F76EA6B1C8F588200DEBAF2 /* Model */,
@@ -1634,6 +1639,15 @@
 				9F76EA521C8F586000DEBAF2 /* DBTableComments.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9F7CD8F41C960FDD00074DD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F7CD8F21C960E6000074DD5 /* App7CustomTVCell.swift */,
+				9F7CD8EE1C960DE000074DD5 /* App7CustomTVCell_1.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		9F8F243F1C8B16E6003D546B /* ViewControllers */ = {
@@ -2129,6 +2143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7CD8EF1C960DE000074DD5 /* App7CustomTVCell_1.xib in Resources */,
 				9F76EA361C8F572F00DEBAF2 /* Images.xcassets in Resources */,
 				9F76EA371C8F572F00DEBAF2 /* AppSqlite3DB.db in Resources */,
 				9F76EA381C8F572F00DEBAF2 /* demoDB.db in Resources */,
@@ -2734,6 +2749,7 @@
 				9F76EA5D1C8F586000DEBAF2 /* App7LayoutsManager.swift in Sources */,
 				9F76EA151C8F572F00DEBAF2 /* NSObject+Extensions.swift in Sources */,
 				9F76EA651C8F586000DEBAF2 /* App7Screen2ViewController.swift in Sources */,
+				9F7CD8F31C960E6000074DD5 /* App7CustomTVCell.swift in Sources */,
 				9F7CD8E11C91E68C00074DD5 /* App7ViewModelUseCases.swift in Sources */,
 				9F76EA161C8F572F00DEBAF2 /* String+Base64.swift in Sources */,
 				9F7CD8E91C92617B00074DD5 /* UIImageView+Extensions.swift in Sources */,

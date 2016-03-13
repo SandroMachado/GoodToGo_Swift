@@ -120,13 +120,15 @@ class App7Screen1ViewController: UIViewController {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppGenericConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
-        let item = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
         
+        let cell : App7CustomTVCell = tableView.dequeueReusableCellWithIdentifier(App7CustomTVCellConstants.CellIdentifier, forIndexPath: indexPath) as! App7CustomTVCell
+        
+        let item = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
+
         viewModel!.getCoverImage(item) { (newImage) -> Void in
-            cell.imageView?.setNewImageWithSmootTransition(newImage)
-            cell.textLabel?.text       = item.title
-            cell.detailTextLabel?.text = item.description
+            cell.img1!.setNewImageWithSmootTransition(newImage)
+            cell.lbl1!.text = item.title
+            cell.lbl2!.text = item.description
         }
         
         RJSLayoutsManager.App7.LayoutUITableViewCell_1(cell)
@@ -154,7 +156,8 @@ class App7Screen1ViewController: UIViewController {
     
         startListenningNotification()
         
-        self.tableView!.registerCellIdentifier(AppGenericConstants.TableView.cellIdentifier)
+        // Register custom cell
+        App7CustomTVCell.prepareTableView(self.tableView!)
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to restore to defaults...")
