@@ -48,6 +48,12 @@ About :
 ## App_7 : Marvel/Dropbox Exam
 About : [http://nschallenges.blogspot.pt/2016/03/marvel-challange.html](http://nschallenges.blogspot.pt/2016/03/marvel-challange.html)
 
+## GoodToGo_PlayGrounds : PlayGrounds testing
+About  : 
+    - Open the workspace file
+
+## GoodToGo_SwiftLessons : Foundation class's testing
+
 ## License
 
 WTFPL – Do What... You Want to Public License - http://www.wtfpl.net/about/
