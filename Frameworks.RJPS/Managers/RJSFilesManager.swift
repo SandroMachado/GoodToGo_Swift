@@ -64,7 +64,7 @@ struct RJSFilesManager
         var sucess = false
         var filename = "\(path)/\(name)"
         if let data = UIImagePNGRepresentation(image) {
-            filename = filename.replace("\\", newChar: "/")
+            filename = filename.replace("\\", with: "/")
             sucess = data.writeToFile(filename, atomically: true)
         }
         if(!sucess) {

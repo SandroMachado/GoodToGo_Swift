@@ -144,7 +144,7 @@ struct RJSDropBoxManager
         }
         
         // "comic_covers\\id_8461_f3056e228fe7282ae289a49b087d9bbe.png" -> "comic_covers/id_8461_f3056e228fe7282ae289a49b087d9bbe.png"
-        imageName = imageName.replace("\\", newChar: "/")
+        imageName = imageName.replace("\\", with: "/")
         let apiArg = "{\"path\": \"/comic_covers/\(imageName)\", \"mode\": \"overwrite\"}"
         if(!RJSJSON.isJSON(apiArg)) {
             DLogError("Bad JSON : [\(apiArg)]")

@@ -25,12 +25,12 @@ extension String {
         return randomString as String
     }
     
-    func replace(oldChar:String, newChar:String) -> String {
-        guard !oldChar.isEmpty else {
+    func replace(oldString:String, with:String) -> String {
+        guard !oldString.isEmpty else {
             DLogWarning("Do you want to replace an empty char?")
             return self
         }
-        let newString = self.stringByReplacingOccurrencesOfString(oldChar, withString: newChar)
+        let newString = self.stringByReplacingOccurrencesOfString(oldString, withString: with)
         return newString
     }
     

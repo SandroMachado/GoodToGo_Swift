@@ -21,8 +21,8 @@ struct App7ViewModelUseCases {
     // Some of the comic descriptions have clearly invalid chars. 
     // This function trys to fix some of then
     static func fixCommicDescription(var textToEscape:String) -> String {
-        textToEscape = textToEscape.replace("<null>", newChar: "")
-        textToEscape = textToEscape.replace("<br>", newChar: "\n")
+        textToEscape = textToEscape.replace("<null>", with: "")
+        textToEscape = textToEscape.replace("<br>", with: "\n")
         if(textToEscape.trim().isEmpty) {
             textToEscape = "N/A"
         }

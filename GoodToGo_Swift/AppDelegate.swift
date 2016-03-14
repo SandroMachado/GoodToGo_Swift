@@ -39,8 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // TODO: improve RegExp
                 let matches        = RJSRegExp.matchesForRegexInText("access_token=[^&]+&token_type", text: ToString(url))
                 var userAcessToken = ToString(matches[0])
-                userAcessToken     = userAcessToken.replace("access_token=", newChar: "")
-                userAcessToken     = userAcessToken.replace("&token_type",   newChar: "")
+                userAcessToken     = userAcessToken.replace("access_token=", with: "")
+                userAcessToken     = userAcessToken.replace("&token_type",   with: "")
                 
                 RJSStorages.saveToKeychain(userAcessToken, key: App7Constants.Keys.DropboxUserAcessToken)
                 
