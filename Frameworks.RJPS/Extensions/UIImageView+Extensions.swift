@@ -22,14 +22,14 @@ extension UIImageView
                 let rate   = newImage.size.width / newImage.size.height
                 if(rate>1) {
                     DLog("Landscaped image")
-                    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
-                    let dif = (self.frame.size.width - self.frame.size.width * rate) / 2
-                    self.center = CGPointMake(self.center.x + dif, self.center.y)
+                    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height/rate);
+                    let dif = (self.frame.size.height - self.frame.size.height / rate) / 2
+                    self.center = CGPointMake(self.center.x, self.center.y+dif)
                 } else {
                     DLog("Portrait image")
-                    let dif = (self.frame.size.width - self.frame.size.width * rate) / 2
+                    let dif     = (self.frame.size.width - self.frame.size.width * rate) / 2
                     self.center = CGPointMake(self.center.x + dif, self.center.y)
-                    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
+                    self.frame  = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
                 }
 
                 }, completion: { (Bool) -> Void in

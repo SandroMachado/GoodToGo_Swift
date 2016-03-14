@@ -13,13 +13,11 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
     var oncetoken: dispatch_once_t = 0
     
     /// TODO: typo: Commic -> Comic
-    @IBOutlet weak var txtComicDescription: UITextView?
     @IBOutlet weak var lblComicTitle: UILabel?
     @IBOutlet weak var imgComic: UIImageView?
 
     @IBOutlet weak var lblBackground1: UILabel?
     @IBOutlet weak var lblBackground2: UILabel?
-    @IBOutlet weak var lblBackground3: UILabel?
 
     var sharedVar : TableItem?
 
@@ -30,7 +28,6 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     // MARK: IBActions
-
     @IBAction func handleTap(sender: UITapGestureRecognizer? = nil) {
         changeCoverPicture()
     }
@@ -76,7 +73,6 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
             }
             
             let OKAction = UIAlertAction(title: "Yes", style: .Default) { (action) in
-               // self.imgCommic?.image = newImage
                 self.viewModel?.replaceCoverImageForCurrentCommic(newImage)
             }
             
@@ -121,13 +117,10 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
 
         navigationItem.rightBarButtonItems = [btn1, btn2]
             
-        txtComicDescription?.userInteractionEnabled = true
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground1)
         RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground2)
-        RJSLayoutsManager.App7.LayoutBackgroundLabelOrView(self.lblBackground3)
         
         RJSLayoutsManager.App7.LayoutLabel_Title_1(self.lblComicTitle)
-        RJSLayoutsManager.App7.LayoutTextView_1(self.txtComicDescription)
 
         if(HaveValue(self.imgComic))
         {
@@ -145,9 +138,8 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         self.navigationItem.titleView = lblTitle
         
         RJSOptionalUtils.safeUIElementSetValue(self.lblComicTitle, value: viewModel!.comicTitle)
-        RJSOptionalUtils.safeUIElementSetValue(self.txtComicDescription, value: viewModel!.comicDescription)
         viewModel?.getCoverImage({ (newImage) -> Void in
-            self.imgComic?.setNewImageWithSmootTransition(newImage)
+            self.imgComic?.setNewImageWithSmootTransition(newImage, duration:1, ajustSize:true)
         })
     }
     

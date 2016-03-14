@@ -127,12 +127,8 @@ class App7Screen1ViewController: UIViewController {
 
         viewModel!.getCoverImage(item) { (newImage) -> Void in
           
-            cell.img1!.setNewImageWithSmootTransition(newImage)
+            cell.img1!.setNewImageWithSmootTransition(newImage, duration:1, ajustSize:true)
             
-            
-
-            
-
             cell.lbl1!.text = item.title
             cell.lbl2!.text = item.description
         }
