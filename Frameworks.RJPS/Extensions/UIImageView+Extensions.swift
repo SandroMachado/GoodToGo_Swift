@@ -11,20 +11,42 @@ import UIKit
 extension UIImageView
 {    
     
-    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=1) -> Void {
+    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=1, ajustSize:Bool=true) -> Void {
         
-        if(self.image==nil) {
-            // No image? Just set and leave
-            self.image = newImage
-            return
+        let arrangeSize = {
+            guard ajustSize else {
+                return
+            }
+            
+            UIView.animateWithDuration(duration/2, animations: { () -> Void in
+                let rate   = newImage.size.width / newImage.size.height
+                if(rate>1) {
+                    DLog("Landscaped image")
+                    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
+                    let dif = (self.frame.size.width - self.frame.size.width * rate) / 2
+                    self.center = CGPointMake(self.center.x + dif, self.center.y)
+                } else {
+                    DLog("Portrait image")
+                    let dif = (self.frame.size.width - self.frame.size.width * rate) / 2
+                    self.center = CGPointMake(self.center.x + dif, self.center.y)
+                    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
+                }
+
+                }, completion: { (Bool) -> Void in
+                    
+            })
         }
         
         UIView.transitionWithView(self,
-            duration: duration,
+            duration: duration/2,
             options: UIViewAnimationOptions.TransitionCrossDissolve,
-            animations: { self.image = newImage }) //set the new image
+            animations: {
+                self.image = newImage
+            })
             { (Bool) -> Void in
-
+                RJSBlocks.executeWithDelay(Tread.MainTread, delay: 0.1, block: {
+                    arrangeSize()
+                })
         }
     }
 }
