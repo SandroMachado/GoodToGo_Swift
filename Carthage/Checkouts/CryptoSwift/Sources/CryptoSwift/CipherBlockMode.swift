@@ -111,7 +111,7 @@ private struct CBCMode: BlockMode {
         var prevCiphertext = iv // for the first time prevCiphertext = iv
         for ciphertext in blocks {
             if let decrypted = cipherOperation(block: ciphertext) { // decrypt
-                out.appendContentsOf(xor(prevCiphertext, decrypted)) //FIXME: b:
+                out.appendContentsOf(xor(prevCiphertext, decrypted))
             }
             prevCiphertext = ciphertext
         }

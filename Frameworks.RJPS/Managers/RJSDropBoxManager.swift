@@ -149,49 +149,10 @@ struct RJSDropBoxManager
         if(!RJSJSON.isJSON(apiArg)) {
             DLogError("Bad JSON : [\(apiArg)]")
         }
-        
-
+    
         // example image data
         let imageData = UIImageJPEGRepresentation(image, 0.1)
         
-        if(false) {
-        
-            let headers = [
-                "hi": "hi",
-            ]
-            
-            let p1        = "authorization=Bearer \(secretToken)&arg=\(apiArg)"
-            let escapedP1 = ToString(p1.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding))
-            let url2      = "https://content.dropboxapi.com/2-beta-2/files/upload?\(escapedP1)"
-            
-            let urlRequest = urlRequestWithComponents(url2, parameters: headers, imageData: imageData!)
-            
-            RJSUtils.setActivityIndicatorToState(true, identifier: url2) // Turn activity indicator ON
-            Alamofire.upload(urlRequest.0, data: urlRequest.1)
-                .progress { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) in
-                    print("\(totalBytesWritten) / \(totalBytesExpectedToWrite)")
-                }
-                .responseData { (nsurlrequest, nshttpresponse, result) -> Void in
-                    if(result.isFailure) {
-                        // Fail
-                        debugPrint(result)
-                    }
-                    else {
-                        // Prepare Result<NSData>
-                        let resultData = result as Result<NSData>
-                        let datastring = ToString(NSString(data: resultData.value!, encoding: NSUTF8StringEncoding))
-                        if(RJSJSON.isJSON(datastring)) {
-                            let json = RJSJSON.convertObjectToJSONToObject(datastring)
-                            completion(result: json, error: nil)
-                        }
-                        else {
-                            debugPrint(datastring)
-                        }
-                    }
-                    RJSUtils.setActivityIndicatorToState(false, identifier: url2) // Turn activity indicator OFF
-            }
-        }
-
         if(true) {
             
             let url = "https://content.dropboxapi.com/2-beta-2/files/upload"
@@ -200,7 +161,7 @@ struct RJSDropBoxManager
                 "Authorization": "Bearer \(secretToken)",
                 "Content-Type": "application/octet-stream",
                 "Dropbox-API-Arg": apiArg,
-                "data-binary": "123"
+                "data-binary": "\(imageData)"
             ]
             
             RJSUtils.setActivityIndicatorToState(true, identifier: url) // Turn activity indicator ON

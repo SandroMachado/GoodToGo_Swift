@@ -2043,7 +2043,7 @@
 						CreatedOnToolsVersion = 7.2.1;
 					};
 					9F76E9E71C8F572F00DEBAF2 = {
-						DevelopmentTeam = G92548JLNB;
+						DevelopmentTeam = EP8XQ3ZY9V;
 					};
 					9F9A9BED1C6CF0CB00B37D0D = {
 						CreatedOnToolsVersion = 7.2.1;

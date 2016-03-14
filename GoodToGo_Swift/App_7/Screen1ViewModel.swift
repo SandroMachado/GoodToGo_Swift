@@ -77,8 +77,14 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
     
     func refreshAllData () -> Void {
         if (RJSUtils.existsInternetConnection()) {
+            // 1 - Delete all stored records
             DBTableComic.deleteAllRecords()
+            
+            // 2 - Get new records
             App7MarvelAPI.getComics(0, limit: 0, cleanCachedImages: true, debug: false)
+            
+            // 3 - Disconnect from dropbox
+            RJSDropBoxManager.disconect()
         }
         else {
             RJSUtils.postNotificaitonWithName(App7Constants.Notifications.ShowNoInternetConnection)

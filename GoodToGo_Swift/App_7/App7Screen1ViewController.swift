@@ -76,7 +76,7 @@ class App7Screen1ViewController: UIViewController {
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
         
         let percentage = (currentOffset/maximumOffset) * 100
-        print(percentage)
+        //print(percentage)
         if ((maximumOffset - currentOffset <= -40.0) || (percentage>66)) {
             App7MarvelAPI.getNexComicsPage()
         }
@@ -126,7 +126,7 @@ class App7Screen1ViewController: UIViewController {
         let item = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
 
         viewModel!.getCoverImage(item) { (newImage) -> Void in
-            cell.img1!.setNewImageWithSmootTransition(newImage, duration:1, ajustSize:true)
+            cell.img1!.setNewImageWithSmootTransition(newImage, duration:0.5, ajustSize:true)
             cell.lbl1!.text = item.title
             cell.lbl2?.hidden = true
         }

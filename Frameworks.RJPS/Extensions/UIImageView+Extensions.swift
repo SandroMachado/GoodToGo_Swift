@@ -11,7 +11,7 @@ import UIKit
 extension UIImageView
 {    
     
-    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=1, ajustSize:Bool=true) -> Void {
+    func setNewImageWithSmootTransition(newImage:UIImage, duration:Double=0.5, ajustSize:Bool=true) -> Void {
         
         let arrangeSize = {
             guard ajustSize else {
@@ -26,7 +26,6 @@ extension UIImageView
                     let dif = (self.frame.size.height - self.frame.size.height / rate) / 2
                     self.center = CGPointMake(self.center.x, self.center.y+dif)
                 } else {
-                    //DLog("Portrait image")
                     let dif     = (self.frame.size.width - self.frame.size.width * rate) / 2
                     self.center = CGPointMake(self.center.x + dif, self.center.y)
                     self.frame  = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width*rate, self.frame.size.height);
