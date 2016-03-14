@@ -30,7 +30,8 @@ struct App7ViewModelUseCases {
     }
     
     static func uploadToDropBox(imageName:String, image:UIImage)-> Void {
-        RJSDropBoxManager.uploadImage(AppGenericConstants.APIs.DropboxAcessTokenSecret, image:image, imageName:imageName ) {
+        let testToken = ToString(RJSStorages.readFromDefaults("dropbox_api_userAcessToken"))
+        RJSDropBoxManager.uploadImage(testToken, image:image, imageName:imageName ) {
             (result, error) -> Void in
             print(result)
         }
@@ -39,7 +40,6 @@ struct App7ViewModelUseCases {
     // Given some Url, calculates the name of that image in the file system
     static func thumbnailURLToToFileSystemName(tableItem:TableItem)-> String {
         var imageNameInFileSystem = "id_\(tableItem.id)-\(tableItem.thumbnail.md5())"
-        //imageNameInFileSystem     = "comic_covers\\" + imageNameInFileSystem + ".png"
         imageNameInFileSystem     = "" + imageNameInFileSystem + ".png"
         return imageNameInFileSystem
     }

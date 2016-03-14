@@ -57,14 +57,15 @@ extension RJSLayoutsManager
             tableView?.backgroundColor = UIColor.clearColor()
         }
         
-        static func LayoutUITableViewCell_1(cell:UITableViewCell?)
+        static func LayoutUITableViewCell_1(cell:App7CustomTVCell?)
         {
             guard HaveValue(cell) else {
                 DLogWarning("Ignored...")
                 return
             }
-            RJSLayoutsManager.LayoutLabel(cell!.textLabel,       fontSize: 15, fontColor: nil)
-            //RJSLayoutsManager.LayoutLabel(cell!.detailTextLabel, fontSize: 13, fontColor: nil)
+            RJSLayoutsManager.LayoutLabel(cell!.lbl1, fontSize: 15, fontColor: nil)
+            cell!.lbl1!.setCornerRadius(5)
+            cell!.img1!.setCornerRadius(3)
             cell!.backgroundColor = RJSLayoutsManagerConstants.Default.BackgroundColor
         }
         

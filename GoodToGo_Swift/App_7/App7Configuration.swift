@@ -23,5 +23,14 @@
         
         return 1
     }
+    
+    static func setUserDropBoxAcessToken(userAcessToken:String) -> Void {
+        RJSStorages.saveToDefaults(userAcessToken, key: "dropbox_api_userAcessToken")
+    }
+    
+    static func getUserDropBoxAcessToken() -> String {
+        return ToString( RJSStorages.readFromDefaults("dropbox_api_userAcessToken"))
+    }
+    
   }
   

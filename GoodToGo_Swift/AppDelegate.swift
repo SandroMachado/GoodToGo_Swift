@@ -29,21 +29,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         return true
     }
-/*
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        DLog(url)
         
         if let authResult = Dropbox.handleRedirectURL(url) {
             switch authResult {
-            case .Success(let token):
-                print("Success! User is logged into Dropbox.")
-            case .Error(let error, let description):
+            case .Success:
+                // TODO: improve RegExp
+                let matches        = RJSRegExp.matchesForRegexInText("access_token=[^&]+&token_type", text: ToString(url))
+                var userAcessToken = ToString(matches[0])
+                userAcessToken     = userAcessToken.replace("access_token=", newChar: "")
+                userAcessToken     = userAcessToken.replace("&token_type",   newChar: "")
+                
+                // TODO: Save user acess tokon in keychain
+                RJSStorages.saveToDefaults(userAcessToken, key: "dropbox_api_userAcessToken")
+                
+            case .Error( _, let description):
                 print("Error: \(description)")
             }
         }
         
         return false
     }
-    */
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

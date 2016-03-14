@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading1" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-3e-RBj">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <rect key="frame" x="175" y="155" width="250" height="250"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="QMK-hx-aVo"/>
@@ -147,12 +147,12 @@
                             <constraint firstItem="W5A-GU-6L1" firstAttribute="top" secondItem="xqY-Hx-BPq" secondAttribute="bottom" constant="8" id="FsV-wZ-CVj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vd5-fA-qNG" secondAttribute="trailing" constant="74" id="GLb-XN-63y"/>
                             <constraint firstItem="Pf6-yl-91j" firstAttribute="top" secondItem="xqY-Hx-BPq" secondAttribute="bottom" constant="-44" id="GUq-i9-Sb6"/>
-                            <constraint firstItem="hr6-3e-RBj" firstAttribute="centerY" secondItem="5e1-kR-JNa" secondAttribute="centerY" id="LkB-Dc-bXh"/>
                             <constraint firstItem="PoR-ei-7pl" firstAttribute="top" secondItem="xqY-Hx-BPq" secondAttribute="bottom" constant="14" id="aEm-5H-4de"/>
                             <constraint firstAttribute="leadingMargin" secondItem="8xe-3P-Yod" secondAttribute="leading" id="bl0-UA-wCW"/>
-                            <constraint firstItem="hr6-3e-RBj" firstAttribute="centerX" secondItem="5e1-kR-JNa" secondAttribute="centerX" id="grI-7Q-193"/>
+                            <constraint firstItem="hr6-3e-RBj" firstAttribute="top" secondItem="PoR-ei-7pl" secondAttribute="bottom" constant="17" id="edl-8p-lXA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vd5-fA-qNG" secondAttribute="trailing" constant="74" id="i3D-FY-4PC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W5A-GU-6L1" secondAttribute="trailing" constant="-9" id="jh0-aN-gAl"/>
+                            <constraint firstItem="hr6-3e-RBj" firstAttribute="centerX" secondItem="5e1-kR-JNa" secondAttribute="centerX" id="m1U-9y-qPi"/>
                             <constraint firstItem="Vd5-fA-qNG" firstAttribute="leading" secondItem="5e1-kR-JNa" secondAttribute="leadingMargin" constant="73" id="tV2-ZZ-qtr"/>
                             <constraint firstItem="Vd5-fA-qNG" firstAttribute="top" secondItem="xqY-Hx-BPq" secondAttribute="bottom" constant="-48" id="xTL-Me-Uhr"/>
                         </constraints>

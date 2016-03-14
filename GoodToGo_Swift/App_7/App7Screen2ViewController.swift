@@ -40,13 +40,7 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func uploadCurrentPictToDropBox() {
-        
-        RJSMessagesManager.showAlert(sender: self, title: "Not implemented yet", message: "")
-
-        return;
-            
         RJSDropBoxManager.authorizeFromController(self)
-
         viewModel?.uploadImageToDropbox()
     }
     

@@ -9,11 +9,17 @@
 ########################## INSTALED ################################
 ####################################################################
 
+# A powerful, protocol-oriented library for working with the keychain in Swift.
+# https://github.com/matthewpalmer/Locksmith
+github 'matthewpalmer/Locksmith'
+
 ####################################################################
 
 # SwiftyDropbox, the new Swift SDK for Dropbox API v2!
 # https://blogs.dropbox.com/developers/2015/05/try-out-swiftydropbox-the-new-swift-sdk-for-dropbox-api-v2/
 github "dropbox/SwiftyDropbox"
+
+####################################################################
 
 # Elegant HTTP Networking in Swift
 # https://github.com/Alamofire/Alamofire

@@ -20,7 +20,7 @@ struct RJSDropBoxManager
         let mutableURLRequest        = NSMutableURLRequest(URL: NSURL(string: urlString)!)
         mutableURLRequest.HTTPMethod = Alamofire.Method.POST.rawValue
         let boundaryConstant         = "myRandomBoundary12345";
-        let contentType              = "multipart/form-data;boundary="+boundaryConstant
+        let contentType              = "application/octet-stream;"
         mutableURLRequest.setValue(contentType, forHTTPHeaderField: "Content-Type")
         
         
@@ -61,7 +61,7 @@ struct RJSDropBoxManager
 
     /**
      * Step 2 - Authorize controller
-     * Call inside AppDelegate application:didFinishLaunchingWithOptions
+     * (This opens a dialog where the user can enter is password
      */
     static func authorizeFromController(controller:UIViewController) -> Void {
         
@@ -73,9 +73,21 @@ struct RJSDropBoxManager
         }
         else {
             DLogWarning("Controller \(controller) is already authorized!")
+            let testToken = ToString(RJSStorages.readFromDefaults("dropbox_api_userAcessToken"))
+            RJSDropBoxManager.getCurrentAcount(testToken) { (result, error) -> Void in
+                DLog(result)
+            }
         }
     }
 
+    static func disconect() -> Void {
+        if(Dropbox.authorizedClient==nil) {
+            DLogWarning("Allready disconnected")
+        } else {
+            Dropbox.unlinkClient()
+        }
+    }
+    
     static func getCurrentAcount(secretToken:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
         
         // Connect to the DropBox
@@ -86,7 +98,7 @@ struct RJSDropBoxManager
             return
         }
         
-        if(secretToken.countUTF8()<40 || !secretToken.containsString("-")) {
+        if(secretToken.countUTF8()<40) {
             DLogWarning("Are you sure that you are using the rigth token? [\(secretToken)]")
         }
         
@@ -127,35 +139,34 @@ struct RJSDropBoxManager
             return
         }
         
-        if(secretToken.countUTF8()<40 || !secretToken.containsString("-")) {
+        if(secretToken.countUTF8()<40) {
             DLogWarning("Are you sure that you are using the rigth token? [\(secretToken)]")
         }
         
         // "comic_covers\\id_8461_f3056e228fe7282ae289a49b087d9bbe.png" -> "comic_covers/id_8461_f3056e228fe7282ae289a49b087d9bbe.png"
         imageName = imageName.replace("\\", newChar: "/")
-        let apiArg = "{\"path\": \"/\(imageName)\", \"mode\": \"overwrite\"}"
+        let apiArg = "{\"path\": \"/comic_covers/\(imageName)\", \"mode\": \"overwrite\"}"
         if(!RJSJSON.isJSON(apiArg)) {
             DLogError("Bad JSON : [\(apiArg)]")
         }
         
-        let headers = [
-            "Authorization": "Bearer \(secretToken)",
-            "Content-Type": "application/octet-stream",
-            "Dropbox-API-Arg": apiArg,
-            "data-binary": String.randomStringWithLength(5000)
-        ]
-        
-        // let url = "https://api.dropboxapi.com/2-beta-2/files/upload"
-        let url = "https://content.dropboxapi.com/2-beta-2/files/upload"
 
         // example image data
         let imageData = UIImageJPEGRepresentation(image, 0.1)
         
-        if(true) {
+        if(false) {
+        
+            let headers = [
+                "hi": "hi",
+            ]
             
-            let urlRequest = urlRequestWithComponents(url, parameters: headers, imageData: imageData!)
+            let p1        = "authorization=Bearer \(secretToken)&arg=\(apiArg)"
+            let escapedP1 = ToString(p1.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding))
+            let url2      = "https://content.dropboxapi.com/2-beta-2/files/upload?\(escapedP1)"
             
-            RJSUtils.setActivityIndicatorToState(true, identifier: url) // Turn activity indicator OFF
+            let urlRequest = urlRequestWithComponents(url2, parameters: headers, imageData: imageData!)
+            
+            RJSUtils.setActivityIndicatorToState(true, identifier: url2) // Turn activity indicator ON
             Alamofire.upload(urlRequest.0, data: urlRequest.1)
                 .progress { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) in
                     print("\(totalBytesWritten) / \(totalBytesExpectedToWrite)")
@@ -174,15 +185,23 @@ struct RJSDropBoxManager
                             completion(result: json, error: nil)
                         }
                         else {
-                            
                             debugPrint(datastring)
                         }
                     }
-                    RJSUtils.setActivityIndicatorToState(false, identifier: url) // Turn activity indicator OFF
+                    RJSUtils.setActivityIndicatorToState(false, identifier: url2) // Turn activity indicator OFF
             }
         }
 
         if(true) {
+            
+            let url = "https://content.dropboxapi.com/2-beta-2/files/upload"
+
+            let headers = [
+                "Authorization": "Bearer \(secretToken)",
+                "Content-Type": "application/octet-stream",
+                "Dropbox-API-Arg": apiArg,
+                "data-binary": "123"
+            ]
             
             RJSUtils.setActivityIndicatorToState(true, identifier: url) // Turn activity indicator ON
             Alamofire.request(.POST, url, headers: headers)
@@ -222,10 +241,10 @@ struct RJSDropBoxManager
      */
     static func unitTests() -> Void
     {
-        RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
-            assert(HaveValue(result))
-            assert(!HaveValue(error))
-        }
+     //   RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
+     //       assert(HaveValue(result))
+     //       assert(!HaveValue(error))
+     //   }
         
     }
     
