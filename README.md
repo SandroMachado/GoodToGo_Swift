@@ -38,16 +38,7 @@ About :
 
 The test can be found [here](https://docs.google.com/document/d/196_oDP1A4dxwuBElkxhXSNiD7TDSuVFpzO8NwqFhLYA/edit)
 
-About :
-- App suports all orientations.
-- Storyboards/Autolayouts.
-- Universal App (iPhone/iPad).
-- Records are stored in [Realm](https://realm.io/) db for offline use.
-- Avatar imagens are cached after the first donwload.
-
-TODO :
-- Fix top message orientation (Whisper).
-- Beside the user location, show also the user details.
+About : [http://nschallenges.blogspot.pt/2016/03/ios-candidate-test.html](http://nschallenges.blogspot.pt/2016/03/ios-candidate-test.html)
 
 ## App_6 : [Realm](https://realm.io/) DB tests
 About :
@@ -55,8 +46,7 @@ About :
 - Not intented to be [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).
 
 ## App_7 : [Marven](http://developer.marvel.com/) Exam
-About :
-- In construction.
+About : [http://nschallenges.blogspot.pt/2016/03/marvel-challange.html](http://nschallenges.blogspot.pt/2016/03/marvel-challange.html)
 
 ## License
 
