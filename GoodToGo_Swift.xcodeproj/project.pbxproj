@@ -949,7 +949,7 @@
 		9F6E65181C89F6F5005991CE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Realm/RealmSwift.framework; sourceTree = "<group>"; };
 		9F6E655A1C89FD0B005991CE /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F6E655D1C89FD46005991CE /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		9F76EA471C8F572F00DEBAF2 /* App_7 - Exam 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App_7 - Exam 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F76EA471C8F572F00DEBAF2 /* App_7 - Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App_7 - Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F76EA4A1C8F586000DEBAF2 /* App7Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7Configuration.swift; path = App_7/App7Configuration.swift; sourceTree = "<group>"; };
 		9F76EA4B1C8F586000DEBAF2 /* App7Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7Constants.swift; path = App_7/App7Constants.swift; sourceTree = "<group>"; };
 		9F76EA4C1C8F586000DEBAF2 /* App7LayoutsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App7LayoutsManager.swift; path = App_7/App7LayoutsManager.swift; sourceTree = "<group>"; };
@@ -1705,7 +1705,7 @@
 				9F63D2AF1C84BEB100352073 /* Swift.Lessons */,
 				9F41DAEE1C8520420083D1FC /* App_5 - Exam 1.app */,
 				9F6E65031C89F513005991CE /* App_6 - Realm.app */,
-				9F76EA471C8F572F00DEBAF2 /* App_7 - Exam 2.app */,
+				9F76EA471C8F572F00DEBAF2 /* App_7 - Marvel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1972,9 +1972,9 @@
 			productReference = 9F6E65031C89F513005991CE /* App_6 - Realm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9F76E9E71C8F572F00DEBAF2 /* App_7 - Exam 2 */ = {
+		9F76E9E71C8F572F00DEBAF2 /* App_7 - Marvel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F76EA441C8F572F00DEBAF2 /* Build configuration list for PBXNativeTarget "App_7 - Exam 2" */;
+			buildConfigurationList = 9F76EA441C8F572F00DEBAF2 /* Build configuration list for PBXNativeTarget "App_7 - Marvel" */;
 			buildPhases = (
 				9F76E9E81C8F572F00DEBAF2 /* Sources */,
 				9F76EA271C8F572F00DEBAF2 /* Frameworks */,
@@ -1986,9 +1986,9 @@
 			);
 			dependencies = (
 			);
-			name = "App_7 - Exam 2";
+			name = "App_7 - Marvel";
 			productName = GoodToGo_Swift;
-			productReference = 9F76EA471C8F572F00DEBAF2 /* App_7 - Exam 2.app */;
+			productReference = 9F76EA471C8F572F00DEBAF2 /* App_7 - Marvel.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9F9A9BED1C6CF0CB00B37D0D /* App_1 - UI Animations */ = {
@@ -2069,7 +2069,7 @@
 				9FD267D71C723A06005E9CC9 /* App_4 - Simple MVVM */,
 				9F41DA9C1C8520420083D1FC /* App_5 - Exam 1 */,
 				9F6E64B51C89F513005991CE /* App_6 - Realm */,
-				9F76E9E71C8F572F00DEBAF2 /* App_7 - Exam 2 */,
+				9F76E9E71C8F572F00DEBAF2 /* App_7 - Marvel */,
 				9F63D2AE1C84BEB100352073 /* Swift.Lessons */,
 			);
 		};
@@ -3082,6 +3082,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -3103,6 +3104,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -3110,6 +3112,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3123,6 +3126,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -3130,6 +3134,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3143,6 +3148,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -3150,6 +3156,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Links-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3163,6 +3170,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RJS.Links;
 				PRODUCT_NAME = Links;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -3170,6 +3178,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Links-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3183,13 +3192,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RJS.Links;
 				PRODUCT_NAME = Links;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		9F63D2B31C84BEB100352073 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks.Fabric",
@@ -3205,7 +3215,7 @@
 		9F63D2B41C84BEB100352073 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks.Fabric",
@@ -3222,6 +3232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3235,6 +3246,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ac81b4cd-3bdf-4736-9d82-27db08fb7e09";
 			};
 			name = Debug;
 		};
@@ -3242,6 +3254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3255,6 +3268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ac81b4cd-3bdf-4736-9d82-27db08fb7e09";
 			};
 			name = Release;
 		};
@@ -3275,9 +3289,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GoodToGo_Swift/App_7-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-7";
+				PRODUCT_BUNDLE_IDENTIFIER = rjps.goodtogo.swift.app7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ac81b4cd-3bdf-4736-9d82-27db08fb7e09";
 			};
 			name = Debug;
 		};
@@ -3298,9 +3312,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GoodToGo_Swift/App_7-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-7";
+				PRODUCT_BUNDLE_IDENTIFIER = rjps.goodtogo.swift.app7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ac81b4cd-3bdf-4736-9d82-27db08fb7e09";
 			};
 			name = Release;
 		};
@@ -3394,6 +3408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3414,6 +3429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3433,6 +3449,7 @@
 		9FD2680E1C723A06005E9CC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3446,12 +3463,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		9FD2680F1C723A06005E9CC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3465,6 +3484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -3516,7 +3536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F76EA441C8F572F00DEBAF2 /* Build configuration list for PBXNativeTarget "App_7 - Exam 2" */ = {
+		9F76EA441C8F572F00DEBAF2 /* Build configuration list for PBXNativeTarget "App_7 - Marvel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F76EA451C8F572F00DEBAF2 /* Debug */,

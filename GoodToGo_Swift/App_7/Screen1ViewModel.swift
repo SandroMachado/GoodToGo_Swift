@@ -50,7 +50,7 @@ final class Screen1ViewModel : Screen1ViewModelProtocol {
 
     init() {
         
-        self.title           = "Commics"
+        self.title           = "Comics"
         self.viewNeedsReload = Dynamic<Bool>(false)
         
         updateCommentsData()

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
-               BuildableName = "App_7 - Exam 2.app"
-               BlueprintName = "App_7 - Exam 2"
+               BuildableName = "App_7 - Marvel.app"
+               BlueprintName = "App_7 - Marvel"
                ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
-            BuildableName = "App_7 - Exam 2.app"
-            BlueprintName = "App_7 - Exam 2"
+            BuildableName = "App_7 - Marvel.app"
+            BlueprintName = "App_7 - Marvel"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
-            BuildableName = "App_7 - Exam 2.app"
-            BlueprintName = "App_7 - Exam 2"
+            BuildableName = "App_7 - Marvel.app"
+            BlueprintName = "App_7 - Marvel"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F76E9E71C8F572F00DEBAF2"
-            BuildableName = "App_7 - Exam 2.app"
-            BlueprintName = "App_7 - Exam 2"
+            BuildableName = "App_7 - Marvel.app"
+            BlueprintName = "App_7 - Marvel"
             ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
