@@ -30,8 +30,8 @@ struct App7ViewModelUseCases {
     }
     
     static func uploadToDropBox(imageName:String, image:UIImage)-> Void {
-        let testToken = ToString(RJSStorages.readFromDefaults("dropbox_api_userAcessToken"))
-        RJSDropBoxManager.uploadImage(testToken, image:image, imageName:imageName ) {
+        let userToken = ToString(RJSStorages.readFromKeychain(App7Constants.Keys.DropboxUserAcessToken))
+        RJSDropBoxManager.uploadImage(userToken, image:image, imageName:imageName ) {
             (result, error) -> Void in
             print(result)
         }

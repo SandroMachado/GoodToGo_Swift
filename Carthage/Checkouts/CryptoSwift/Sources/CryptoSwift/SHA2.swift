@@ -112,6 +112,7 @@ final class SHA2 : HashProtocol {
         }
     }
     
+    //FIXME: I can't do Generic func out of calculate32 and calculate64 (UInt32 vs UInt64), but if you can - please do pull request.
     func calculate32() -> [UInt8] {
         var tmpMessage = self.prepare(64)
         
@@ -139,7 +140,7 @@ final class SHA2 : HashProtocol {
                     M[x] = le.bigEndian
                     break
                 default:
-                    let s0 = rotateRight(M[x-15], n: 7) ^ rotateRight(M[x-15], n: 18) ^ (M[x-15] >> 3)
+                    let s0 = rotateRight(M[x-15], n: 7) ^ rotateRight(M[x-15], n: 18) ^ (M[x-15] >> 3) //FIXME: n
                     let s1 = rotateRight(M[x-2], n: 17) ^ rotateRight(M[x-2], n: 19) ^ (M[x-2] >> 10)
                     M[x] = M[x-16] &+ s0 &+ M[x-7] &+ s1
                     break
@@ -240,7 +241,7 @@ final class SHA2 : HashProtocol {
             
             // Main loop
             for j in 0..<variant.k.count {
-                let s0 = rotateRight(A,n: 28) ^ rotateRight(A,n: 34) ^ rotateRight(A,n: 39) 
+                let s0 = rotateRight(A,n: 28) ^ rotateRight(A,n: 34) ^ rotateRight(A,n: 39) //FIXME: n:
                 let maj = (A & B) ^ (A & C) ^ (B & C)
                 let t2 = s0 &+ maj
                 let s1 = rotateRight(E,n: 14) ^ rotateRight(E,n: 18) ^ rotateRight(E,n: 41)

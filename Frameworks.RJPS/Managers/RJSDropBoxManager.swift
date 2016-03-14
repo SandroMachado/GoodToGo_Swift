@@ -73,10 +73,10 @@ struct RJSDropBoxManager
         }
         else {
             DLogWarning("Controller \(controller) is already authorized!")
-            let testToken = ToString(RJSStorages.readFromDefaults("dropbox_api_userAcessToken"))
-            RJSDropBoxManager.getCurrentAcount(testToken) { (result, error) -> Void in
+            /*let userToken = ToString(RJSStorages.readFromKeychain(App7Constants.Keys.DropboxUserAcessToken))
+            RJSDropBoxManager.getCurrentAcount(userToken) { (result, error) -> Void in
                 DLog(result)
-            }
+            }*/
         }
     }
 
@@ -241,10 +241,10 @@ struct RJSDropBoxManager
      */
     static func unitTests() -> Void
     {
-     //   RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
-     //       assert(HaveValue(result))
-     //       assert(!HaveValue(error))
-     //   }
+        //RJSDropBoxManager.getCurrentAcount(AppGenericConstants.APIs.DropboxAcessTokenSecret) { (result, error) -> Void in
+        //    assert(HaveValue(result))
+        //    assert(!HaveValue(error))
+        //}
         
     }
     

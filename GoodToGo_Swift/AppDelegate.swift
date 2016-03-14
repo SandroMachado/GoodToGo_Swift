@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        if(RJSUtils.isRealDevice())
+        if(RJSUtils.isRealDevice() || true)
         {
             Fabric.with([Answers.self, Crashlytics.self])
         }
@@ -42,8 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 userAcessToken     = userAcessToken.replace("access_token=", newChar: "")
                 userAcessToken     = userAcessToken.replace("&token_type",   newChar: "")
                 
-                // TODO: Save user acess tokon in keychain
-                RJSStorages.saveToDefaults(userAcessToken, key: "dropbox_api_userAcessToken")
+                RJSStorages.saveToKeychain(userAcessToken, key: App7Constants.Keys.DropboxUserAcessToken)
                 
             case .Error( _, let description):
                 print("Error: \(description)")

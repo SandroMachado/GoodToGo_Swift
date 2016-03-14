@@ -663,6 +663,13 @@
 		9FD268071C723A06005E9CC9 /* choicesCheckedGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F4680C51C6E1B3800065E19 /* choicesCheckedGreen.png */; };
 		9FD2680A1C723A06005E9CC9 /* choicesCheckedBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F4680C41C6E1B3800065E19 /* choicesCheckedBlue@2x.png */; };
 		9FD2680B1C723A06005E9CC9 /* choicesUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F4680C61C6E1B3800065E19 /* choicesUnchecked.png */; };
+		9FE2A0A41C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0A51C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0A61C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0A71C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0A81C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0A91C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0AA1C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
 		9FE3A9A11C6FED63002B166B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681491C6E1E0D00065E19 /* SwiftyJSON.framework */; };
 		9FE3A9A21C6FED64002B166B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681491C6E1E0D00065E19 /* SwiftyJSON.framework */; };
 		9FE3A9A31C6FED67002B166B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681461C6E1E0600065E19 /* Alamofire.framework */; };
@@ -1030,6 +1037,7 @@
 		9FD268101C723A06005E9CC9 /* App_4 - Simple MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App_4 - Simple MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD268141C723A92005E9CC9 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = App_4/ArticleViewController.swift; sourceTree = "<group>"; };
 		9FD268181C723A92005E9CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = SOURCE_ROOT; };
 		9FE3A9B21C6FF808002B166B /* RJSCrashlytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJSCrashlytics.swift; sourceTree = "<group>"; };
 		9FE3A9D01C6FFCF4002B166B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks.Fabric/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		9FE3A9D11C6FFCF4002B166B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks.Fabric/Fabric.framework; sourceTree = SOURCE_ROOT; };
@@ -1062,6 +1070,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A81C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F41DAD51C8520420083D1FC /* libsqlite3.dylib in Frameworks */,
 				9F6E652F1C89F6F5005991CE /* Realm.framework in Frameworks */,
 				9F6E654F1C89FAAD005991CE /* RealmSwift.framework in Frameworks */,
@@ -1083,6 +1092,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A51C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F9A291E1C7D32A5006CE65C /* libsqlite3.dylib in Frameworks */,
 				9F6E652C1C89F6F5005991CE /* Realm.framework in Frameworks */,
 				9F6E65401C89FA99005991CE /* RealmSwift.framework in Frameworks */,
@@ -1104,6 +1114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A61C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F9A291F1C7D32A5006CE65C /* libsqlite3.dylib in Frameworks */,
 				9F6E652D1C89F6F5005991CE /* Realm.framework in Frameworks */,
 				9F6E65451C89FAA0005991CE /* RealmSwift.framework in Frameworks */,
@@ -1132,6 +1143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A91C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F6E64ED1C89F513005991CE /* libsqlite3.dylib in Frameworks */,
 				9F6E65301C89F6F6005991CE /* Realm.framework in Frameworks */,
 				9F6E65541C89FAB4005991CE /* RealmSwift.framework in Frameworks */,
@@ -1153,6 +1165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0AA1C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F76EA281C8F572F00DEBAF2 /* libsqlite3.dylib in Frameworks */,
 				9F76EA291C8F572F00DEBAF2 /* Realm.framework in Frameworks */,
 				9F76EA2A1C8F572F00DEBAF2 /* RealmSwift.framework in Frameworks */,
@@ -1174,6 +1187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A41C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F9A291D1C7D32A4006CE65C /* libsqlite3.dylib in Frameworks */,
 				9F6E652B1C89F6F5005991CE /* Realm.framework in Frameworks */,
 				9F6E653B1C89FA90005991CE /* RealmSwift.framework in Frameworks */,
@@ -1195,6 +1209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2A0A71C970E2700C0C9B1 /* Locksmith.framework in Frameworks */,
 				9F9A291C1C7D328B006CE65C /* libsqlite3.dylib in Frameworks */,
 				9F6E652E1C89F6F5005991CE /* Realm.framework in Frameworks */,
 				9F6E654A1C89FAA6005991CE /* RealmSwift.framework in Frameworks */,
@@ -1399,6 +1414,7 @@
 		9F4681F51C6E7BD200065E19 /* Frameworks.Carthage */ = {
 			isa = PBXGroup;
 			children = (
+				9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */,
 				9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */,
 				9FFCAD7A1C8DC6AE00EF51A5 /* Eureka.framework */,
 				9F6D7F771C6FEC4500E70557 /* Whisper.framework */,
@@ -2191,6 +2207,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2209,6 +2226,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2227,6 +2245,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2245,6 +2264,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2263,6 +2283,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2281,6 +2302,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);
@@ -2299,6 +2321,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 			);
 			outputPaths = (
 			);

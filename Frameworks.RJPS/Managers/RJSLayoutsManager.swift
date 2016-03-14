@@ -104,6 +104,18 @@ class RJSLayoutsManager
         else {
             UINavigationBar.appearance().tintColor = RJSLayoutsManagerConstants.Default.LabelsTextColor
         }
+        
+        // Cor dos botoes
+        UIBarButtonItem.appearance().tintColor = RJSLayoutsManagerConstants.Default.LabelsTextColor
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: RJSLayoutsManagerConstants.FontName.HelveticaNeue_Thin, size: 10)!
+        ]
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.greenColor()
+        UITabBar.appearance().backgroundColor        = UIColor.yellowColor();
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 234.0/255.0, green: 46.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
     
     /*

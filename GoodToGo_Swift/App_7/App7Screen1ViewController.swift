@@ -129,7 +129,6 @@ class App7Screen1ViewController: UIViewController {
             cell.img1!.setNewImageWithSmootTransition(newImage, duration:1, ajustSize:true)
             cell.lbl1!.text = item.title
             cell.lbl2?.hidden = true
-        //    cell.lbl2!.text = item.description
         }
         
         RJSLayoutsManager.App7.LayoutUITableViewCell_1(cell)

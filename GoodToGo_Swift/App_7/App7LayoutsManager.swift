@@ -13,10 +13,7 @@ extension RJSLayoutsManager
     */
     class App7
     {
-        static func LayoutNavigationBar()
-        {
-            RJSLayoutsManager.LayoutNavigationBar(nil)
-        }
+
         
         static func LayoutBackround_1(view:UIView)
         {
@@ -90,19 +87,25 @@ extension RJSLayoutsManager
             }
         }
         
-        static func LayoutUINavigationBar(appName:String?)
+        static func LayoutNavigationBar()
         {
             // Cor dos botoes
             UIBarButtonItem.appearance().tintColor = RJSLayoutsManagerConstants.Default.LabelsTextColor
             UINavigationBar.appearance().titleTextAttributes = [
                 NSFontAttributeName: UIFont(name: RJSLayoutsManagerConstants.FontName.HelveticaNeue_Thin, size: 10)!
             ]
-
-            UINavigationBar.appearance().backgroundColor = UIColor.greenColor()
-            UITabBar.appearance().backgroundColor        = UIColor.yellowColor();
-                
-            UINavigationBar.appearance().barTintColor = UIColor(red: 234.0/255.0, green: 46.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+            
+            UINavigationBar.appearance().backgroundColor = UIColor.whiteColor()
+            UITabBar.appearance().backgroundColor        = UIColor.whiteColor();
+            
+            UINavigationBar.appearance().barTintColor        = UIColor.whiteColor()
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+            // UINavigationBar buttons color
+            UINavigationBar.appearance().tintColor = RJSLayoutsManagerConstants.Default.LabelsTextColor
+
         }
+        
+
     }
 }

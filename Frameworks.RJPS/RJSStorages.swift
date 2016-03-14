@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Locksmith
 
 struct  RJSStorages
 {
    
+    // MARK: - NSUserDefaults
     /**
      @brief Delete from NSUserDefaults the value for the key
      @param key is the key of the object to be deleted.
@@ -64,6 +66,37 @@ struct  RJSStorages
         return nil;
     }
     
+    // MARK: - Keychain
+    private static let keychainGroup = "rjps.app.keychain"
+    static func saveToKeychain(value : String, key : String) -> Bool
+    {
+        guard !key.isEmpty else {
+            DLogWarning("Ignored. Invalid key")
+            return false
+        }
+        
+        _ = try! Locksmith.saveData([key: value], forUserAccount: keychainGroup)
+        
+        return true
+    }
+    
+    static func readFromKeychain(key : String) -> String?
+    {
+        guard !key.isEmpty else {
+            DLogWarning("Ignored. Invalid key")
+            return nil
+        }
+        
+        let dictionary = Locksmith.loadDataForUserAccount(keychainGroup)
+        let result = dictionary?.valueForKey(key)
+        if(HaveValue(result)) {
+            return ToString(result)
+        }
+        return ""
+    }
+    
+    // MARK: - Keychain
+
     /**
      @brief Do unit testing for this class
      @param None.

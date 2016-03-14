@@ -35,7 +35,7 @@ func integerFromBitsArray<T: UnsignedIntegerType>(bits: [Bit]) -> T
 /// Initialize integer from array of bytes.
 /// This method may be slow
 func integerWithBytes<T: IntegerType where T:ByteConvertible, T: BitshiftOperationsType>(bytes: [UInt8]) -> T {
-    var bytes = bytes.reverse() as Array<UInt8>
+    var bytes = bytes.reverse() as Array<UInt8> //FIXME: check it this is equivalent of Array(...)
     if bytes.count < sizeof(T) {
         let paddingCount = sizeof(T) - bytes.count
         if (paddingCount > 0) {
@@ -90,6 +90,7 @@ func << <T:UnsignedIntegerType>(lhs: T, rhs: Int) -> UInt {
 }
 
 // Generic function itself
+// FIXME: this generic function is not as generic as I would. It crashes for smaller types
 func shiftLeft<T: SignedIntegerType where T: Initiable>(value: T, count: Int) -> T {
     if (value == 0) {
         return 0;
@@ -115,7 +116,7 @@ func shiftLeft<T: SignedIntegerType where T: Initiable>(value: T, count: Int) ->
 
 // for any f*** other Integer type - this part is so non-Generic
 func shiftLeft(value: UInt, count: Int) -> UInt {
-    return UInt(shiftLeft(Int(value), count: count))
+    return UInt(shiftLeft(Int(value), count: count)) //FIXME: count:
 }
 
 func shiftLeft(value: UInt8, count: Int) -> UInt8 {

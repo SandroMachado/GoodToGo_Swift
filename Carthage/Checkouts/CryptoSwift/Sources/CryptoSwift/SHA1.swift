@@ -40,7 +40,7 @@ final class SHA1 : HashProtocol {
                     M[x] = le.bigEndian
                     break
                 default:
-                    M[x] = rotateLeft(M[x-3] ^ M[x-8] ^ M[x-14] ^ M[x-16], 1) 
+                    M[x] = rotateLeft(M[x-3] ^ M[x-8] ^ M[x-14] ^ M[x-16], 1) //FIXME: n:
                     break
                 }
             }
