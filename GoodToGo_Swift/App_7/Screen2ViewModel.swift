@@ -40,7 +40,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     // Uploads the current image to the dropbox
     func uploadImageToDropbox () -> Void {
-        guard RJSUtils.existsInternetConnection() && false else {
+        guard RJSUtils.existsInternetConnection() else {
             RJSUtils.postNotificaitonWithName(AppGenericConstants.Notifications.ShowNoInternetConnection)
             return
         }
@@ -55,7 +55,7 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     func replaceCoverImageForCurrentCommic(newImage:UIImage) {
         
-        guard RJSUtils.existsInternetConnection() && false else {
+        guard RJSUtils.existsInternetConnection() else {
             RJSUtils.postNotificaitonWithName(AppGenericConstants.Notifications.ShowNoInternetConnection)
             
             // Reload...
