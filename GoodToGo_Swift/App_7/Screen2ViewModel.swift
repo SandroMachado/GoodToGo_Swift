@@ -40,6 +40,11 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     // Uploads the current image to the dropbox
     func uploadImageToDropbox () -> Void {
+        guard RJSUtils.existsInternetConnection() && false else {
+            RJSUtils.postNotificaitonWithName(AppGenericConstants.Notifications.ShowNoInternetConnection)
+            return
+        }
+        
         // Get the name of the image (the folder in the dropbox, is the same that the folder of the cached image)
         let name = App7ViewModelUseCases.thumbnailURLToToFileSystemName(currentItem)
         getCoverImage({ (image) -> Void in
@@ -50,7 +55,15 @@ final class Screen2ViewModel : Screen2ViewModelProtocol {
     
     func replaceCoverImageForCurrentCommic(newImage:UIImage) {
         
-        // Salvar a imagem no sistema de ficheiros
+        guard RJSUtils.existsInternetConnection() && false else {
+            RJSUtils.postNotificaitonWithName(AppGenericConstants.Notifications.ShowNoInternetConnection)
+            
+            // Reload...
+            setViewNeedsToReadInMainTread()
+            
+            return
+        }
+         // Salvar a imagem no sistema de ficheiros
         let name = App7ViewModelUseCases.thumbnailURLToToFileSystemName(currentItem)
         RJSFilesManager.saveImage(name, folder: RJSFilesManager.Folder.Documents, image: newImage)
         

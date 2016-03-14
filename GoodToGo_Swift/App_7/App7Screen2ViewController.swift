@@ -81,13 +81,6 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // MARK: Segues
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-  //      DLogWarning("Comentado")
-  //      if let destinationVC = segue.destinationViewController as? App7Screen3ViewController {
-  //          destinationVC.sharedVar = self.sharedVar
-  //      }
-    }
     
     // MARK: Auxiliar
     func loadViewModel()
@@ -133,7 +126,7 @@ class App7Screen2ViewController: UIViewController, UIImagePickerControllerDelega
         
         RJSOptionalUtils.safeUIElementSetValue(self.lblComicTitle, value: viewModel!.comicTitle)
         viewModel?.getCoverImage({ (newImage) -> Void in
-            self.imgComic?.setNewImageWithSmootTransition(newImage, duration:1, ajustSize:true)
+            self.imgComic?.setNewImageWithSmootTransition(newImage, duration:0, ajustSize:true)
         })
     }
     

@@ -18,10 +18,6 @@ extension UIImageView
                 return
             }
             
-            if(self.frame.size.width != self.frame.size.height) {
-           //     return
-            }
-            
             UIView.animateWithDuration(duration/2, animations: { () -> Void in
                 let rate   = newImage.size.width / newImage.size.height
                 if(rate>1) {

@@ -178,7 +178,6 @@ class App7Screen1ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
-        
     }
   
 }
