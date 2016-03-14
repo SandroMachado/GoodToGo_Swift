@@ -21,7 +21,7 @@ About :
 
 ## App_3 : Links - UIWebView based app
 About :
-- Real app to send to the app store (or not).
+- Real app to send to the app store (or not). It works, but it have to be totally rebuided in MVVM and I dont the time (for now)
 - [3 tier architacture - PL, BLL, DAL](https://www.techopedia.com/definition/24649/three-tier-architecture.)
 
 
@@ -42,7 +42,7 @@ About : [http://nschallenges.blogspot.pt/2016/03/ios-candidate-test.html](http:/
 
 ## App_6 : [Realm](https://realm.io/) DB tests
 About :
--  [Realm](https://realm.io/) DB simples tests.
+- [Realm](https://realm.io/) DB simples tests.
 - Not intented to be [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).
 
 ## App_7 : Marvel/Dropbox Exam
