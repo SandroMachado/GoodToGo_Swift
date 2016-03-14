@@ -45,7 +45,7 @@ About :
 -  [Realm](https://realm.io/) DB simples tests.
 - Not intented to be [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).
 
-## App_7 : [Marven](http://developer.marvel.com/) Exam
+## App_7 : Marvel/Dropbox Exam
 About : [http://nschallenges.blogspot.pt/2016/03/marvel-challange.html](http://nschallenges.blogspot.pt/2016/03/marvel-challange.html)
 
 ## License
