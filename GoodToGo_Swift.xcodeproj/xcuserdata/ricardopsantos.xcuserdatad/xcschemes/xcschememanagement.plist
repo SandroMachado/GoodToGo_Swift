@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>GoodToGo_UnitTesting.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Swift.Lessons.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -108,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>9FD267D71C723A06005E9CC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FE2A0AE1C98796000C0C9B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

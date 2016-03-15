@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 userAcessToken     = userAcessToken.replace("access_token=", with: "")
                 userAcessToken     = userAcessToken.replace("&token_type",   with: "")
                 
-                RJSStorages.saveToKeychain(userAcessToken, key: App7Constants.Keys.DropboxUserAcessToken)
+                RJSStorages.saveToKeychain(userAcessToken, key: AppConstants.DefaultsKey.DropboxUserAcessToken)
                 
             case .Error( _, let description):
                 print("Error: \(description)")

@@ -300,7 +300,7 @@ class LKMainScreenVC: UINavigationController, RJSChoivesVCDelegate, NSURLSession
         
         if(String.isNullOrEmpty(lastURL) || !App3BusinessLayer.urlIsStored(lastURL))
         {
-            /// FIX: hardcoded
+            // TODO: hardcoded
             lastURL = "https://www.google.com";
             lastKey = "Google"
             RJSMessagesManager.showSmallTopMessage("Loading default url...");

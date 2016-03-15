@@ -30,7 +30,7 @@ struct App7ViewModelUseCases {
     }
     
     static func uploadToDropBox(imageName:String, image:UIImage)-> Void {
-        let userToken = ToString(RJSStorages.readFromKeychain(App7Constants.Keys.DropboxUserAcessToken))
+        let userToken = ToString(RJSStorages.readFromKeychain(AppConstants.DefaultsKey.DropboxUserAcessToken))
         RJSDropBoxManager.uploadImage(userToken, image:image, imageName:imageName ) {
             (result, error) -> Void in
             print(result)
@@ -60,7 +60,7 @@ struct App7ViewModelUseCases {
         if(RJSUtils.existsInternetConnection())
         {
             // While we download the imagem, let's set a temporary image...
-            let downloadingImage = UIImage(named: AppGenericConstants.ImagesBlundle.Downloading1)
+            let downloadingImage = UIImage(named: AppConstants.ImagesBlundle.Downloading1)
             completion(newImage: downloadingImage!)
             
             // We didnt find the cover image on the file system. Let fetch it....

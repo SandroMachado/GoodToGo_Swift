@@ -14,11 +14,6 @@ struct TableItem {
 }
 
 enum App7Constants {
-    enum Keys {
-        static var DropboxUserAcessToken: String {
-            return "dropbox_api_userAcessToken"
-        }
-    }
     enum Segues {
         static var Screen2: String {
             return "app7.modal.screen2"

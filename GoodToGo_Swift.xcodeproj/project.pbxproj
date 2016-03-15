@@ -84,7 +84,7 @@
 		9F41DACC1C8520420083D1FC /* RJSAppAndDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3A9D81C6FFD36002B166B /* RJSAppAndDeviceInfo.swift */; };
 		9F41DACD1C8520420083D1FC /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680D51C6E1B3800065E19 /* UILabel+Extensions.swift */; };
 		9F41DACE1C8520420083D1FC /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A29031C7D3124006CE65C /* SQLiteDB.swift */; };
-		9F41DACF1C8520420083D1FC /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
+		9F41DACF1C8520420083D1FC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
 		9F41DAD01C8520420083D1FC /* RJSExceptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680DF1C6E1B3800065E19 /* RJSExceptionsManager.swift */; };
 		9F41DAD11C8520420083D1FC /* UIBezierPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680D21C6E1B3800065E19 /* UIBezierPath+Extensions.swift */; };
 		9F41DAD21C8520420083D1FC /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680CC1C6E1B3800065E19 /* Dictionary+Extensions.swift */; };
@@ -224,7 +224,7 @@
 		9F6D7F7A1C6FED3800E70557 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7F771C6FEC4500E70557 /* Whisper.framework */; };
 		9F6E64B71C89F513005991CE /* RJSJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680E71C6E1B3800065E19 /* RJSJSON.swift */; };
 		9F6E64B81C89F513005991CE /* RJSWebservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680EF1C6E1B3800065E19 /* RJSWebservices.swift */; };
-		9F6E64B91C89F513005991CE /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
+		9F6E64B91C89F513005991CE /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
 		9F6E64BA1C89F513005991CE /* RJSErrorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680DE1C6E1B3800065E19 /* RJSErrorsManager.swift */; };
 		9F6E64BB1C89F513005991CE /* RJSMVVMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8BC061C81E66700394CA1 /* RJSMVVMUtils.swift */; };
 		9F6E64BC1C89F513005991CE /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A29041C7D3124006CE65C /* SQLTable.swift */; };
@@ -372,7 +372,7 @@
 		9F76EA181C8F572F00DEBAF2 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680D51C6E1B3800065E19 /* UILabel+Extensions.swift */; };
 		9F76EA191C8F572F00DEBAF2 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A29031C7D3124006CE65C /* SQLiteDB.swift */; };
 		9F76EA1B1C8F572F00DEBAF2 /* RJSRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E61B1C879C080051E9F5 /* RJSRegExp.swift */; };
-		9F76EA1C1C8F572F00DEBAF2 /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
+		9F76EA1C1C8F572F00DEBAF2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
 		9F76EA1E1C8F572F00DEBAF2 /* RJSExceptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680DF1C6E1B3800065E19 /* RJSExceptionsManager.swift */; };
 		9F76EA211C8F572F00DEBAF2 /* UIBezierPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680D21C6E1B3800065E19 /* UIBezierPath+Extensions.swift */; };
 		9F76EA221C8F572F00DEBAF2 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F24371C8B13FD003D546B /* AppConfiguration.swift */; };
@@ -670,6 +670,7 @@
 		9FE2A0A81C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
 		9FE2A0A91C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
 		9FE2A0AA1C970E2700C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
+		9FE2A0B21C98796000C0C9B1 /* GoodToGo_UnitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2A0B11C98796000C0C9B1 /* GoodToGo_UnitTesting.swift */; };
 		9FE3A9A11C6FED63002B166B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681491C6E1E0D00065E19 /* SwiftyJSON.framework */; };
 		9FE3A9A21C6FED64002B166B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681491C6E1E0D00065E19 /* SwiftyJSON.framework */; };
 		9FE3A9A31C6FED67002B166B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681461C6E1E0600065E19 /* Alamofire.framework */; };
@@ -718,10 +719,10 @@
 		9FF0E61E1C879C080051E9F5 /* RJSRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E61B1C879C080051E9F5 /* RJSRegExp.swift */; };
 		9FF0E61F1C879C080051E9F5 /* RJSRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E61B1C879C080051E9F5 /* RJSRegExp.swift */; };
 		9FF0E6201C879C080051E9F5 /* RJSRegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E61B1C879C080051E9F5 /* RJSRegExp.swift */; };
-		9FF1BBC81C81001A004279D2 /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
-		9FF1BBC91C81001A004279D2 /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
-		9FF1BBCA1C81001A004279D2 /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
-		9FF1BBCB1C81001A004279D2 /* AppGenericConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */; };
+		9FF1BBC81C81001A004279D2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
+		9FF1BBC91C81001A004279D2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
+		9FF1BBCA1C81001A004279D2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
+		9FF1BBCB1C81001A004279D2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBC71C81001A004279D2 /* AppConstants.swift */; };
 		9FF1BBCF1C810519004279D2 /* DBTConfigurationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBCE1C810519004279D2 /* DBTConfigurationKeys.swift */; };
 		9FF1BBD01C810519004279D2 /* DBTConfigurationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBCE1C810519004279D2 /* DBTConfigurationKeys.swift */; };
 		9FF1BBD11C810519004279D2 /* DBTConfigurationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1BBCE1C810519004279D2 /* DBTConfigurationKeys.swift */; };
@@ -1038,6 +1039,9 @@
 		9FD268141C723A92005E9CC9 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = App_4/ArticleViewController.swift; sourceTree = "<group>"; };
 		9FD268181C723A92005E9CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = SOURCE_ROOT; };
+		9FE2A0AF1C98796000C0C9B1 /* GoodToGo_UnitTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodToGo_UnitTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE2A0B11C98796000C0C9B1 /* GoodToGo_UnitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodToGo_UnitTesting.swift; sourceTree = "<group>"; };
+		9FE2A0B31C98796000C0C9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE3A9B21C6FF808002B166B /* RJSCrashlytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJSCrashlytics.swift; sourceTree = "<group>"; };
 		9FE3A9D01C6FFCF4002B166B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks.Fabric/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		9FE3A9D11C6FFCF4002B166B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks.Fabric/Fabric.framework; sourceTree = SOURCE_ROOT; };
@@ -1055,7 +1059,7 @@
 		9FF0E6191C8781A60051E9F5 /* Screen3ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Screen3ViewModel.swift; path = App_5/Screen3ViewModel.swift; sourceTree = "<group>"; };
 		9FF0E61B1C879C080051E9F5 /* RJSRegExp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJSRegExp.swift; sourceTree = "<group>"; };
 		9FF1BBC51C80A160004279D2 /* iOS Good Practices.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "iOS Good Practices.pdf"; path = "Documents/iOS Good Practices.pdf"; sourceTree = "<group>"; };
-		9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppGenericConstants.swift; path = App_Shared/AppGenericConstants.swift; sourceTree = "<group>"; };
+		9FF1BBC71C81001A004279D2 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = App_Shared/AppConstants.swift; sourceTree = "<group>"; };
 		9FF1BBCE1C810519004279D2 /* DBTConfigurationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBTConfigurationKeys.swift; path = App_Shared/DBTConfigurationKeys.swift; sourceTree = "<group>"; };
 		9FF1BBD61C810AB9004279D2 /* demoDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = demoDB.db; sourceTree = "<group>"; };
 		9FF6A9D41C8ED7C500C60347 /* LDesignatedInitAndConvenienceInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LDesignatedInitAndConvenienceInit.swift; path = GoodToGo_SwiftLessons/LDesignatedInitAndConvenienceInit.swift; sourceTree = SOURCE_ROOT; };
@@ -1224,6 +1228,13 @@
 				9FFCAD7E1C8DC6AE00EF51A5 /* Eureka.framework in Frameworks */,
 				9FD268021C723A06005E9CC9 /* QuartzCore.framework in Frameworks */,
 				9F6E65481C89FAA6005991CE /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE2A0AC1C98796000C0C9B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1445,7 +1456,7 @@
 				9F468F161C6F60BC00065E19 /* Images.xcassets */,
 				9FF0E60A1C8776D50051E9F5 /* Media.xcassets */,
 				9FC4D6361C6F811000796F65 /* RJSNodeServer.swift */,
-				9FF1BBC71C81001A004279D2 /* AppGenericConstants.swift */,
+				9FF1BBC71C81001A004279D2 /* AppConstants.swift */,
 				9F8F24371C8B13FD003D546B /* AppConfiguration.swift */,
 			);
 			name = "App's Shared Sources";
@@ -1689,6 +1700,7 @@
 				9F9A9BF01C6CF0CB00B37D0D /* GoodToGo_Swift */,
 				9F63D2B01C84BEB100352073 /* GoodToGo_SwiftLessons */,
 				9FFCAD811C8DC98B00EF51A5 /* GoodToGo_PlayGrounds */,
+				9FE2A0B01C98796000C0C9B1 /* GoodToGo_UnitTesting */,
 				9F9A9BEF1C6CF0CB00B37D0D /* Products */,
 				9FF6A9E21C8F26AB00C60347 /* README.md */,
 				9FFCAD791C8DC68D00EF51A5 /* Cartfile */,
@@ -1706,6 +1718,7 @@
 				9F41DAEE1C8520420083D1FC /* App_5 - Exam 1.app */,
 				9F6E65031C89F513005991CE /* App_6 - Realm.app */,
 				9F76EA471C8F572F00DEBAF2 /* App_7 - Marvel.app */,
+				9FE2A0AF1C98796000C0C9B1 /* GoodToGo_UnitTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1835,6 +1848,15 @@
 				9FA8BC421C82583B00394CA1 /* Models */,
 			);
 			name = App_4;
+			sourceTree = "<group>";
+		};
+		9FE2A0B01C98796000C0C9B1 /* GoodToGo_UnitTesting */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2A0B11C98796000C0C9B1 /* GoodToGo_UnitTesting.swift */,
+				9FE2A0B31C98796000C0C9B1 /* Info.plist */,
+			);
+			path = GoodToGo_UnitTesting;
 			sourceTree = "<group>";
 		};
 		9FE3A9B61C6FFB09002B166B /* Frameworks.Frabric */ = {
@@ -2029,6 +2051,23 @@
 			productReference = 9FD268101C723A06005E9CC9 /* App_4 - Simple MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9FE2A0AE1C98796000C0C9B1 /* GoodToGo_UnitTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE2A0B41C98796000C0C9B1 /* Build configuration list for PBXNativeTarget "GoodToGo_UnitTesting" */;
+			buildPhases = (
+				9FE2A0AB1C98796000C0C9B1 /* Sources */,
+				9FE2A0AC1C98796000C0C9B1 /* Frameworks */,
+				9FE2A0AD1C98796000C0C9B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodToGo_UnitTesting;
+			productName = GoodToGo_UnitTesting;
+			productReference = 9FE2A0AF1C98796000C0C9B1 /* GoodToGo_UnitTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2046,6 +2085,9 @@
 						DevelopmentTeam = EP8XQ3ZY9V;
 					};
 					9F9A9BED1C6CF0CB00B37D0D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					9FE2A0AE1C98796000C0C9B1 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -2071,6 +2113,7 @@
 				9F6E64B51C89F513005991CE /* App_6 - Realm */,
 				9F76E9E71C8F572F00DEBAF2 /* App_7 - Marvel */,
 				9F63D2AE1C84BEB100352073 /* Swift.Lessons */,
+				9FE2A0AE1C98796000C0C9B1 /* GoodToGo_UnitTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -2196,6 +2239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FE2A0AD1C98796000C0C9B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2216,7 +2266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
 		};
 		9F46814F1C6E1F5F00065E19 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2235,7 +2285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		9F468EDD1C6E7F5C00065E19 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2254,7 +2304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		9F468F5E1C6F65B600065E19 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2273,7 +2323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
 		};
 		9F6E64FF1C89F513005991CE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2292,7 +2342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 		9F76EA401C8F572F00DEBAF2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2311,7 +2361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n\n";
 		};
 		9FD2680C1C723A06005E9CC9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2330,7 +2380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIXME:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n./Frameworks.Fabric/Fabric.framework/run cd3f8731e60f94a9d9961c3611f22f4287145299 1e61e8bedde6c99978379547edeb7dbf535368b2809d2c276f0010550a6eb880\n\nTAGS=\"TODO:|FIX:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2403,7 +2453,7 @@
 				9F41DACE1C8520420083D1FC /* SQLiteDB.swift in Sources */,
 				9FF0E6181C8781850051E9F5 /* Screen3ViewController.swift in Sources */,
 				9FF0E6201C879C080051E9F5 /* RJSRegExp.swift in Sources */,
-				9F41DACF1C8520420083D1FC /* AppGenericConstants.swift in Sources */,
+				9F41DACF1C8520420083D1FC /* AppConstants.swift in Sources */,
 				9FF0E5F31C862DBA0051E9F5 /* DBTableComments.swift in Sources */,
 				9F41DAD01C8520420083D1FC /* RJSExceptionsManager.swift in Sources */,
 				9FF0E6001C8645990051E9F5 /* Screen2ViewController.swift in Sources */,
@@ -2474,7 +2524,7 @@
 				9F468EC61C6E7F5C00065E19 /* UIView+Animations.swift in Sources */,
 				9FF1BBD01C810519004279D2 /* DBTConfigurationKeys.swift in Sources */,
 				9FA8BC451C825DBD00394CA1 /* RJSDownloadsManager.swift in Sources */,
-				9FF1BBC91C81001A004279D2 /* AppGenericConstants.swift in Sources */,
+				9FF1BBC91C81001A004279D2 /* AppConstants.swift in Sources */,
 				9F8F24391C8B13FD003D546B /* AppConfiguration.swift in Sources */,
 				9F3D2E8A1C7D4B0B005A78B3 /* NSObject+Extensions.swift in Sources */,
 				9F468EC81C6E7F5C00065E19 /* RJSSizes.swift in Sources */,
@@ -2578,7 +2628,7 @@
 				9F468F4E1C6F65B600065E19 /* UILabel+Extensions.swift in Sources */,
 				9FB0B5F31C90773600C0F031 /* SecurityUtil.m in Sources */,
 				9F9A29081C7D3124006CE65C /* SQLiteDB.swift in Sources */,
-				9FF1BBCA1C81001A004279D2 /* AppGenericConstants.swift in Sources */,
+				9FF1BBCA1C81001A004279D2 /* AppConstants.swift in Sources */,
 				9F468F4F1C6F65B600065E19 /* RJSExceptionsManager.swift in Sources */,
 				9FF0E61E1C879C080051E9F5 /* RJSRegExp.swift in Sources */,
 				9F468F501C6F65B600065E19 /* UIBezierPath+Extensions.swift in Sources */,
@@ -2622,7 +2672,7 @@
 			files = (
 				9F6E64B71C89F513005991CE /* RJSJSON.swift in Sources */,
 				9F6E64B81C89F513005991CE /* RJSWebservices.swift in Sources */,
-				9F6E64B91C89F513005991CE /* AppGenericConstants.swift in Sources */,
+				9F6E64B91C89F513005991CE /* AppConstants.swift in Sources */,
 				9F6E64BA1C89F513005991CE /* RJSErrorsManager.swift in Sources */,
 				9F6E64BB1C89F513005991CE /* RJSMVVMUtils.swift in Sources */,
 				9F6E64BC1C89F513005991CE /* SQLTable.swift in Sources */,
@@ -2767,7 +2817,7 @@
 				9F76EA181C8F572F00DEBAF2 /* UILabel+Extensions.swift in Sources */,
 				9F76EA191C8F572F00DEBAF2 /* SQLiteDB.swift in Sources */,
 				9F76EA1B1C8F572F00DEBAF2 /* RJSRegExp.swift in Sources */,
-				9F76EA1C1C8F572F00DEBAF2 /* AppGenericConstants.swift in Sources */,
+				9F76EA1C1C8F572F00DEBAF2 /* AppConstants.swift in Sources */,
 				9F76EA1E1C8F572F00DEBAF2 /* RJSExceptionsManager.swift in Sources */,
 				9FB0B5FE1C90773600C0F031 /* Sharing.swift in Sources */,
 				9FB0B5DB1C90773600C0F031 /* Files.swift in Sources */,
@@ -2790,7 +2840,7 @@
 				9F46818E1C6E792400065E19 /* RJSJSON.swift in Sources */,
 				9FB0B6141C90773600C0F031 /* UsersRoutes.swift in Sources */,
 				9F4681961C6E792400065E19 /* RJSWebservices.swift in Sources */,
-				9FF1BBC81C81001A004279D2 /* AppGenericConstants.swift in Sources */,
+				9FF1BBC81C81001A004279D2 /* AppConstants.swift in Sources */,
 				9FE3A9DC1C700662002B166B /* RJSErrorsManager.swift in Sources */,
 				9FB0B5C01C90773600C0F031 /* Client.swift in Sources */,
 				9FA8BC071C81E66700394CA1 /* RJSMVVMUtils.swift in Sources */,
@@ -2869,7 +2919,7 @@
 				9FD267DD1C723A06005E9CC9 /* RJSErrorsManager.swift in Sources */,
 				9F41DB081C8525010083D1FC /* ArticleViewModel.swift in Sources */,
 				9FB0B5FB1C90773600C0F031 /* Sharing.swift in Sources */,
-				9FF1BBCB1C81001A004279D2 /* AppGenericConstants.swift in Sources */,
+				9FF1BBCB1C81001A004279D2 /* AppConstants.swift in Sources */,
 				9FD267DE1C723A06005E9CC9 /* RJSStorages.swift in Sources */,
 				9FA8BC0A1C81E66700394CA1 /* RJSMVVMUtils.swift in Sources */,
 				9F9A290F1C7D3124006CE65C /* SQLTable.swift in Sources */,
@@ -2937,6 +2987,14 @@
 				9F024E071C8A746A00E3D27A /* UIImage+Extensions.swift in Sources */,
 				9FD267FA1C723A06005E9CC9 /* UIBezierPath+Extensions.swift in Sources */,
 				9FD267FB1C723A06005E9CC9 /* Dictionary+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE2A0AB1C98796000C0C9B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE2A0B21C98796000C0C9B1 /* GoodToGo_UnitTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3111,7 +3169,6 @@
 		9F468EDF1C6E7F5C00065E19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3133,7 +3190,6 @@
 		9F468EE01C6E7F5C00065E19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3231,7 +3287,6 @@
 		9F6E65011C89F513005991CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3253,7 +3308,6 @@
 		9F6E65021C89F513005991CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3407,7 +3461,6 @@
 		9F9A9C191C6CF0CC00B37D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3428,7 +3481,6 @@
 		9F9A9C1A1C6CF0CC00B37D0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "Generic-AppIcon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3485,6 +3537,35 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-Swift.App-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9FE2A0B51C98796000C0C9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = GoodToGo_UnitTesting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-UnitTesting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9FE2A0B61C98796000C0C9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GoodToGo_UnitTesting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "RJS.GoodToGo-UnitTesting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -3571,6 +3652,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9FE2A0B41C98796000C0C9B1 /* Build configuration list for PBXNativeTarget "GoodToGo_UnitTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE2A0B51C98796000C0C9B1 /* Debug */,
+				9FE2A0B61C98796000C0C9B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

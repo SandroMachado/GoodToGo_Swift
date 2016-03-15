@@ -108,7 +108,7 @@ class Screen1ViewController: UIViewController {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppGenericConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
         let item                   = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
         cell.textLabel?.text       = item.title
         cell.detailTextLabel?.text = item.description
@@ -137,7 +137,7 @@ class Screen1ViewController: UIViewController {
     
         startListenningNotification()
         
-        self.tableView!.registerCellIdentifier(AppGenericConstants.TableView.cellIdentifier)
+        self.tableView!.registerCellIdentifier(AppConstants.TableView.cellIdentifier)
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")

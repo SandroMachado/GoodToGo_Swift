@@ -66,17 +66,13 @@ struct RJSDropBoxManager
     static func authorizeFromController(controller:UIViewController) -> Void {
         
         // Connect to the DropBox
-        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        RJSDropBoxManager.connect(AppConstants.APIs.DropboxAppKey)
         
         if (Dropbox.authorizedClient == nil) {
             Dropbox.authorizeFromController(controller)
         }
         else {
             DLogWarning("Controller \(controller) is already authorized!")
-            /*let userToken = ToString(RJSStorages.readFromKeychain(App7Constants.Keys.DropboxUserAcessToken))
-            RJSDropBoxManager.getCurrentAcount(userToken) { (result, error) -> Void in
-                DLog(result)
-            }*/
         }
     }
 
@@ -91,7 +87,7 @@ struct RJSDropBoxManager
     static func getCurrentAcount(secretToken:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
         
         // Connect to the DropBox
-        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        RJSDropBoxManager.connect(AppConstants.APIs.DropboxAppKey)
         
         guard !secretToken.isEmpty else {
             DLogWarning("Ignored")
@@ -128,11 +124,11 @@ struct RJSDropBoxManager
         }
     }
     
-    // FIX: !! Images are not upload the right way!
+    // FIX: Images are not upload the right way!
     static func uploadImage(secretToken:String, image:UIImage, var imageName:String, completion: (result: AnyObject!, error: NSError!) -> Void) {
        
         // Connect to the DropBox
-        RJSDropBoxManager.connect(AppGenericConstants.APIs.DropboxAppKey)
+        RJSDropBoxManager.connect(AppConstants.APIs.DropboxAppKey)
         
         guard !secretToken.isEmpty else {
             DLogWarning("Ignored..")

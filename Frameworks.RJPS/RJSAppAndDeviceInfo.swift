@@ -41,7 +41,7 @@ struct RJSAppAndDeviceInfo
     
     static func appNumberOfLogins() -> Int
     {
-        if let appNumberOfLogins = RJSStorages.readFromDefaults(AppGenericConstants.DefaultsKey.kNumberOfLogins)
+        if let appNumberOfLogins = RJSStorages.readFromDefaults(AppConstants.DefaultsKey.kNumberOfLogins)
         {
             if(HaveValue(appNumberOfLogins))
             {
@@ -59,7 +59,7 @@ struct RJSAppAndDeviceInfo
     {
         let appNumberOfLogins = self.appNumberOfLogins() + 1;
         DLog("App Logins count: \(appNumberOfLogins)")
-        [RJSStorages.saveToDefaults("\(appNumberOfLogins)", key: AppGenericConstants.DefaultsKey.kNumberOfLogins)]
+        [RJSStorages.saveToDefaults("\(appNumberOfLogins)", key: AppConstants.DefaultsKey.kNumberOfLogins)]
     }
 }
 

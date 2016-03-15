@@ -21,7 +21,8 @@ if(false) {
     LIterators.start()
 }
 
-if(false) {
+let unitTests = false
+if(unitTests) {
     RJSRegExp.unitTests()
     //RJSWebservices.unitTests()
     RJSJSON.unitTests()

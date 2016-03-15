@@ -6,10 +6,13 @@
 /// TODO : Change names
 
 // Constants that are shared (existing) in the the app's
-enum AppGenericConstants {
+enum AppConstants {
     enum DefaultsKey {
         static var kNumberOfLogins: String {
             return "kNumberOfLogins"
+        }
+        static var DropboxUserAcessToken: String {
+            return "dropbox_api_userAcessToken"
         }
     }
     enum TableView {

@@ -57,7 +57,7 @@ class ArticleViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppGenericConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(AppConstants.TableView.cellIdentifier, forIndexPath: indexPath) as UITableViewCell
         let item                   = viewModel!.tableViewDataSource[indexPath.section][indexPath.row]
         cell.textLabel?.text       = item.title
         cell.detailTextLabel?.text = item.description
@@ -67,7 +67,7 @@ class ArticleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        self.tableView!.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: AppGenericConstants.TableView.cellIdentifier)
+        self.tableView!.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: AppConstants.TableView.cellIdentifier)
         
     }
     
