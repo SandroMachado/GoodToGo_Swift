@@ -27,7 +27,6 @@ About :
 
 TODO :
 - REBUILD in [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) and change storage to [Realm](https://realm.io/).
-- Turn into [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).
 
 ## App_4 : Template App 3 - [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) - Model-View-ViewModel
 About :
