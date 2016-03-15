@@ -3,6 +3,7 @@
 //  Copyright (c) 2015 Ricardo Santos. All rights reserved.
 //
 
+import UIKit
 import Foundation
 import Alamofire
 

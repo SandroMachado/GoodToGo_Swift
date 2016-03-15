@@ -1,3 +1,6 @@
+
+import Foundation
+
 /// Routes for the sharing namespace
 public class SharingRoutes {
     public let client : BabelClient

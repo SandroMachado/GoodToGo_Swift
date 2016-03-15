@@ -1,3 +1,6 @@
+
+import Foundation
+
 /// Routes for the files namespace
 public class FilesRoutes {
     public let client : BabelClient

@@ -6,6 +6,7 @@
 //
 //
 
+import UIKit
 import Foundation
 import Alamofire
 
@@ -13,7 +14,7 @@ class DropboxServerTrustPolicyManager: ServerTrustPolicyManager {
     init() {
         super.init(policies: [String : ServerTrustPolicy]())
     }
-        
+     /*
     override func serverTrustPolicyForHost(host: String) -> ServerTrustPolicy? {
         let trustPolicy = ServerTrustPolicy.CustomEvaluation {(serverTrust, host) in
             let policy = SecPolicyCreateSSL(true,  host as CFString)
@@ -44,7 +45,7 @@ class DropboxServerTrustPolicyManager: ServerTrustPolicyManager {
         }
         
         return trustPolicy
-    }
+    }*/
 }
 
 /// This is a convenience class for the typical single user case. To use this

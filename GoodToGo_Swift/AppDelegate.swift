@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        if(RJSUtils.isRealDevice() || true)
+        if(RJSUtils.isRealDevice())
         {
             Fabric.with([Answers.self, Crashlytics.self])
         }
@@ -31,24 +31,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        DLog(url)
-        
-        if let authResult = Dropbox.handleRedirectURL(url) {
-            switch authResult {
-            case .Success:
-                // TODO: improve RegExp
-                let matches        = RJSRegExp.matchesForRegexInText("access_token=[^&]+&token_type", text: ToString(url))
-                var userAcessToken = ToString(matches[0])
-                userAcessToken     = userAcessToken.replace("access_token=", with: "")
-                userAcessToken     = userAcessToken.replace("&token_type",   with: "")
-                
-                RJSStorages.saveToKeychain(userAcessToken, key: AppConstants.DefaultsKey.DropboxUserAcessToken)
-                
-            case .Error( _, let description):
-                print("Error: \(description)")
+        #if DROPBOX_ENABLED
+            if let authResult = Dropbox.handleRedirectURL(url) {
+                switch authResult {
+                case .Success:
+                    // TODO: improve RegExp
+                    let matches        = RJSRegExp.matchesForRegexInText("access_token=[^&]+&token_type", text: ToString(url))
+                    var userAcessToken = ToString(matches[0])
+                    userAcessToken     = userAcessToken.replace("access_token=", with: "")
+                    userAcessToken     = userAcessToken.replace("&token_type",   with: "")
+                    RJSStorages.saveToKeychain(userAcessToken, key: AppConstants.DefaultsKey.DropboxUserAcessToken)
+                case .Error( _, let description):
+                    print("Error: \(description)")
+                }
             }
-        }
-        
+        #endif
         return false
     }
     

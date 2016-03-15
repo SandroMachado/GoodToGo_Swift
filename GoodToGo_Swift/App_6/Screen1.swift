@@ -24,7 +24,7 @@ class Screen1: UIViewController {
     
     @IBAction func btn1Pressed() -> Void {
         guard RJSUtils.existsInternetConnection() else {
-            RJSMessagesManager.showNoInternetConnetion()
+            RJSMessagesManager.showNoInternetConnetion(self)
             return
         }
         let download1Users = {

@@ -23,18 +23,18 @@ if(false) {
 
 let unitTests = false
 if(unitTests) {
-    RJSRegExp.unitTests()
+    //RJSRegExp.unitTests()
     //RJSWebservices.unitTests()
-    RJSJSON.unitTests()
-    RJSBlocks.unitTests()
+    //RJSJSON.unitTests()
+    //RJSBlocks.unitTests()
     //RJSStorages.unitTests()
-    String.unitTests()
+    //String.unitTests()
     //RJSDBManager.unitTests()
     //RJSMVVMUtils.unitTests()
     //RJSDownloadsManager.unitTests()
     //RJSUtils.unitTests()
-    RJSConvert.unitTests()
-    RJSStorages.unitTests()
+    //RJSConvert.unitTests()
+    //RJSStorages.unitTests()
 }
 
 
