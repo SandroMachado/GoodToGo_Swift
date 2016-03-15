@@ -16,13 +16,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FE2A0AE1C98796000C0C9B1"
-               BuildableName = "GoodToGo_UnitTesting.xctest"
-               BlueprintName = "GoodToGo_UnitTesting"
+               BlueprintIdentifier = "9FE2A0CD1C98945500C0C9B1"
+               BuildableName = "UI.UnitTesting.xctest"
+               BlueprintName = "UI.UnitTesting"
                ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9F9A9BED1C6CF0CB00B37D0D"
+            BuildableName = "App_1 - UI Animations.app"
+            BlueprintName = "App_1 - UI Animations"
+            ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -36,6 +45,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9F9A9BED1C6CF0CB00B37D0D"
+            BuildableName = "App_1 - UI Animations.app"
+            BlueprintName = "App_1 - UI Animations"
+            ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -45,6 +64,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9F9A9BED1C6CF0CB00B37D0D"
+            BuildableName = "App_1 - UI Animations.app"
+            BlueprintName = "App_1 - UI Animations"
+            ReferencedContainer = "container:GoodToGo_Swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

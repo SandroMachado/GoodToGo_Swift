@@ -18,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        if(RJSUtils.isRealDevice())
-        {
-            Fabric.with([Answers.self, Crashlytics.self])
-        }
+        #if FRABLIC_ENABLED
+            if(RJSUtils.isRealDevice())
+            {
+                Fabric.with([Answers.self, Crashlytics.self])
+            }
+        #endif
 
         RJSAppAndDeviceInfo.numberOfLoginsIncrement()
 

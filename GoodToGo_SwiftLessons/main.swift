@@ -21,21 +21,6 @@ if(false) {
     LIterators.start()
 }
 
-let unitTests = false
-if(unitTests) {
-    //RJSRegExp.unitTests()
-    //RJSWebservices.unitTests()
-    //RJSJSON.unitTests()
-    //RJSBlocks.unitTests()
-    //RJSStorages.unitTests()
-    //String.unitTests()
-    //RJSDBManager.unitTests()
-    //RJSMVVMUtils.unitTests()
-    //RJSDownloadsManager.unitTests()
-    //RJSUtils.unitTests()
-    //RJSConvert.unitTests()
-    //RJSStorages.unitTests()
-}
 
 
 

@@ -22,4 +22,13 @@ struct RJSDBManager
         }
     }
     
+    /**
+     @brief Do unit testing for this class
+     @param None.
+     @return Void
+     */
+    static func unitTests() -> Void
+    {
+        
+    }
 }
