@@ -43,6 +43,9 @@ class Screen3: UIViewController {
         {
             imgView1?.bump(size:10)
         }
+        
+        RJSMessagesManager.showAlert(sender: self, title: "Alert", message: "Rotate me, I will resize my self acording to the screen!\n\n[CMD]+[->]")
+
     }
     
     override func didReceiveMemoryWarning()

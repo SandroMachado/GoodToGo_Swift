@@ -8,6 +8,8 @@
 
 import XCTest
 
+import UIKit // http://mathijskadijk.nl/post/101529113209/the-bundle-couldnt-be-loaded-because-it-is
+
 class GoodToGo_UnitTesting: XCTestCase {
         
     override func setUp() {
@@ -35,9 +37,5 @@ class GoodToGo_UnitTesting: XCTestCase {
         XCTAssertEqual(true, true, "asd")
     }
     
-    func testeExample2() {
-        XCTAssertEqual(true, true, "asd")
-    }
-
     
 }

@@ -22,6 +22,7 @@ class Screen5: UIViewController {
     {
         super.viewWillAppear(animated);
         
+        RJSMessagesManager.showAlert(sender: self, title: "Alert", message: "Rotate me, I will resize my self acording to the screen!\n\n[CMD]+[->]")
     }
     
     override func didReceiveMemoryWarning()

@@ -97,43 +97,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5J-ge-hKN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50% x 33%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5J-ge-hKN">
                                 <rect key="frame" x="0.0" y="0.0" width="202" height="300"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-I7-m3Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50% x 66%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-I7-m3Q">
                                 <rect key="frame" x="202" y="0.0" width="404" height="300"/>
                                 <color key="backgroundColor" red="1" green="0.37006703100301885" blue="0.2045106617855893" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZY-qi-TjQ">
-                                <rect key="frame" x="200" y="300" width="200" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33% x 33%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZY-qi-TjQ">
+                                <rect key="frame" x="201" y="300" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.96668014386931489" green="1" blue="0.38257936251065294" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN3-AY-lni">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;The rest&quot; x 100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN3-AY-lni">
                                 <rect key="frame" x="0.0" y="500" width="600" height="51"/>
                                 <color key="backgroundColor" red="0.36215249761609103" green="0.48991996510764135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-Bu-wCb">
-                                <rect key="frame" x="400" y="300" width="200" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33% x 33%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-Bu-wCb">
+                                <rect key="frame" x="401" y="300" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.34773375731983869" green="1" blue="0.30797225889354141" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Ha-e1D">
-                                <rect key="frame" x="0.0" y="300" width="200" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33% x 33%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Ha-e1D">
+                                <rect key="frame" x="0.0" y="300" width="202" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,10 +147,10 @@
                             <constraint firstItem="A5J-ge-hKN" firstAttribute="width" secondItem="3jm-Ge-m7G" secondAttribute="width" multiplier="0.3333" constant="2" id="0zg-WH-Nui"/>
                             <constraint firstItem="0MP-I7-m3Q" firstAttribute="top" secondItem="3jm-Ge-m7G" secondAttribute="topMargin" id="10G-3V-B2Q"/>
                             <constraint firstItem="0MP-I7-m3Q" firstAttribute="width" secondItem="3jm-Ge-m7G" secondAttribute="width" multiplier="0.6666" constant="4" id="3vZ-sX-wVk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ERd-Bu-wCb" secondAttribute="trailing" constant="-21" id="8Cq-Ov-yv8"/>
                             <constraint firstItem="ERd-Bu-wCb" firstAttribute="leading" secondItem="DZY-qi-TjQ" secondAttribute="trailing" id="8Cw-AB-BJw"/>
-                            <constraint firstItem="DZY-qi-TjQ" firstAttribute="leading" secondItem="wpV-Ha-e1D" secondAttribute="trailing" id="ByU-XK-gKm"/>
-                            <constraint firstItem="ERd-Bu-wCb" firstAttribute="width" secondItem="3jm-Ge-m7G" secondAttribute="width" multiplier="0.3333" id="Em6-pN-Q62"/>
-                            <constraint firstItem="wpV-Ha-e1D" firstAttribute="width" secondItem="3jm-Ge-m7G" secondAttribute="width" multiplier="0.3333" id="Gdd-TL-hDf"/>
+                            <constraint firstItem="DZY-qi-TjQ" firstAttribute="leading" secondItem="wpV-Ha-e1D" secondAttribute="trailing" constant="-1" id="ByU-XK-gKm"/>
+                            <constraint firstItem="wpV-Ha-e1D" firstAttribute="width" secondItem="3jm-Ge-m7G" secondAttribute="width" multiplier="0.3333" constant="2.0200000000000102" id="Gdd-TL-hDf"/>
                             <constraint firstItem="ERd-Bu-wCb" firstAttribute="height" secondItem="3jm-Ge-m7G" secondAttribute="height" multiplier="0.3333" id="Hhn-K3-GLf"/>
                             <constraint firstItem="0MP-I7-m3Q" firstAttribute="leading" secondItem="A5J-ge-hKN" secondAttribute="trailing" id="R1p-eL-hu7"/>
                             <constraint firstItem="A5J-ge-hKN" firstAttribute="leading" secondItem="3jm-Ge-m7G" secondAttribute="leadingMargin" constant="-20" id="SRm-GH-R8V"/>

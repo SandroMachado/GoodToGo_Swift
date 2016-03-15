@@ -562,8 +562,6 @@
 		9FE2A1021C989ACB00C0C9B1 /* RJSMessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4680E41C6E1B3800065E19 /* RJSMessagesManager.swift */; };
 		9FE2A1071C989CE700C0C9B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9A9C221C6E16D600B37D0D /* QuartzCore.framework */; };
 		9FE2A1081C989CE900C0C9B1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4681CE1C6E796B00065E19 /* CoreData.framework */; };
-		9FE2A1091C989CF400C0C9B1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E65171C89F6F5005991CE /* Realm.framework */; };
-		9FE2A10A1C989CF700C0C9B1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E65181C89F6F5005991CE /* RealmSwift.framework */; };
 		9FE2A10B1C989CFE00C0C9B1 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2A0A31C970E2700C0C9B1 /* Locksmith.framework */; };
 		9FE2A10C1C989D0100C0C9B1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB650751C8F7FA000207AD2 /* CryptoSwift.framework */; };
 		9FE2A10E1C989D0600C0C9B1 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D7F771C6FEC4500E70557 /* Whisper.framework */; };
@@ -1113,12 +1111,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE2A1081C989CE900C0C9B1 /* CoreData.framework in Frameworks */,
-				9FE2A10A1C989CF700C0C9B1 /* RealmSwift.framework in Frameworks */,
 				9FE2A1071C989CE700C0C9B1 /* QuartzCore.framework in Frameworks */,
 				9FE2A10F1C989D0800C0C9B1 /* SwiftyJSON.framework in Frameworks */,
 				9FE2A1101C989D0B00C0C9B1 /* Alamofire.framework in Frameworks */,
 				9FE2A10B1C989CFE00C0C9B1 /* Locksmith.framework in Frameworks */,
-				9FE2A1091C989CF400C0C9B1 /* Realm.framework in Frameworks */,
 				9FE2A1151C98A44100C0C9B1 /* Eureka.framework in Frameworks */,
 				9FE2A10C1C989D0100C0C9B1 /* CryptoSwift.framework in Frameworks */,
 				9FE2A10E1C989D0600C0C9B1 /* Whisper.framework in Frameworks */,
@@ -1932,6 +1928,9 @@
 		9F9A9BE61C6CF0CB00B37D0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Ricardo Santos";
@@ -3317,11 +3316,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks.Fabric",
 					"$(PROJECT_DIR)/Frameworks.OpenSource/Realm",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GoodToGo_UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -3340,11 +3341,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks.Fabric",
 					"$(PROJECT_DIR)/Frameworks.OpenSource/Realm",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GoodToGo_UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
